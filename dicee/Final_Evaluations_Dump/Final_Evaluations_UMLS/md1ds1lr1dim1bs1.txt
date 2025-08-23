@@ -1,0 +1,8 @@
+Model: DistMult
+Dataset: KGs/Countries-S3
+Learning Rate: 0.01
+Embed Dim: 32
+Batch Size: 1024
+
+Train MRR: 0.05637157543746066
+Test  MRR: 0.15094556368107806

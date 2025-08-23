@@ -1,0 +1,5 @@
+max_char_length: 95
+max_token_length: 4
+recommended_max_length_subword_tokens: 14
+vocab_size: 291014
+min_frequency: 1

@@ -8,6 +8,8 @@ from .static_funcs import pickle
 from .static_funcs_training import evaluate_lp, evaluate_bpe_lp
 from typing import Tuple, List
 from .knowledge_graph import KG
+# REMOVE: from .config import tokenizer_path
+import os
 
 
 class Evaluator:
@@ -339,9 +341,15 @@ class Evaluator:
         # (1) set model to eval model
         model.eval()
         num_triples = len(triples)
-        import tiktoken
-
-        enc = tiktoken.get_encoding("gpt2")
+        custom_path = getattr(self.args, "tokenizer_path", None)
+        if isinstance(custom_path, str) and os.path.isfile(custom_path):
+            from tokenizers import Tokenizer
+            enc = Tokenizer.from_file(custom_path)
+            print("I am evaluator, I got the NEW Tokenizer")
+        else:
+            import tiktoken
+            enc = tiktoken.get_encoding("gpt2")
+            print("I am evaluator, I got the OLD Tokenizer")
         if info and self.during_training is False:
             print(info + ':', end=' ')
         # Iterate over integer indexed triples in mini batch fashion
@@ -349,10 +357,18 @@ class Evaluator:
             str_data_batch = triples[i:i + self.args.batch_size]
             for i in str_data_batch:
                 s, p, o = i
-                x = torch.LongTensor([enc.encode(s + " " + p)])
+                if isinstance(custom_path, str) and os.path.isfile(custom_path):
+                    x = torch.LongTensor([enc.encode(s + " " + p).ids])
+                else:
+                    x = torch.LongTensor([enc.encode(s + " " + p)])
                 print("Triple:", i, end="\t")
                 y = model.generate(x, max_new_tokens=100, temperature=model.temperature, top_k=model.topk).tolist()
-                print("Generated:", enc.decode(y[0]))
+                if isinstance(custom_path, str) and os.path.isfile(custom_path):
+                    simple_ids = [enc.ids for enc in y]
+                    print("Generated:", enc.decode(simple_ids[0]))
+                else:
+                    print("Generated:", enc.decode(y[0]))
+                
 
         results = {'H@1': -1, 'H@3': -1, 'H@10': -1, 'MRR': -1}
         return results
@@ -392,11 +408,18 @@ class Evaluator:
             bpe_hr = torch_batch_bpe_triple[:, [0, 1], :]
             # (3) Predict missing entities, i.e., assign probs to all entities.
             predictions = model(bpe_hr)
-            # (4) Filter entities except the target entity
+            # print("DEBUG - Current entity_to_idx mapping for key entities:")
+            # print(f"'cell_or_molecular_dysfunction' -> {model.str_to_bpe_entity_to_idx.get('cell_or_molecular_dysfunction')}")
+            # print(f"'behavior' -> {model.str_to_bpe_entity_to_idx.get('behavior')}")
+                        # (4) Filter entities except the target entity
             for j in range(len(predictions)):
                 # (4.2) Get all ids of all entities occurring with the head entity and relation extracted in 4.1.
                 h, r, t = str_data_batch[j]
+                # print(f"h, r, t = {h!r}, {r!r}, {t!r}")
+                # print(f"type(h), type(r), type(t) = {type(h)}, {type(r)}, {type(t)}")
                 id_e_target = model.str_to_bpe_entity_to_idx[t]
+                # print(f"id_e_target = {id_e_target}")
+                # print(type(id_e_target))
                 filt_idx_entities = [model.str_to_bpe_entity_to_idx[_] for _ in self.er_vocab[(h, r)]]
 
                 # (4.3) Store the assigned score of the target tail entity extracted in 4.1.

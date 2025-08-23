@@ -40,6 +40,8 @@ class AbstractTrainer:
         # To be able to use pl callbacks with our trainers.
         self.strategy=None
 
+        self.tokenizer_path = getattr(args, "tokenizer_path", None)
+
     def on_fit_start(self, *args, **kwargs):
         """
         A function to call callbacks before the training starts.
@@ -75,24 +77,6 @@ class AbstractTrainer:
         """
         for c in self.callbacks:
             c.on_fit_end(*args, **kwargs)
-
-    def on_train_epoch_start(self, *args, **kwargs):
-        """
-        A function to call callbacks at the start of an epoch.
-
-        Parameter
-        ---------
-        args
-
-        kwargs
-
-
-        Returns
-        -------
-        None
-        """
-        for c in self.callbacks:
-            c.on_train_epoch_start(*args, **kwargs)
 
     def on_train_epoch_end(self, *args, **kwargs):
         """
@@ -166,8 +150,9 @@ class BaseInteractiveKGE:
     apply_semantic_constraint : boolean
     """
 
-    def __init__(self, path: str = None, url: str = None, construct_ensemble: bool = False, model_name: str = None,
+    def __init__(self, args, path: str = None, url: str = None, construct_ensemble: bool = False, model_name: str = None,
                  apply_semantic_constraint: bool = False):
+        self.tokenizer_path = getattr(args, "tokenizer_path", None)
         if url is not None:
             assert path is None
             self.path = download_pretrained_model(url)
@@ -192,10 +177,29 @@ class BaseInteractiveKGE:
             else:
                 self.model, tuple_of_entity_relation_idx = load_model(self.path)
         if self.configs.get("byte_pair_encoding", None):
-            import tiktoken
-            self.enc = tiktoken.get_encoding("gpt2")
-            self.dummy_id = tiktoken.get_encoding("gpt2").encode(" ")[0]
+            custom_path = self.tokenizer_path
+            if isinstance(custom_path, str) and os.path.isfile(custom_path):
+                try:
+                    from tokenizers import Tokenizer
+                    self.enc = Tokenizer.from_file(custom_path)
+                    self.dummy_id = self.enc.encode(" ").ids[0]
+                    print("I am abstracts, I got the NEW Tokenizer")
+                except Exception as e:
+                    raise RuntimeError(f"Failed to load custom tokenizer at {self.custom_path}: {e}")
+            else:
+                import tiktoken
+                self.enc = tiktoken.get_encoding("gpt2")
+                self.dummy_id = self.enc.encode(" ")[0]
+                print("I am evaluator, I got the OLD Tokenizer")
             self.max_length_subword_tokens = self.configs["max_length_subword_tokens"]
+            # # import tiktoken
+            # # self.enc = tiktoken.get_encoding("gpt2")
+            # # self.dummy_id = tiktoken.get_encoding("gpt2").encode(" ")[0]
+            # from tokenizers import Tokenizer
+            # self.enc = Tokenizer.from_file("C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\Tokenizer_Path\\tokenizer.json")
+            # # self.enc = Tokenizer.from_file("/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env-CTA-copy/lib/python3.11/site-packages/dicee/Tokenizer/Tokenizer_Path/tokenizer.json")
+            # self.dummy_id = self.enc.encode(" ").ids[0]
+            # self.max_length_subword_tokens = self.configs["max_length_subword_tokens"]
         else:
             assert len(tuple_of_entity_relation_idx) == 2
 
@@ -227,12 +231,15 @@ class BaseInteractiveKGE:
         A list integer(s) or a list of lists containing integer(s)
 
         """
-
         if isinstance(str_entity_or_relation, list):
             return [self.get_bpe_token_representation(i) for i in str_entity_or_relation]
         else:
             # (1) Map a string into its binary representation
-            unshaped_bpe_repr = self.enc.encode(str_entity_or_relation)
+            custom_path = self.tokenizer_path
+            if isinstance(custom_path, str):
+                unshaped_bpe_repr = self.enc.encode(str_entity_or_relation).ids
+            else:
+                unshaped_bpe_repr = self.enc.encode(str_entity_or_relation)
             # (2)
             if len(unshaped_bpe_repr) <= self.max_length_subword_tokens:
                 unshaped_bpe_repr.extend(
@@ -395,7 +402,12 @@ class BaseInteractiveKGE:
         ---------
         """
         if self.configs["byte_pair_encoding"]:
-            t_encode = self.enc.encode_batch(items)
+            custom_path = self.tokenizer_path
+            if isinstance(custom_path, str):
+                batch = self.enc.encode_batch(items)
+                t_encode = [enc.ids for enc in batch]
+            else:
+                t_encode = self.enc.encode_batch(items)
             if len(t_encode) != self.configs["max_length_subword_tokens"]:
                 for i in range(len(t_encode)):
                     t_encode[i].extend(
@@ -778,7 +790,6 @@ class BaseInteractiveTrainKGE:
         freeze_entity_embeddings: bool = True,
         gate_residual: bool = True,
         device: str = None,
-        suffle_data: bool = True
     ):
         """
         Trains the Literal Embeddings model using literal data.
@@ -794,7 +805,6 @@ class BaseInteractiveTrainKGE:
             freeze_entity_embeddings (bool): If True, freeze the entity embeddings during training.
             gate_residual (bool): If True, use gate residual connections in the model.
             device (str): Device to use for training ('cuda' or 'cpu'). If None, will use available GPU or CPU.
-            suffle_data (bool): If True, shuffle the dataset before training.
         """
         # Assign torch.seed to reproduice experiments
         torch.manual_seed(random_seed)
@@ -819,7 +829,7 @@ class BaseInteractiveTrainKGE:
 
         batch_data = DataLoader(
             dataset=literal_dataset,
-            shuffle=suffle_data,
+            shuffle=True,
             batch_size=batch_size,
         )
 
@@ -838,7 +848,7 @@ class BaseInteractiveTrainKGE:
 
         print(
             f"Training Literal Embedding model"
-            f" using pre-trained '{self.model.name}' embeddings."
+            f"using pre-trained '{self.model.name}' embeddings."
         )
 
         # Training loop

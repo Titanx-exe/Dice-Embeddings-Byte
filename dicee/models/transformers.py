@@ -13,20 +13,35 @@ from dataclasses import dataclass
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
+import os
 
 
 class BytE(BaseKGE):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.name="BytE"
-        # lazy import
-        import tiktoken
-        self.config = GPTConfig(**{"block_size": self.block_size,
-                                   "vocab_size": tiktoken.get_encoding("gpt2").n_vocab,
-                                   "n_layer": 4, "n_head": 4, "n_embd": self.embedding_dim, "dropout": 0,
-                                   "bias": False})
-        self.temperature=0.5
-        self.topk=2
+        self.name = "BytE"
+
+        custom_path = self.tokenizer_path
+        if isinstance(custom_path, str) and os.path.isfile(custom_path):
+            from tokenizers import Tokenizer
+            vocab_size = Tokenizer.from_file(custom_path).get_vocab_size()
+            print("I am transformer, I got the NEW Tokenizer")
+        else:
+            import tiktoken
+            vocab_size = tiktoken.get_encoding("gpt2").n_vocab
+            print("I am transformer, I got the OLD Tokenizer")
+
+        self.config = GPTConfig(**{
+            "block_size": self.block_size,
+            "vocab_size": vocab_size,
+            "n_layer": 4,
+            "n_head": 4,
+            "n_embd": self.embedding_dim,
+            "dropout": 0,
+            "bias": False
+        })
+        self.temperature = 0.5
+        self.topk = 2
         self.transformer = nn.ModuleDict(dict(
             wte=nn.Embedding(self.config.vocab_size, self.config.n_embd),
             wpe=nn.Embedding(self.config.block_size, self.config.n_embd),

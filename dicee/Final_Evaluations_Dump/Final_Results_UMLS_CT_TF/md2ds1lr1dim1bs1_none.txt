@@ -1,0 +1,12 @@
+Model: ComplEx
+Dataset: KGs/UMLS
+Learning Rate: 0.01
+Embed Dim: 32
+Batch Size: 512
+nhead: NA
+num_layers: NA
+
+layer_mode: none
+
+Train MRR: 0.30154651461019133
+Test  MRR: 0.31084434862984295

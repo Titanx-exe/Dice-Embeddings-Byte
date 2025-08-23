@@ -1,0 +1,304 @@
+Train MRR:, 0.06337933546347038
+Test  MRR:, 0.06031083710691835
+{'num_train_triples': 10432, 'num_entities': 135, 'num_relations': 92, 'max_length_subword_tokens': None, 'runtime_kg_loading': 0.3418307304382324, 'EstimatedSizeMB': 0.006927490234375, 'NumParam': 7264, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 17-42-35.813454', 'Runtime': 11.360716104507446, 'Train': {'H@1': 0.01246165644171779, 'H@3': 0.05291411042944785, 'H@10': 0.12289110429447853, 'MRR': 0.06337933546347038}, 'Val': {'H@1': 0.010736196319018405, 'H@3': 0.04371165644171779, 'H@10': 0.10276073619631902, 'MRR': 0.056053725164485015}, 'Test': {'H@1': 0.009833585476550681, 'H@3': 0.05370650529500756, 'H@10': 0.11649016641452345, 'MRR': 0.06031083710691835}}
+
+Train MRR:, 0.32322329076229145
+Test  MRR:, 0.32085744346756456
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.8230686187744141, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 17-43-41.473179', 'Runtime': 13.037050724029541, 'Train': {'H@1': 0.23820935582822086, 'H@3': 0.3432707055214724, 'H@10': 0.4637653374233129, 'MRR': 0.32322329076229145}, 'Val': {'H@1': 0.22162576687116564, 'H@3': 0.32131901840490795, 'H@10': 0.43941717791411045, 'MRR': 0.3034810358721104}, 'Test': {'H@1': 0.2344931921331316, 'H@3': 0.3358547655068079, 'H@10': 0.4689863842662632, 'MRR': 0.32085744346756456}}
+
+Train MRR:, 0.0009984473911383326
+Test  MRR:, 0.0008282041900193469
+{'num_train_triples': 100628, 'num_entities': 22411, 'num_relations': 86, 'max_length_subword_tokens': None, 'runtime_kg_loading': 0.9672613143920898, 'EstimatedSizeMB': 0.686553955078125, 'NumParam': 719904, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 17-45-18.899548', 'Runtime': 284.1125280857086, 'Train': {'H@1': 3.975036769090114e-05, 'H@3': 0.00011925110307270342, 'H@10': 0.0010235719680407045, 'MRR': 0.0009984473911383326}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0003986181238373638, 'MRR': 0.0008437186030095619}, 'Test': {'H@1': 0.0, 'H@3': 0.00013347570742124932, 'H@10': 0.0006673785371062467, 'MRR': 0.0008282041900193469}}
+
+Train MRR:, 0.004340488796837518
+Test  MRR:, 0.0040503727324565746
+{'num_train_triples': 35957, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 29, 'runtime_kg_loading': 5.139451265335083, 'EstimatedSizeMB': 1.562042236328125, 'NumParam': 1637920, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 17-50-37.191495', 'Runtime': 362.2017562389374, 'Train': {'H@1': 0.0022558333664586395, 'H@3': 0.0032297173748857175, 'H@10': 0.00750288190165759, 'MRR': 0.004340488796837518}, 'Val': {'H@1': 0.0018602179112410311, 'H@3': 0.0029231995748073346, 'H@10': 0.005713526441668881, 'MRR': 0.0037039331395396723}, 'Test': {'H@1': 0.00200213561131874, 'H@3': 0.0029364655632674853, 'H@10': 0.007474639615589963, 'MRR': 0.0040503727324565746}}
+
+Train MRR:, 0.1807392141476802
+Test  MRR:, 0.18971078482451406
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.7750644683837891, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 18-21-08.514380', 'Runtime': 11.748946189880371, 'Train': {'H@1': 0.09787193251533742, 'H@3': 0.18548696319018404, 'H@10': 0.3256326687116564, 'MRR': 0.1807392141476802}, 'Val': {'H@1': 0.09892638036809816, 'H@3': 0.18558282208588958, 'H@10': 0.3136503067484663, 'MRR': 0.1796864726882429}, 'Test': {'H@1': 0.10136157337367625, 'H@3': 0.2004538577912254, 'H@10': 0.3502269288956127, 'MRR': 0.18971078482451406}}
+
+Train MRR:, 0.1807392141476802
+Test  MRR:, 0.18971078482451406
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.7470471858978271, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 18-22-40.478728', 'Runtime': 10.988376140594482, 'Train': {'H@1': 0.09787193251533742, 'H@3': 0.18548696319018404, 'H@10': 0.3256326687116564, 'MRR': 0.1807392141476802}, 'Val': {'H@1': 0.09892638036809816, 'H@3': 0.18558282208588958, 'H@10': 0.3136503067484663, 'MRR': 0.1796864726882429}, 'Test': {'H@1': 0.10136157337367625, 'H@3': 0.2004538577912254, 'H@10': 0.3502269288956127, 'MRR': 0.18971078482451406}}
+
+Train MRR:, 0.06337933546347038
+Test  MRR:, 0.06031083710691835
+{'num_train_triples': 10432, 'num_entities': 135, 'num_relations': 92, 'max_length_subword_tokens': None, 'runtime_kg_loading': 0.09600949287414551, 'EstimatedSizeMB': 0.006927490234375, 'NumParam': 7264, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 18-56-35.966380', 'Runtime': 13.976126432418823, 'Train': {'H@1': 0.01246165644171779, 'H@3': 0.05291411042944785, 'H@10': 0.12289110429447853, 'MRR': 0.06337933546347038}, 'Val': {'H@1': 0.010736196319018405, 'H@3': 0.04371165644171779, 'H@10': 0.10276073619631902, 'MRR': 0.056053725164485015}, 'Test': {'H@1': 0.009833585476550681, 'H@3': 0.05370650529500756, 'H@10': 0.11649016641452345, 'MRR': 0.06031083710691835}}
+
+Train MRR:, 0.3076726569233828
+Test  MRR:, 0.31416757235364023
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.45303797721862793, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 18-57-27.485788', 'Runtime': 14.215145349502563, 'Train': {'H@1': 0.21414877300613497, 'H@3': 0.3362730061349693, 'H@10': 0.4661618098159509, 'MRR': 0.3076726569233828}, 'Val': {'H@1': 0.20245398773006135, 'H@3': 0.31441717791411045, 'H@10': 0.4532208588957055, 'MRR': 0.2939918844566698}, 'Test': {'H@1': 0.22465960665658094, 'H@3': 0.33661119515885024, 'H@10': 0.4697428139183056, 'MRR': 0.31416757235364023}}
+
+Train MRR:, 0.0009984473911383326
+Test  MRR:, 0.0008282041900193469
+{'num_train_triples': 100628, 'num_entities': 22411, 'num_relations': 86, 'max_length_subword_tokens': None, 'runtime_kg_loading': 0.500042200088501, 'EstimatedSizeMB': 0.686553955078125, 'NumParam': 719904, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 18-58-46.208929', 'Runtime': 280.0710425376892, 'Train': {'H@1': 3.975036769090114e-05, 'H@3': 0.00011925110307270342, 'H@10': 0.0010235719680407045, 'MRR': 0.0009984473911383326}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0003986181238373638, 'MRR': 0.0008437186030095619}, 'Test': {'H@1': 0.0, 'H@3': 0.00013347570742124932, 'H@10': 0.0006673785371062467, 'MRR': 0.0008282041900193469}}
+
+Train MRR:, 0.10448957092251414
+Test  MRR:, 0.10233168566084805
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.39403295516967773, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 19-16-14.607803', 'Runtime': 25.41405200958252, 'Train': {'H@1': 0.05013420245398773, 'H@3': 0.09451687116564417, 'H@10': 0.1843366564417178, 'MRR': 0.10448957092251414}, 'Val': {'H@1': 0.03834355828220859, 'H@3': 0.08588957055214724, 'H@10': 0.17484662576687116, 'MRR': 0.09228337357268351}, 'Test': {'H@1': 0.048411497730711045, 'H@3': 0.09304084720121028, 'H@10': 0.17246596066565809, 'MRR': 0.10233168566084805}}
+
+Train MRR:, 0.1807392141476802
+Test  MRR:, 0.18971078482451406
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.6950564384460449, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 19-29-27.275388', 'Runtime': 21.43372654914856, 'Train': {'H@1': 0.09787193251533742, 'H@3': 0.18548696319018404, 'H@10': 0.3256326687116564, 'MRR': 0.1807392141476802}, 'Val': {'H@1': 0.09892638036809816, 'H@3': 0.18558282208588958, 'H@10': 0.3136503067484663, 'MRR': 0.1796864726882429}, 'Test': {'H@1': 0.10136157337367625, 'H@3': 0.2004538577912254, 'H@10': 0.3502269288956127, 'MRR': 0.18971078482451406}}
+
+Train MRR:, 0.10448957092251414
+Test  MRR:, 0.10233168566084805
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.4340250492095947, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 20-30-23.940077', 'Runtime': 20.625741720199585, 'Train': {'H@1': 0.05013420245398773, 'H@3': 0.09451687116564417, 'H@10': 0.1843366564417178, 'MRR': 0.10448957092251414}, 'Val': {'H@1': 0.03834355828220859, 'H@3': 0.08588957055214724, 'H@10': 0.17484662576687116, 'MRR': 0.09228337357268351}, 'Test': {'H@1': 0.048411497730711045, 'H@3': 0.09304084720121028, 'H@10': 0.17246596066565809, 'MRR': 0.10233168566084805}}
+
+Train MRR:, 0.05769668215567099
+Test  MRR:, 0.049974766524547
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.4320199489593506, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 20-37-47.849476', 'Runtime': 19.49755620956421, 'Train': {'H@1': 0.014858128834355827, 'H@3': 0.036042944785276074, 'H@10': 0.10515720858895705, 'MRR': 0.05769668215567099}, 'Val': {'H@1': 0.010736196319018405, 'H@3': 0.027607361963190184, 'H@10': 0.0843558282208589, 'MRR': 0.04929276439502511}, 'Test': {'H@1': 0.009077155824508321, 'H@3': 0.025718608169440244, 'H@10': 0.09984871406959153, 'MRR': 0.049974766524547}}
+
+Train MRR:, 0.05769668215567099
+Test  MRR:, 0.049974766524547
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.4250361919403076, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 20-40-24.952522', 'Runtime': 12.982045888900757, 'Train': {'H@1': 0.014858128834355827, 'H@3': 0.036042944785276074, 'H@10': 0.10515720858895705, 'MRR': 0.05769668215567099}, 'Val': {'H@1': 0.010736196319018405, 'H@3': 0.027607361963190184, 'H@10': 0.0843558282208589, 'MRR': 0.04929276439502511}, 'Test': {'H@1': 0.009077155824508321, 'H@3': 0.025718608169440244, 'H@10': 0.09984871406959153, 'MRR': 0.049974766524547}}
+
+Train MRR:, 0.05769668215567099
+Test  MRR:, 0.049974766524547
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.46804070472717285, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 20-41-54.955365', 'Runtime': 20.202627658843994, 'Train': {'H@1': 0.014858128834355827, 'H@3': 0.036042944785276074, 'H@10': 0.10515720858895705, 'MRR': 0.05769668215567099}, 'Val': {'H@1': 0.010736196319018405, 'H@3': 0.027607361963190184, 'H@10': 0.0843558282208589, 'MRR': 0.04929276439502511}, 'Test': {'H@1': 0.009077155824508321, 'H@3': 0.025718608169440244, 'H@10': 0.09984871406959153, 'MRR': 0.049974766524547}}
+
+Train MRR:, 0.05769668215567099
+Test  MRR:, 0.049974766524547
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.45703673362731934, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 20-45-49.696839', 'Runtime': 20.472650289535522, 'Train': {'H@1': 0.014858128834355827, 'H@3': 0.036042944785276074, 'H@10': 0.10515720858895705, 'MRR': 0.05769668215567099}, 'Val': {'H@1': 0.010736196319018405, 'H@3': 0.027607361963190184, 'H@10': 0.0843558282208589, 'MRR': 0.04929276439502511}, 'Test': {'H@1': 0.009077155824508321, 'H@3': 0.025718608169440244, 'H@10': 0.09984871406959153, 'MRR': 0.049974766524547}}
+
+Train MRR:, 0.05769668215567099
+Test  MRR:, 0.049974766524547
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.4360373020172119, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 20-49-19.147919', 'Runtime': 20.46164894104004, 'Train': {'H@1': 0.014858128834355827, 'H@3': 0.036042944785276074, 'H@10': 0.10515720858895705, 'MRR': 0.05769668215567099}, 'Val': {'H@1': 0.010736196319018405, 'H@3': 0.027607361963190184, 'H@10': 0.0843558282208589, 'MRR': 0.04929276439502511}, 'Test': {'H@1': 0.009077155824508321, 'H@3': 0.025718608169440244, 'H@10': 0.09984871406959153, 'MRR': 0.049974766524547}}
+
+Train MRR:, 0.05769668215567099
+Test  MRR:, 0.049974766524547
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.4820394515991211, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 21-10-07.473114', 'Runtime': 13.277068853378296, 'Train': {'H@1': 0.014858128834355827, 'H@3': 0.036042944785276074, 'H@10': 0.10515720858895705, 'MRR': 0.05769668215567099}, 'Val': {'H@1': 0.010736196319018405, 'H@3': 0.027607361963190184, 'H@10': 0.0843558282208589, 'MRR': 0.04929276439502511}, 'Test': {'H@1': 0.009077155824508321, 'H@3': 0.025718608169440244, 'H@10': 0.09984871406959153, 'MRR': 0.049974766524547}}
+
+Train MRR:, 0.05769668215567099
+Test  MRR:, 0.049974766524547
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.4490346908569336, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-03 21-14-20.830798', 'Runtime': 13.227063417434692, 'Train': {'H@1': 0.014858128834355827, 'H@3': 0.036042944785276074, 'H@10': 0.10515720858895705, 'MRR': 0.05769668215567099}, 'Val': {'H@1': 0.010736196319018405, 'H@3': 0.027607361963190184, 'H@10': 0.0843558282208589, 'MRR': 0.04929276439502511}, 'Test': {'H@1': 0.009077155824508321, 'H@3': 0.025718608169440244, 'H@10': 0.09984871406959153, 'MRR': 0.049974766524547}}
+
+Train MRR:, 0.05769668215567099
+Test  MRR:, 0.049974766524547
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.42902350425720215, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-04 00-13-29.116565', 'Runtime': 14.575164318084717, 'Train': {'H@1': 0.014858128834355827, 'H@3': 0.036042944785276074, 'H@10': 0.10515720858895705, 'MRR': 0.05769668215567099}, 'Val': {'H@1': 0.010736196319018405, 'H@3': 0.027607361963190184, 'H@10': 0.0843558282208589, 'MRR': 0.04929276439502511}, 'Test': {'H@1': 0.009077155824508321, 'H@3': 0.025718608169440244, 'H@10': 0.09984871406959153, 'MRR': 0.049974766524547}}
+
+Train MRR:, 0.05769668215567099
+Test  MRR:, 0.049974766524547
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.44803500175476074, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-04 00-39-21.103880', 'Runtime': 14.694109201431274, 'Train': {'H@1': 0.014858128834355827, 'H@3': 0.036042944785276074, 'H@10': 0.10515720858895705, 'MRR': 0.05769668215567099}, 'Val': {'H@1': 0.010736196319018405, 'H@3': 0.027607361963190184, 'H@10': 0.0843558282208589, 'MRR': 0.04929276439502511}, 'Test': {'H@1': 0.009077155824508321, 'H@3': 0.025718608169440244, 'H@10': 0.09984871406959153, 'MRR': 0.049974766524547}}
+
+Train MRR:, 0.0177639434462898
+Test  MRR:, 0.016588626310477854
+{'num_train_triples': 35957, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 13, 'runtime_kg_loading': 6.0224573612213135, 'EstimatedSizeMB': 1.048126220703125, 'NumParam': 1099040, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-04 01-44-46.628708', 'Runtime': 271.6097090244293, 'Train': {'H@1': 0.004829669674444489, 'H@3': 0.017996978972055492, 'H@10': 0.03634177366140637, 'MRR': 0.0177639434462898}, 'Val': {'H@1': 0.00451767207015679, 'H@3': 0.01607759766144034, 'H@10': 0.03441403135795908, 'MRR': 0.017025444439513364}, 'Test': {'H@1': 0.0038707955152162306, 'H@3': 0.016951414842498666, 'H@10': 0.033368926855312335, 'MRR': 0.016588626310477854}}
+
+Train MRR:, 0.3046313791312547
+Test  MRR:, 0.3115086327881418
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.43903446197509766, 'EstimatedSizeMB': 0.039154052734375, 'NumParam': 41056, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-04 02-15-01.094046', 'Runtime': 15.143141984939575, 'Train': {'H@1': 0.2089723926380368, 'H@3': 0.32783742331288346, 'H@10': 0.4790069018404908, 'MRR': 0.3046313791312547}, 'Val': {'H@1': 0.1955521472392638, 'H@3': 0.30828220858895705, 'H@10': 0.473159509202454, 'MRR': 0.289628683539896}, 'Test': {'H@1': 0.22087745839636913, 'H@3': 0.33358547655068077, 'H@10': 0.47655068078668683, 'MRR': 0.3115086327881418}}
+
+Train MRR:, 0.3046313791312547
+Test  MRR:, 0.3115086327881418
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.4970376491546631, 'EstimatedSizeMB': 0.039154052734375, 'NumParam': 41056, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-04 02-15-56.756431', 'Runtime': 14.697110891342163, 'Train': {'H@1': 0.2089723926380368, 'H@3': 0.32783742331288346, 'H@10': 0.4790069018404908, 'MRR': 0.3046313791312547}, 'Val': {'H@1': 0.1955521472392638, 'H@3': 0.30828220858895705, 'H@10': 0.473159509202454, 'MRR': 0.289628683539896}, 'Test': {'H@1': 0.22087745839636913, 'H@3': 0.33358547655068077, 'H@10': 0.47655068078668683, 'MRR': 0.3115086327881418}}
+
+Train MRR:, 0.3046313791312547
+Test  MRR:, 0.3115086327881418
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.5170443058013916, 'EstimatedSizeMB': 0.039154052734375, 'NumParam': 41056, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-04 02-17-08.518552', 'Runtime': 15.481168985366821, 'Train': {'H@1': 0.2089723926380368, 'H@3': 0.32783742331288346, 'H@10': 0.4790069018404908, 'MRR': 0.3046313791312547}, 'Val': {'H@1': 0.1955521472392638, 'H@3': 0.30828220858895705, 'H@10': 0.473159509202454, 'MRR': 0.289628683539896}, 'Test': {'H@1': 0.22087745839636913, 'H@3': 0.33358547655068077, 'H@10': 0.47655068078668683, 'MRR': 0.3115086327881418}}
+
+Train MRR:, 0.0662474978188071
+Test  MRR:, 0.24023094498751726
+{'num_train_triples': 624, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 7, 'runtime_kg_loading': 0.2160189151763916, 'EstimatedSizeMB': 0.03912353515625, 'NumParam': 41024, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-04 02-18-44.214268', 'Runtime': 12.178923845291138, 'Train': {'H@1': 0.019801980198019802, 'H@3': 0.05535553555355536, 'H@10': 0.1341134113411341, 'MRR': 0.0662474978188071}, 'Val': {'H@1': 0.08333333333333333, 'H@3': 0.1875, 'H@10': 0.3541666666666667, 'MRR': 0.18213516294218782}, 'Test': {'H@1': 0.14583333333333334, 'H@3': 0.25, 'H@10': 0.4375, 'MRR': 0.24023094498751726}}
+
+Train MRR:, 0.06631014310524644
+Test  MRR:, 0.1937455341326243
+{'num_train_triples': 576, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 7, 'runtime_kg_loading': 0.1200103759765625, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-04 02-20-29.689995', 'Runtime': 12.140444040298462, 'Train': {'H@1': 0.02398871119473189, 'H@3': 0.05738476011288805, 'H@10': 0.11100658513640639, 'MRR': 0.06631014310524644}, 'Val': {'H@1': 0.10416666666666667, 'H@3': 0.1875, 'H@10': 0.20833333333333334, 'MRR': 0.17929505226859796}, 'Test': {'H@1': 0.08333333333333333, 'H@3': 0.22916666666666666, 'H@10': 0.2916666666666667, 'MRR': 0.1937455341326243}}
+
+Train MRR:, 0.05637157543746066
+Test  MRR:, 0.15094556368107806
+{'num_train_triples': 576, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 6, 'runtime_kg_loading': 0.1880168914794922, 'EstimatedSizeMB': 0.03814697265625, 'NumParam': 40000, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-04 02-21-45.487967', 'Runtime': 12.370938301086426, 'Train': {'H@1': 0.019289340101522844, 'H@3': 0.04517766497461929, 'H@10': 0.10761421319796954, 'MRR': 0.05637157543746066}, 'Val': {'H@1': 0.10416666666666667, 'H@3': 0.1875, 'H@10': 0.1875, 'MRR': 0.14487273147603755}, 'Test': {'H@1': 0.08333333333333333, 'H@3': 0.22916666666666666, 'H@10': 0.2708333333333333, 'MRR': 0.15094556368107806}}
+
+Train MRR:, 0.5168917879425001
+Test  MRR:, 0.2715205146459772
+{'num_train_triples': 149689, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 15, 'runtime_kg_loading': 18.16334581375122, 'EstimatedSizeMB': 0.85345458984375, 'NumParam': 894912, 'path_experiment_folder': '/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env/lib/python3.11/site-packages/dicee/Experiments/2025-07-04 06-27-09.626499', 'Runtime': 2591.0876276493073, 'Train': {'H@1': 0.4049629752126858, 'H@3': 0.5809896551090532, 'H@10': 0.7272237840618856, 'MRR': 0.5168917879425001}, 'Val': {'H@1': 0.19275734245794127, 'H@3': 0.30051325919589394, 'H@10': 0.434901625320787, 'MRR': 0.27377454897516956}, 'Test': {'H@1': 0.18921626111599726, 'H@3': 0.29715137300889277, 'H@10': 0.43606469266099873, 'MRR': 0.2715205146459772}}
+
+Train MRR:, 0.1184047847765187
+Test  MRR:, 0.12516614157091638
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.735060453414917, 'EstimatedSizeMB': 1.5533761978149414, 'NumParam': 1628833, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-08 13-50-29.211075', 'Runtime': 15.71326756477356, 'Train': {'H@1': 0.05828220858895705, 'H@3': 0.1204946319018405, 'H@10': 0.20475460122699388, 'MRR': 0.1184047847765187}, 'Val': {'H@1': 0.062116564417177916, 'H@3': 0.11733128834355828, 'H@10': 0.18404907975460122, 'MRR': 0.11719610054603603}, 'Test': {'H@1': 0.06505295007564296, 'H@3': 0.12708018154311648, 'H@10': 0.22390317700453857, 'MRR': 0.12516614157091638}}
+
+Train MRR:, 0.09452556451651241
+Test  MRR:, 0.10121151315094147
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.6290524005889893, 'EstimatedSizeMB': 3.1458139419555664, 'NumParam': 3298625, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-08 13-50-44.935344', 'Runtime': 16.031294345855713, 'Train': {'H@1': 0.028470092024539876, 'H@3': 0.08253450920245399, 'H@10': 0.2013995398773006, 'MRR': 0.09452556451651241}, 'Val': {'H@1': 0.03144171779141104, 'H@3': 0.07592024539877301, 'H@10': 0.200920245398773, 'MRR': 0.09481184925290573}, 'Test': {'H@1': 0.0340393343419062, 'H@3': 0.09001512859304085, 'H@10': 0.21255673222390317, 'MRR': 0.10121151315094147}}
+
+Train MRR:, 0.162358152437642
+Test  MRR:, 0.17393845551420312
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 23, 'runtime_kg_loading': 0.6970653533935547, 'EstimatedSizeMB': 1.516937255859375, 'NumParam': 1590624, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-17 14-46-00.627076', 'Runtime': 323.9263062477112, 'Train': {'H@1': 0.09537960122699386, 'H@3': 0.15049846625766872, 'H@10': 0.3148006134969325, 'MRR': 0.162358152437642}, 'Val': {'H@1': 0.0897239263803681, 'H@3': 0.147239263803681, 'H@10': 0.3090490797546012, 'MRR': 0.15822681824261395}, 'Test': {'H@1': 0.10665658093797277, 'H@3': 0.16036308623298035, 'H@10': 0.3290468986384266, 'MRR': 0.17393845551420312}}
+
+Train MRR:, 0.011712432172345057
+Test  MRR:, 0.006757941279456361
+{'num_train_triples': 624, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 15, 'runtime_kg_loading': 0.1480112075805664, 'EstimatedSizeMB': 0.04248046875, 'NumParam': 44544, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-30 07-14-12.979219', 'Runtime': 11.929697751998901, 'Train': {'H@1': 0.0009000900090009, 'H@3': 0.004050405040504051, 'H@10': 0.0144014401440144, 'MRR': 0.011712432172345057}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.006693128891691838}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.006757941279456361}}
+
+Train MRR:, 0.012273748869806967
+Test  MRR:, 0.0080203995666019
+{'num_train_triples': 624, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 15, 'runtime_kg_loading': 0.2900207042694092, 'EstimatedSizeMB': 0.1220703125, 'NumParam': 128000, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-30 07-14-24.930922', 'Runtime': 12.279624223709106, 'Train': {'H@1': 0.0013501350135013501, 'H@3': 0.0054005400540054005, 'H@10': 0.012601260126012601, 'MRR': 0.012273748869806967}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.007583820257389336}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.0080203995666019}}
+
+Train MRR:, 0.018830291875238363
+Test  MRR:, 0.0237245347522957
+{'num_train_triples': 624, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 15, 'runtime_kg_loading': 0.2830219268798828, 'EstimatedSizeMB': 0.04248046875, 'NumParam': 44544, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-30 07-14-37.224545', 'Runtime': 12.254209041595459, 'Train': {'H@1': 0.0009000900090009, 'H@3': 0.0036003600360036, 'H@10': 0.017101710171017102, 'MRR': 0.018830291875238363}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.019072834265203505}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.041666666666666664, 'MRR': 0.0237245347522957}}
+
+Train MRR:, 0.014504378208334532
+Test  MRR:, 0.012062443446378869
+{'num_train_triples': 624, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 15, 'runtime_kg_loading': 0.3090221881866455, 'EstimatedSizeMB': 0.1220703125, 'NumParam': 128000, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-30 07-14-49.500756', 'Runtime': 11.932693004608154, 'Train': {'H@1': 0.0009000900090009, 'H@3': 0.004050405040504051, 'H@10': 0.013501350135013501, 'MRR': 0.014504378208334532}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.011713264797822401}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.012062443446378869}}
+
+Train MRR:, 0.011768657339685103
+Test  MRR:, 0.008385763387363326
+{'num_train_triples': 624, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 15, 'runtime_kg_loading': 0.3160216808319092, 'EstimatedSizeMB': 0.04248046875, 'NumParam': 44544, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-30 07-15-01.445450', 'Runtime': 11.474701642990112, 'Train': {'H@1': 0.0009000900090009, 'H@3': 0.0027002700270027003, 'H@10': 0.013051305130513051, 'MRR': 0.011768657339685103}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.008142658226490402}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.008385763387363326}}
+
+Train MRR:, 0.03133349002601698
+Test  MRR:, 0.02463236546982291
+{'num_train_triples': 624, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 7, 'runtime_kg_loading': 0.1330115795135498, 'EstimatedSizeMB': 0.04315185546875, 'NumParam': 45248, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-30 07-17-12.433417', 'Runtime': 11.491394758224487, 'Train': {'H@1': 0.00765076507650765, 'H@3': 0.016201620162016202, 'H@10': 0.06075607560756076, 'MRR': 0.03133349002601698}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.041666666666666664, 'MRR': 0.018835043719926444}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.041666666666666664, 'MRR': 0.02463236546982291}}
+
+Train MRR:, 0.03985755726621858
+Test  MRR:, 0.041137247986391574
+{'num_train_triples': 624, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 7, 'runtime_kg_loading': 0.131011962890625, 'EstimatedSizeMB': 0.03912353515625, 'NumParam': 41024, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-30 07-19-13.563612', 'Runtime': 11.289701223373413, 'Train': {'H@1': 0.0063006300630063005, 'H@3': 0.0279027902790279, 'H@10': 0.08415841584158416, 'MRR': 0.03985755726621858}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.16666666666666666, 'MRR': 0.03981327818248688}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.20833333333333334, 'MRR': 0.041137247986391574}}
+
+Train MRR:, 0.04099904093506204
+Test  MRR:, 0.07004430747213006
+{'num_train_triples': 624, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 7, 'runtime_kg_loading': 0.26001977920532227, 'EstimatedSizeMB': 0.0919189453125, 'NumParam': 96384, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-07-30 07-19-24.866312', 'Runtime': 11.470728874206543, 'Train': {'H@1': 0.004050405040504051, 'H@3': 0.022052205220522054, 'H@10': 0.10891089108910891, 'MRR': 0.04099904093506204}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.3958333333333333, 'MRR': 0.07353935512070715}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.3333333333333333, 'MRR': 0.07004430747213006}}
+
+Train MRR:, 0.024191114329957387
+Test  MRR:, 0.023638396333550898
+{'num_train_triples': 624, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 7, 'runtime_kg_loading': 0.1220097541809082, 'EstimatedSizeMB': 0.694793701171875, 'NumParam': 728544, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-18 00-55-29.742685', 'Runtime': 22.144745588302612, 'Train': {'H@1': 0.0009000900090009, 'H@3': 0.01575157515751575, 'H@10': 0.04095409540954095, 'MRR': 0.024191114329957387}, 'Val': {'H@1': 0.0, 'H@3': 0.020833333333333332, 'H@10': 0.020833333333333332, 'MRR': 0.0237936979264594}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.023638396333550898}}
+
+Train MRR:, 0.03133349002601698
+Test  MRR:, 0.02463236546982291
+{'num_train_triples': 624, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 7, 'runtime_kg_loading': 0.12501072883605957, 'EstimatedSizeMB': 0.04315185546875, 'NumParam': 45248, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-18 01-16-30.688308', 'Runtime': 11.765651226043701, 'Train': {'H@1': 0.00765076507650765, 'H@3': 0.016201620162016202, 'H@10': 0.06075607560756076, 'MRR': 0.03133349002601698}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.041666666666666664, 'MRR': 0.018835043719926444}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.041666666666666664, 'MRR': 0.02463236546982291}}
+
+Train MRR:, 0.09003303562253746
+Test  MRR:, 0.10224657710605185
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 28, 'runtime_kg_loading': 0.6280488967895508, 'EstimatedSizeMB': 0.05963134765625, 'NumParam': 62528, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-20 11-56-07.794979', 'Runtime': 13.659653902053833, 'Train': {'H@1': 0.037960122699386506, 'H@3': 0.07908358895705521, 'H@10': 0.16708205521472394, 'MRR': 0.09003303562253746}, 'Val': {'H@1': 0.027607361963190184, 'H@3': 0.06748466257668712, 'H@10': 0.15567484662576686, 'MRR': 0.07843511716652457}, 'Test': {'H@1': 0.046142208774583963, 'H@3': 0.09304084720121028, 'H@10': 0.19062027231467474, 'MRR': 0.10224657710605185}}
+
+Train MRR:, 0.22360907938479183
+Test  MRR:, 0.23695471778565674
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 28, 'runtime_kg_loading': 0.6850709915161133, 'EstimatedSizeMB': 0.05963134765625, 'NumParam': 62528, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-22 22-23-02.494458', 'Runtime': 16.415653944015503, 'Train': {'H@1': 0.1321894171779141, 'H@3': 0.2482745398773006, 'H@10': 0.38151840490797545, 'MRR': 0.22360907938479183}, 'Val': {'H@1': 0.12653374233128833, 'H@3': 0.24846625766871167, 'H@10': 0.37116564417177916, 'MRR': 0.21883947354252992}, 'Test': {'H@1': 0.14674735249621784, 'H@3': 0.2594553706505295, 'H@10': 0.39636913767019666, 'MRR': 0.23695471778565674}}
+
+Train MRR:, 0.30154651461019133
+Test  MRR:, 0.31084434862984295
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 28, 'runtime_kg_loading': 0.9980740547180176, 'EstimatedSizeMB': 0.05963134765625, 'NumParam': 62528, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-22 22-23-18.920112', 'Runtime': 15.960438966751099, 'Train': {'H@1': 0.21855828220858894, 'H@3': 0.3280291411042945, 'H@10': 0.4169861963190184, 'MRR': 0.30154651461019133}, 'Val': {'H@1': 0.2062883435582822, 'H@3': 0.3182515337423313, 'H@10': 0.4072085889570552, 'MRR': 0.28934267664943425}, 'Test': {'H@1': 0.22465960665658094, 'H@3': 0.3434190620272315, 'H@10': 0.43267776096822996, 'MRR': 0.31084434862984295}}
+
+Train MRR:, 0.30596051621261294
+Test  MRR:, 0.3082642270195242
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 28, 'runtime_kg_loading': 0.684051513671875, 'EstimatedSizeMB': 0.05963134765625, 'NumParam': 62528, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-22 22-23-34.892553', 'Runtime': 14.056785821914673, 'Train': {'H@1': 0.2169286809815951, 'H@3': 0.3243865030674847, 'H@10': 0.4688458588957055, 'MRR': 0.30596051621261294}, 'Val': {'H@1': 0.19171779141104295, 'H@3': 0.2898773006134969, 'H@10': 0.4624233128834356, 'MRR': 0.2803302693094453}, 'Test': {'H@1': 0.2216338880484115, 'H@3': 0.3267776096822995, 'H@10': 0.4848714069591528, 'MRR': 0.3082642270195242}}
+
+Train MRR:, 0.1880424709320056
+Test  MRR:, 0.1900171702880175
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 28, 'runtime_kg_loading': 0.7230546474456787, 'EstimatedSizeMB': 0.059632301330566406, 'NumParam': 62529, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-22 22-23-48.959340', 'Runtime': 14.349072694778442, 'Train': {'H@1': 0.0670053680981595, 'H@3': 0.243385736196319, 'H@10': 0.3857361963190184, 'MRR': 0.1880424709320056}, 'Val': {'H@1': 0.05214723926380368, 'H@3': 0.2085889570552147, 'H@10': 0.37883435582822084, 'MRR': 0.1681801788895633}, 'Test': {'H@1': 0.06732223903177005, 'H@3': 0.2481089258698941, 'H@10': 0.4001512859304085, 'MRR': 0.1900171702880175}}
+
+Train MRR:, 0.22360907938479183
+Test  MRR:, 0.23695471778565674
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 28, 'runtime_kg_loading': 0.5840425491333008, 'EstimatedSizeMB': 0.05963134765625, 'NumParam': 62528, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-22 22-26-25.208216', 'Runtime': 14.263602495193481, 'Train': {'H@1': 0.1321894171779141, 'H@3': 0.2482745398773006, 'H@10': 0.38151840490797545, 'MRR': 0.22360907938479183}, 'Val': {'H@1': 0.12653374233128833, 'H@3': 0.24846625766871167, 'H@10': 0.37116564417177916, 'MRR': 0.21883947354252992}, 'Test': {'H@1': 0.14674735249621784, 'H@3': 0.2594553706505295, 'H@10': 0.39636913767019666, 'MRR': 0.23695471778565674}}
+
+Train MRR:, 0.28598003715559517
+Test  MRR:, 0.3000048256928084
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 28, 'runtime_kg_loading': 0.6330482959747314, 'EstimatedSizeMB': 0.06365966796875, 'NumParam': 66752, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-22 22-33-49.247262', 'Runtime': 17.66393804550171, 'Train': {'H@1': 0.20475460122699388, 'H@3': 0.30722776073619634, 'H@10': 0.41180981595092025, 'MRR': 0.28598003715559517}, 'Val': {'H@1': 0.20168711656441718, 'H@3': 0.29754601226993865, 'H@10': 0.3995398773006135, 'MRR': 0.27884361855750484}, 'Test': {'H@1': 0.21709531013615735, 'H@3': 0.3237518910741301, 'H@10': 0.43267776096822996, 'MRR': 0.3000048256928084}}
+
+Train MRR:, 0.10161146164649697
+Test  MRR:, 0.10496856757953647
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 28, 'runtime_kg_loading': 0.574042797088623, 'EstimatedSizeMB': 0.715301513671875, 'NumParam': 750048, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-22 22-34-46.564005', 'Runtime': 321.2291669845581, 'Train': {'H@1': 0.0366180981595092, 'H@3': 0.09413343558282208, 'H@10': 0.1807898773006135, 'MRR': 0.10161146164649697}, 'Val': {'H@1': 0.040644171779141106, 'H@3': 0.09125766871165644, 'H@10': 0.19401840490797545, 'MRR': 0.10512586141004503}, 'Test': {'H@1': 0.04084720121028744, 'H@3': 0.09682299546142209, 'H@10': 0.18078668683812404, 'MRR': 0.10496856757953647}}
+
+Train MRR:, 0.14056522734662985
+Test  MRR:, 0.14166687711841336
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.946070671081543, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 02-06-38.425883', 'Runtime': 16.06764268875122, 'Train': {'H@1': 0.01572085889570552, 'H@3': 0.21280674846625766, 'H@10': 0.3691526073619632, 'MRR': 0.14056522734662985}, 'Val': {'H@1': 0.015337423312883436, 'H@3': 0.2093558282208589, 'H@10': 0.3535276073619632, 'MRR': 0.13846496754693813}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.2216338880484115, 'H@10': 0.3888048411497731, 'MRR': 0.14166687711841336}}
+
+Train MRR:, 0.14056522734662985
+Test  MRR:, 0.14166687711841336
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.725055456161499, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 02-08-17.235293', 'Runtime': 14.766384840011597, 'Train': {'H@1': 0.01572085889570552, 'H@3': 0.21280674846625766, 'H@10': 0.3691526073619632, 'MRR': 0.14056522734662985}, 'Val': {'H@1': 0.015337423312883436, 'H@3': 0.2093558282208589, 'H@10': 0.3535276073619632, 'MRR': 0.13846496754693813}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.2216338880484115, 'H@10': 0.3888048411497731, 'MRR': 0.14166687711841336}}
+
+Train MRR:, 0.14056522734662985
+Test  MRR:, 0.14166687711841336
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.7100539207458496, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 02-09-43.879641', 'Runtime': 14.660596370697021, 'Train': {'H@1': 0.01572085889570552, 'H@3': 0.21280674846625766, 'H@10': 0.3691526073619632, 'MRR': 0.14056522734662985}, 'Val': {'H@1': 0.015337423312883436, 'H@3': 0.2093558282208589, 'H@10': 0.3535276073619632, 'MRR': 0.13846496754693813}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.2216338880484115, 'H@10': 0.3888048411497731, 'MRR': 0.14166687711841336}}
+
+Train MRR:, 0.14056522734662985
+Test  MRR:, 0.14166687711841336
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.7160549163818359, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 02-11-45.356865', 'Runtime': 14.549479246139526, 'Train': {'H@1': 0.01572085889570552, 'H@3': 0.21280674846625766, 'H@10': 0.3691526073619632, 'MRR': 0.14056522734662985}, 'Val': {'H@1': 0.015337423312883436, 'H@3': 0.2093558282208589, 'H@10': 0.3535276073619632, 'MRR': 0.13846496754693813}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.2216338880484115, 'H@10': 0.3888048411497731, 'MRR': 0.14166687711841336}}
+
+Train MRR:, 0.14056522734662985
+Test  MRR:, 0.14166687711841336
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.7270548343658447, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 02-17-04.324333', 'Runtime': 15.827003955841064, 'Train': {'H@1': 0.01572085889570552, 'H@3': 0.21280674846625766, 'H@10': 0.3691526073619632, 'MRR': 0.14056522734662985}, 'Val': {'H@1': 0.015337423312883436, 'H@3': 0.2093558282208589, 'H@10': 0.3535276073619632, 'MRR': 0.13846496754693813}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.2216338880484115, 'H@10': 0.3888048411497731, 'MRR': 0.14166687711841336}}
+
+Train MRR:, 0.14056522734662985
+Test  MRR:, 0.14166687711841336
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.7396969795227051, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 02-27-18.883272', 'Runtime': 14.898970127105713, 'Train': {'H@1': 0.01572085889570552, 'H@3': 0.21280674846625766, 'H@10': 0.3691526073619632, 'MRR': 0.14056522734662985}, 'Val': {'H@1': 0.015337423312883436, 'H@3': 0.2093558282208589, 'H@10': 0.3535276073619632, 'MRR': 0.13846496754693813}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.2216338880484115, 'H@10': 0.3888048411497731, 'MRR': 0.14166687711841336}}
+
+Train MRR:, 0.14056522734662985
+Test  MRR:, 0.14166687711841336
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.7160553932189941, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 02-32-08.986881', 'Runtime': 16.143527030944824, 'Train': {'H@1': 0.01572085889570552, 'H@3': 0.21280674846625766, 'H@10': 0.3691526073619632, 'MRR': 0.14056522734662985}, 'Val': {'H@1': 0.015337423312883436, 'H@3': 0.2093558282208589, 'H@10': 0.3535276073619632, 'MRR': 0.13846496754693813}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.2216338880484115, 'H@10': 0.3888048411497731, 'MRR': 0.14166687711841336}}
+
+Train MRR:, 0.14056522734662985
+Test  MRR:, 0.14166687711841336
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.7066183090209961, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 02-38-44.845911', 'Runtime': 16.330179691314697, 'Train': {'H@1': 0.01572085889570552, 'H@3': 0.21280674846625766, 'H@10': 0.3691526073619632, 'MRR': 0.14056522734662985}, 'Val': {'H@1': 0.015337423312883436, 'H@3': 0.2093558282208589, 'H@10': 0.3535276073619632, 'MRR': 0.13846496754693813}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.2216338880484115, 'H@10': 0.3888048411497731, 'MRR': 0.14166687711841336}}
+
+Train MRR:, 0.14056522734662985
+Test  MRR:, 0.14166687711841336
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.6840517520904541, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 02-51-53.307670', 'Runtime': 15.685401439666748, 'Train': {'H@1': 0.01572085889570552, 'H@3': 0.21280674846625766, 'H@10': 0.3691526073619632, 'MRR': 0.14056522734662985}, 'Val': {'H@1': 0.015337423312883436, 'H@3': 0.2093558282208589, 'H@10': 0.3535276073619632, 'MRR': 0.13846496754693813}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.2216338880484115, 'H@10': 0.3888048411497731, 'MRR': 0.14166687711841336}}
+
+Train MRR:, 0.14056522734662985
+Test  MRR:, 0.14166687711841336
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.712054967880249, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 13-20-17.777471', 'Runtime': 18.02559518814087, 'Train': {'H@1': 0.01572085889570552, 'H@3': 0.21280674846625766, 'H@10': 0.3691526073619632, 'MRR': 0.14056522734662985}, 'Val': {'H@1': 0.015337423312883436, 'H@3': 0.2093558282208589, 'H@10': 0.3535276073619632, 'MRR': 0.13846496754693813}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.2216338880484115, 'H@10': 0.3888048411497731, 'MRR': 0.14166687711841336}}
+
+Train MRR:, 0.14056522734662985
+Test  MRR:, 0.14166687711841336
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.7364847660064697, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 13-29-14.587550', 'Runtime': 14.818097591400146, 'Train': {'H@1': 0.01572085889570552, 'H@3': 0.21280674846625766, 'H@10': 0.3691526073619632, 'MRR': 0.14056522734662985}, 'Val': {'H@1': 0.015337423312883436, 'H@3': 0.2093558282208589, 'H@10': 0.3535276073619632, 'MRR': 0.13846496754693813}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.2216338880484115, 'H@10': 0.3888048411497731, 'MRR': 0.14166687711841336}}
+
+Train MRR:, 0.14056522734662985
+Test  MRR:, 0.14166687711841336
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.7070541381835938, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 13-51-56.536954', 'Runtime': 16.385585069656372, 'Train': {'H@1': 0.01572085889570552, 'H@3': 0.21280674846625766, 'H@10': 0.3691526073619632, 'MRR': 0.14056522734662985}, 'Val': {'H@1': 0.015337423312883436, 'H@3': 0.2093558282208589, 'H@10': 0.3535276073619632, 'MRR': 0.13846496754693813}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.2216338880484115, 'H@10': 0.3888048411497731, 'MRR': 0.14166687711841336}}
+
+Train MRR:, 0.13309326218448297
+Test  MRR:, 0.13709611099936655
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.4570348262786865, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 14-00-27.108147', 'Runtime': 17.02908205986023, 'Train': {'H@1': 0.040452453987730064, 'H@3': 0.13238113496932516, 'H@10': 0.32294861963190186, 'MRR': 0.13309326218448297}, 'Val': {'H@1': 0.03067484662576687, 'H@3': 0.1165644171779141, 'H@10': 0.3136503067484663, 'MRR': 0.12159019970308545}, 'Test': {'H@1': 0.0416036308623298, 'H@3': 0.13918305597579425, 'H@10': 0.3350983358547655, 'MRR': 0.13709611099936655}}
+
+Train MRR:, 0.14056522734662985
+Test  MRR:, 0.14166687711841336
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.7590575218200684, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 14-01-59.057577', 'Runtime': 15.624664306640625, 'Train': {'H@1': 0.01572085889570552, 'H@3': 0.21280674846625766, 'H@10': 0.3691526073619632, 'MRR': 0.14056522734662985}, 'Val': {'H@1': 0.015337423312883436, 'H@3': 0.2093558282208589, 'H@10': 0.3535276073619632, 'MRR': 0.13846496754693813}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.2216338880484115, 'H@10': 0.3888048411497731, 'MRR': 0.14166687711841336}}
+
+Train MRR:, 0.18525801268167577
+Test  MRR:, 0.19632528999750545
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.47956037521362305, 'EstimatedSizeMB': 0.043212890625, 'NumParam': 45312, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 14-02-48.399765', 'Runtime': 18.002701997756958, 'Train': {'H@1': 0.11541411042944785, 'H@3': 0.16689033742331288, 'H@10': 0.30703604294478526, 'MRR': 0.18525801268167577}, 'Val': {'H@1': 0.09662576687116564, 'H@3': 0.14340490797546013, 'H@10': 0.2937116564417178, 'MRR': 0.16767732021709197}, 'Test': {'H@1': 0.12708018154311648, 'H@3': 0.1777609682299546, 'H@10': 0.3146747352496218, 'MRR': 0.19632528999750545}}
+
+Train MRR:, 0.06337112318914875
+Test  MRR:, 0.06585278684888164
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.4530353546142578, 'EstimatedSizeMB': 0.694854736328125, 'NumParam': 728608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 14-03-28.631448', 'Runtime': 113.22536325454712, 'Train': {'H@1': 0.014378834355828221, 'H@3': 0.05339340490797546, 'H@10': 0.11838573619631902, 'MRR': 0.06337112318914875}, 'Val': {'H@1': 0.014570552147239263, 'H@3': 0.049079754601226995, 'H@10': 0.11503067484662577, 'MRR': 0.0617055700719481}, 'Test': {'H@1': 0.01588502269288956, 'H@3': 0.059001512859304085, 'H@10': 0.1172465960665658, 'MRR': 0.06585278684888164}}
+
+Train MRR:, 0.0003116078120922528
+Test  MRR:, 0.00028590238674963307
+{'num_train_triples': 35957, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 13, 'runtime_kg_loading': 5.7856526374816895, 'EstimatedSizeMB': 1.04815673828125, 'NumParam': 1099072, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 14-27-40.140328', 'Runtime': 226.52774572372437, 'Train': {'H@1': 9.937591922725285e-06, 'H@3': 2.9812775768175855e-05, 'H@10': 7.950073538180228e-05, 'MRR': 0.0003116078120922528}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.00026574541589157585, 'MRR': 0.0002891176074043552}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.00028590238674963307}}
+
+Train MRR:, 0.00031294681426797486
+Test  MRR:, 0.0004030854372670817
+{'num_train_triples': 35957, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 29, 'runtime_kg_loading': 5.274481534957886, 'EstimatedSizeMB': 1.562042236328125, 'NumParam': 1637920, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 14-50-40.814323', 'Runtime': 192.08592653274536, 'Train': {'H@1': 9.937591922725285e-06, 'H@3': 3.975036769090114e-05, 'H@10': 7.950073538180228e-05, 'MRR': 0.00031294681426797486}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.0002542524683711898}, 'Test': {'H@1': 0.0, 'H@3': 0.00013347570742124932, 'H@10': 0.0005339028296849973, 'MRR': 0.0004030854372670817}}
+
+Train MRR:, 0.0003116078120922528
+Test  MRR:, 0.00028590238674963307
+{'num_train_triples': 35957, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 13, 'runtime_kg_loading': 5.518123149871826, 'EstimatedSizeMB': 1.04815673828125, 'NumParam': 1099072, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 14-55-52.324343', 'Runtime': 222.35832524299622, 'Train': {'H@1': 9.937591922725285e-06, 'H@3': 2.9812775768175855e-05, 'H@10': 7.950073538180228e-05, 'MRR': 0.0003116078120922528}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.00026574541589157585, 'MRR': 0.0002891176074043552}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.00028590238674963307}}
+
+Train MRR:, 0.04735500127433179
+Test  MRR:, 0.04277538067581944
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.45792675018310547, 'EstimatedSizeMB': 0.0391845703125, 'NumParam': 41088, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 15-02-41.984188', 'Runtime': 16.636329174041748, 'Train': {'H@1': 0.015625, 'H@3': 0.030866564417177913, 'H@10': 0.05598159509202454, 'MRR': 0.04735500127433179}, 'Val': {'H@1': 0.012269938650306749, 'H@3': 0.02607361963190184, 'H@10': 0.05521472392638037, 'MRR': 0.04358630291282412}, 'Test': {'H@1': 0.012859304084720122, 'H@3': 0.024205748865355523, 'H@10': 0.0529500756429652, 'MRR': 0.04277538067581944}}
+
+Train MRR:, 0.0720536826827826
+Test  MRR:, 0.06916907083454063
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.7591016292572021, 'EstimatedSizeMB': 1.549346923828125, 'NumParam': 1624608, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 15-03-13.664583', 'Runtime': 15.0455641746521, 'Train': {'H@1': 0.020034509202453987, 'H@3': 0.053009969325153374, 'H@10': 0.1343941717791411, 'MRR': 0.0720536826827826}, 'Val': {'H@1': 0.023773006134969327, 'H@3': 0.05674846625766871, 'H@10': 0.13420245398773006, 'MRR': 0.07542312860917819}, 'Test': {'H@1': 0.014372163388804841, 'H@3': 0.05068078668683813, 'H@10': 0.1346444780635401, 'MRR': 0.06916907083454063}}
+
+Train MRR:, 0.0767097035067691
+Test  MRR:, 0.0742999814731922
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.7378671169281006, 'EstimatedSizeMB': 1.553375244140625, 'NumParam': 1628832, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 15-13-53.988406', 'Runtime': 15.931886672973633, 'Train': {'H@1': 0.017158742331288345, 'H@3': 0.07745398773006135, 'H@10': 0.1688075153374233, 'MRR': 0.0767097035067691}, 'Val': {'H@1': 0.018404907975460124, 'H@3': 0.06748466257668712, 'H@10': 0.174079754601227, 'MRR': 0.07673534956326335}, 'Test': {'H@1': 0.014372163388804841, 'H@3': 0.07261724659606657, 'H@10': 0.17095310136157338, 'MRR': 0.0742999814731922}}
+
+Train MRR:, 0.0767097035067691
+Test  MRR:, 0.0742999814731922
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 16, 'runtime_kg_loading': 0.6916277408599854, 'EstimatedSizeMB': 1.553375244140625, 'NumParam': 1628832, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 15-14-49.453030', 'Runtime': 15.050507307052612, 'Train': {'H@1': 0.017158742331288345, 'H@3': 0.07745398773006135, 'H@10': 0.1688075153374233, 'MRR': 0.0767097035067691}, 'Val': {'H@1': 0.018404907975460124, 'H@3': 0.06748466257668712, 'H@10': 0.174079754601227, 'MRR': 0.07673534956326335}, 'Test': {'H@1': 0.014372163388804841, 'H@3': 0.07261724659606657, 'H@10': 0.17095310136157338, 'MRR': 0.0742999814731922}}
+
+Train MRR:, 0.000228932746086928
+Test  MRR:, 0.00030553827838945537
+{'num_train_triples': 35957, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 29, 'runtime_kg_loading': 5.244217395782471, 'EstimatedSizeMB': 1.566070556640625, 'NumParam': 1642144, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 15-15-17.369210', 'Runtime': 204.2515070438385, 'Train': {'H@1': 9.937591922725285e-06, 'H@3': 2.9812775768175855e-05, 'H@10': 9.937591922725286e-05, 'MRR': 0.000228932746086928}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.00017370151666907486}, 'Test': {'H@1': 0.0, 'H@3': 0.00013347570742124932, 'H@10': 0.00026695141484249865, 'MRR': 0.00030553827838945537}}
+
+Train MRR:, 0.00014537486975193584
+Test  MRR:, 0.00013786590043364947
+{'num_train_triples': 35957, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 13, 'runtime_kg_loading': 5.391143083572388, 'EstimatedSizeMB': 1.05218505859375, 'NumParam': 1103296, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 15-18-57.501223', 'Runtime': 225.47398447990417, 'Train': {'H@1': 0.0, 'H@3': 1.987518384545057e-05, 'H@10': 7.950073538180228e-05, 'MRR': 0.00014537486975193584}, 'Val': {'H@1': 0.00013287270794578793, 'H@3': 0.00013287270794578793, 'H@10': 0.00026574541589157585, 'MRR': 0.00026291265199527365}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.00013786590043364947}}
+
+Train MRR:, 0.0001571038796669792
+Test  MRR:, 0.00013827028369484357
+{'num_train_triples': 35957, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 13, 'runtime_kg_loading': 5.648223638534546, 'EstimatedSizeMB': 1.703826904296875, 'NumParam': 1786592, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee/Experiments/2025-08-23 15-25-39.027075', 'Runtime': 637.6872971057892, 'Train': {'H@1': 9.937591922725285e-06, 'H@3': 2.9812775768175855e-05, 'H@10': 7.950073538180228e-05, 'MRR': 0.0001571038796669792}, 'Val': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.00026574541589157585, 'MRR': 0.0001529063286363347}, 'Test': {'H@1': 0.0, 'H@3': 0.0, 'H@10': 0.0, 'MRR': 0.00013827028369484357}}
+

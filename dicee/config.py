@@ -141,24 +141,20 @@ class Namespace(argparse.Namespace):
         self.auto_batch_finding=False
         "A flag for using auto batch finding"
 
-        self.eval_every_n_epochs: int = 0
-        """Evaluate model every n epochs. If 0, no evaluation is applied."""
+        self.transformer_nhead: int = 2
+        "Number of attention heads for TransformerEncoderLayer"
 
-        self.save_every_n_epochs: bool = False
-        """Save model every n epochs. If True, save model at every epoch."""
+        self.transformer_num_layers: int = 4
+        "Number of layers for TransformerEncoder"
 
-        self.eval_at_epochs: list = None
-        """List of epoch numbers at which to evaluate the model (e.g., 1 5 10)."""
+        self.use_attention_layer: bool = False
+        "If True, apply a MultiheadAttention block to BPE embeddings"
 
-        self.n_epochs_eval_model: str = "val_test"
-        """Evaluating link prediction performance on data splits while performing periodic evaluation."""
-        
-        self.adaptive_lr = dict()
-        """Adaptive learning rate parameters, e.g., '{"scheduler_name": "cca"}'"""
+        self.use_transformer_layer: bool = False
+        "If True, apply a TransformerEncoder to BPE embeddings (mutually exclusive with use_attention_layer)"
 
-        self.swa_start_epoch: int = None
-        """Epoch at which to start applying stochastic weight averaging."""
-
+        self.tokenizer_path: str = None
+        "Path of a custom tokenizer"
 
     def __iter__(self):
         # Iterate

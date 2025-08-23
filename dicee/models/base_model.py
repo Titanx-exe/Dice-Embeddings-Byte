@@ -122,6 +122,17 @@ class BaseKGE(BaseKGELightning):
     def __init__(self, args: dict):
         super().__init__()
         self.args = args
+        # tokenizer path (Namespace or dict)
+        self.tokenizer_path = getattr(args, "tokenizer_path", None)
+        if self.tokenizer_path is None and isinstance(args, dict):
+            self.tokenizer_path = args.get("tokenizer_path")
+        if self.tokenizer_path and not isinstance(self.tokenizer_path, str):
+            self.tokenizer_path = str(self.tokenizer_path)
+        # debug
+        if self.tokenizer_path:
+            import os
+            print(f"[MODEL] tokenizer_path received: {self.tokenizer_path} (exists={os.path.isfile(self.tokenizer_path)})")
+
         self.embedding_dim = None
         self.num_entities = None
         self.num_relations = None
@@ -154,9 +165,37 @@ class BaseKGE(BaseKGELightning):
         self.byte_pair_encoding = self.args.get("byte_pair_encoding", False)
         self.max_length_subword_tokens = self.args.get("max_length_subword_tokens", None)
         self.block_size=self.args.get("block_size", None)
+        # NEW: selection flags
+        self.use_attention_layer = bool(self.args.get("use_attention_layer", False))
+        self.use_transformer_layer = bool(self.args.get("use_transformer_layer", False))
+        if self.use_attention_layer and self.use_transformer_layer:
+            raise ValueError("use_attention_layer and use_transformer_layer cannot both be True")
         if self.byte_pair_encoding and self.args['model'] != "BytE":
             self.token_embeddings = torch.nn.Embedding(self.num_tokens, self.embedding_dim)
             self.param_init(self.token_embeddings.weight.data)
+
+            # Conditionally build attention/transformer from config
+            if self.use_attention_layer:
+                self.attention = nn.MultiheadAttention(
+                    embed_dim=self.embedding_dim,
+                    num_heads=4,
+                    batch_first=True
+                )
+
+            if self.use_transformer_layer:
+                nhead = int(self.args.get("transformer_nhead", 2))
+                num_layers = int(self.args.get("transformer_num_layers", 2))
+                if self.embedding_dim % nhead != 0:
+                    raise ValueError(f"embedding_dim ({self.embedding_dim}) must be divisible by nhead ({nhead})")
+                self.encoder_layer = nn.TransformerEncoderLayer(
+                    d_model=self.embedding_dim,
+                    nhead=nhead,
+                    batch_first=True
+                )
+                self.transformer_encoder = nn.TransformerEncoder(
+                    encoder_layer=self.encoder_layer,
+                    num_layers=num_layers
+                )
 
             # Reduces subword units embedding matrix from T x D into D.
             self.lf = nn.Sequential(nn.Linear(self.embedding_dim * self.max_length_subword_tokens,
@@ -190,13 +229,27 @@ class BaseKGE(BaseKGELightning):
         """
         # (1) Get unit normalized subword units embedding matrices: (B, T, D)
         bpe_head_ent_emb, bpe_rel_ent_emb = self.get_bpe_head_and_relation_representation(x)
-        # Future work: Use attention to model similarity between subword units comprising head and relation
-        # attentive_head_rel_emb = self.attention_block(torch.cat((bpe_head_ent_emb, bpe_rel_ent_emb), 1))
-        # bpe_head_ent_emb = attentive_head_rel_emb[:, :self.max_length_subword_tokens, :]
-        # bpe_rel_ent_emb = attentive_head_rel_emb[:, self.max_length_subword_tokens:, :]
+
+        # Apply optional layers
+        if self.use_attention_layer:
+            head_ent_emb, _ = self.attention(bpe_head_ent_emb, bpe_head_ent_emb, bpe_head_ent_emb, need_weights=False)
+            rel_ent_emb,  _ = self.attention(bpe_rel_ent_emb,  bpe_rel_ent_emb,  bpe_rel_ent_emb,  need_weights=False)
+        elif self.use_transformer_layer:
+            head_ent_emb = self.transformer_encoder(bpe_head_ent_emb)
+            rel_ent_emb  = self.transformer_encoder(bpe_rel_ent_emb)
+        else:
+            head_ent_emb = bpe_head_ent_emb
+            rel_ent_emb  = bpe_rel_ent_emb
+
+        # grab B, T, D before we flatten
+        B, T, D = head_ent_emb.shape
+
+        # now flatten into (B, T*D)
+        bpe_head_ent_emb = head_ent_emb.reshape(B, T * D)
+        bpe_rel_ent_emb  = rel_ent_emb.reshape(B, T * D)
 
         # (2) Reshaping (1) into row vectors.
-        B, T, D = bpe_head_ent_emb.shape
+        # B, T, D = bpe_head_ent_emb.shape
 
         # Multi-node GPU setting.
         device_r = bpe_head_ent_emb.get_device()

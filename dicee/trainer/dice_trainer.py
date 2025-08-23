@@ -3,7 +3,7 @@ import polars
 from typing import Union
 from dicee.models.base_model import BaseKGE
 from dicee.static_funcs import select_model
-from dicee.callbacks import ASWA, Eval, KronE, PrintCallback, AccumulateEpochLossCallback, Perturb, PeriodicEvalCallback, LRScheduler, SWA
+from dicee.callbacks import ASWA, Eval, KronE, PrintCallback, AccumulateEpochLossCallback, Perturb
 from dicee.dataset_classes import construct_dataset
 from .torch_trainer import TorchTrainer
 from .torch_trainer_ddp import TorchDDPTrainer
@@ -94,19 +94,11 @@ def get_callbacks(args):
         AccumulateEpochLossCallback(path=args.full_storage_path)
     ]
     if args.swa:
-        print(f"Starting Stochastic Weight Averaging at Epoch: {args.swa_start_epoch}")
-        callbacks.append(SWA(swa_start_epoch=args.swa_start_epoch, lr_init=args.lr,
-                            max_epochs=args.num_epochs))
+        callbacks.append(pl.pytorch.callbacks.StochasticWeightAveraging(swa_lrs=args.lr, swa_epoch_start=1))
     elif args.adaptive_swa:
         callbacks.append(ASWA(num_epochs=args.num_epochs, path=args.full_storage_path))
-    elif args.adaptive_lr:
-        callbacks.append(LRScheduler(adaptive_lr_config=args.adaptive_lr, total_epochs=args.num_epochs,
-                        experiment_dir=args.full_storage_path, eta_max=args.lr))
-    
-    if args.eval_every_n_epochs > 0 or args.eval_at_epochs is not None:
-        callbacks.append(PeriodicEvalCallback(experiment_path=args.full_storage_path, max_epochs=args.num_epochs,
-                        eval_every_n_epoch=args.eval_every_n_epochs, eval_at_epochs=args.eval_at_epochs,
-                        save_model_every_n_epoch=args.save_every_n_epochs, n_epochs_eval_model=args.n_epochs_eval_model))
+    else:
+        """No SWA or ASWA applied"""
 
     if isinstance(args.callbacks, list):
         return callbacks

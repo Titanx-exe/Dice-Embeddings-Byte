@@ -7,6 +7,7 @@ import numpy as np
 import concurrent
 from typing import List, Tuple
 from typing import Union
+import os
 
 
 class PreprocessKG:
@@ -81,6 +82,7 @@ class PreprocessKG:
                 # Mapping from a sequence of bpe entity to its unique integer index
                 entity_to_idx = {shaped_bpe_ent: idx for idx, (str_ent, bpe_ent, shaped_bpe_ent) in
                                  enumerate(self.kg.ordered_bpe_entities)}
+                print("sample entity_to_idx:", list(entity_to_idx.items())[:10])
                 er_tails = dict()
                 # Iterate over bpe encoded triples to obtain a mapping from pair of bpe entity and relation to
                 # indices of bpe entities
@@ -133,8 +135,17 @@ class PreprocessKG:
             # (1) self.kg.train_set list of tuples, where each tuple consists of three tuples representing input triple.
             # (2) Flatten (1) twice to obtain list of numbers
 
-            space_token = self.kg.enc.encode(" ")[0]
-            end_token = self.kg.enc.encode(".")[0]
+            # Use instance-level custom tokenizer path
+            custom_path = getattr(self.kg, "tokenizer_path", None)
+            if isinstance(custom_path, str) and os.path.isfile(custom_path):
+                space_token = self.kg.enc.encode(" ").ids[0]
+                end_token = self.kg.enc.encode(".").ids[0]
+                print("I am preprocess, I got the NEW Tokenizer")
+            else:
+                space_token = self.kg.enc.encode(" ")[0]
+                end_token = self.kg.enc.encode(".")[0]
+                print("I am preprocess, I got the OLD Tokenizer")
+
             triples = []
             for (h, r, t) in self.kg.train_set:
                 x = []
@@ -174,7 +185,21 @@ class PreprocessKG:
         if df is None:
             return []
         else:
-            bpe_triples = list(df.map(lambda x: tuple(f(x))).itertuples(index=False, name=None))
+            # bpe_triples = list(df.map(lambda x: tuple(f(x))).itertuples(index=False, name=None))
+            # bpe_triples = list(df.map(lambda x: tuple(f(x).ids)).itertuples(index=False, name=None))
+
+            def to_ids(x):
+                enc = f(x)
+                if hasattr(enc, 'ids'):
+                    return tuple(enc.ids)
+                else:
+                    return tuple(enc)
+
+            bpe_triples = list(
+                df.map(lambda x: to_ids(x))
+                  .itertuples(index=False, name=None)
+            )
+
             assert isinstance(bpe_triples, list)
             assert isinstance(bpe_triples[0], tuple)
             assert len(bpe_triples[0]) == 3
@@ -232,10 +257,22 @@ class PreprocessKG:
                                                          df=self.kg.raw_test_set, info="Test")
         # (2) Transformation from DataFrame to list of tuples.
 
-        self.kg.train_set = self.__replace_values_df(df=self.kg.raw_train_set, f=self.kg.enc.encode)
-        # We need to add empty space for transformers
-        self.kg.valid_set = self.__replace_values_df(df=self.kg.raw_valid_set, f=self.kg.enc.encode)
-        self.kg.test_set = self.__replace_values_df(df=self.kg.raw_test_set, f=self.kg.enc.encode)
+        def tokenize_wrapper(text):
+            encoding = self.kg.enc.encode(text)
+            # For tokenizers library
+            if hasattr(encoding, 'ids'):
+                return encoding.ids
+            # For tiktoken
+            return encoding
+
+        # self.kg.train_set = self.__replace_values_df(df=self.kg.raw_train_set, f=self.kg.enc.encode)
+        # # We need to add empty space for transformers
+        # self.kg.valid_set = self.__replace_values_df(df=self.kg.raw_valid_set, f=self.kg.enc.encode)
+        # self.kg.test_set = self.__replace_values_df(df=self.kg.raw_test_set, f=self.kg.enc.encode)
+
+        self.kg.train_set = self.__replace_values_df(df=self.kg.raw_train_set, f=tokenize_wrapper)
+        self.kg.valid_set = self.__replace_values_df(df=self.kg.raw_valid_set, f=tokenize_wrapper)
+        self.kg.test_set = self.__replace_values_df(df=self.kg.raw_test_set, f=tokenize_wrapper)
 
     @timeit
     def preprocess_with_byte_pair_encoding_with_padding(self) -> None:
@@ -246,6 +283,15 @@ class PreprocessKG:
         -------
 
         """
+
+        print("Debug - Tokenizer type:", type(self.kg.enc))
+        print("Debug - 'cell_or_molecular_dysfunction' tokenized:")
+        test_encoding = self.kg.enc.encode("cell_or_molecular_dysfunction")
+        if hasattr(test_encoding, 'ids'):
+            print(test_encoding.ids)
+        else:
+            print(test_encoding)
+
 
         self.preprocess_with_byte_pair_encoding()
 
@@ -270,11 +316,47 @@ class PreprocessKG:
             self.kg.test_set = self.__padding_in_place(self.kg.test_set, self.kg.max_length_subword_tokens,
                                                        bpe_subwords_to_shaped_bpe_entities,
                                                        bpe_subwords_to_shaped_bpe_relations)
+        
+        # Decode Wrapper
+        def decode_wrapper(tokens):
+            # Convert tuple to list if needed
+            tokens_list = list(tokens) if isinstance(tokens, tuple) else tokens
+            
+            # Remove padding tokens before decoding
+            unpadded_tokens = [t for t in tokens_list if t != self.kg.dummy_id]
+
+            # if isinstance(tokens, tuple):
+            #     tokens_list = list(tokens)
+            # else:
+            #     tokens_list = tokens
+            # unpadded = [tid for tid in tokens_list if tid != self.kg.dummy_id]
+
+            # if not unpadded:
+            #     return ""  # nothing to decode (should be rare)
+            
+            # try:
+            #     return self.kg.enc.decode(unpadded)
+            # except Exception:
+            #     pass
+
+            if hasattr(self.kg.enc, 'id_to_token') and callable(self.kg.enc.id_to_token):
+                token_strings = [self.kg.enc.id_to_token(t) for t in unpadded_tokens]
+                return "".join(token_strings).replace('Ġ', '').replace(' ', '')
+
+            return ""
+        custom_path = getattr(self.kg, "tokenizer_path", None)
+        if isinstance(custom_path, str) and os.path.isfile(custom_path):
+            self.kg.ordered_bpe_entities = sorted([(decode_wrapper(k), k, v) for k, v in
+                                      bpe_subwords_to_shaped_bpe_entities.items()], key=lambda x: x[0])
+            self.kg.ordered_bpe_relations = sorted([(decode_wrapper(k), k, v) for k, v in
+                                       bpe_subwords_to_shaped_bpe_relations.items()], key=lambda x: x[0])
+        else:
         # Store str_entity, bpe_entity, padded_bpe_entity
-        self.kg.ordered_bpe_entities = sorted([(self.kg.enc.decode(k), k, v) for k, v in
-                                               bpe_subwords_to_shaped_bpe_entities.items()], key=lambda x: x[0])
-        self.kg.ordered_bpe_relations = sorted([(self.kg.enc.decode(k), k, v) for k, v in
-                                                bpe_subwords_to_shaped_bpe_relations.items()], key=lambda x: x[0])
+            self.kg.ordered_bpe_entities = sorted([(self.kg.enc.decode(k), k, v) for k, v in
+                                                bpe_subwords_to_shaped_bpe_entities.items()], key=lambda x: x[0])
+            self.kg.ordered_bpe_relations = sorted([(self.kg.enc.decode(k), k, v) for k, v in
+                                                    bpe_subwords_to_shaped_bpe_relations.items()], key=lambda x: x[0])
+        
         del bpe_subwords_to_shaped_bpe_entities
         del bpe_subwords_to_shaped_bpe_relations
 

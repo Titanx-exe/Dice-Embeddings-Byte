@@ -1,0 +1,2 @@
+model,dataset,lr,embed_dim,batch_size,train_mrr,test_mrr
+DistMult,KGs/UMLS,0.01,32,512,0.162358152437642,0.17393845551420312

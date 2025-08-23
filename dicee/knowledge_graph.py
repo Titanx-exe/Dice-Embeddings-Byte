@@ -3,6 +3,7 @@ from .read_preprocess_save_load_kg import ReadFromDisk, PreprocessKG, LoadSaveTo
 import sys
 import pandas as pd
 import polars as pl
+import os
 class KG:
     """ Knowledge Graph """
 
@@ -16,7 +17,9 @@ class KG:
                  add_reciprocal: bool = None, eval_model: str = None,
                  read_only_few: int = None, sample_triples_ratio: float = None,
                  path_for_serialization: str = None,
-                 entity_to_idx=None, relation_to_idx=None, backend=None, training_technique: str = None, separator:str=None):
+                 entity_to_idx=None, relation_to_idx=None, backend=None,
+                 training_technique: str = None, separator: str = None,
+                 tokenizer_path: str = None):
         """
         :param dataset_dir: A path of a folder containing train.txt, valid.txt, test.text
         :param byte_pair_encoding: Apply Byte pair encoding.
@@ -57,15 +60,36 @@ class KG:
         self.raw_train_set, self.raw_valid_set, self.raw_test_set = None, None, None
         self.train_set, self.valid_set, self.test_set = None, None, None
         self.idx_entity_to_bpe_shaped = dict()
+        self.tokenizer_path = tokenizer_path
 
+        custom_path = self.tokenizer_path
+        if isinstance(custom_path, str) and os.path.isfile(custom_path):
+            from tokenizers import Tokenizer
+            self.enc = Tokenizer.from_file(custom_path)
+            self.num_tokens = self.enc.get_vocab_size()
+            # self.dummy_id = self.enc.encode(" ").ids[0]
+            self.dummy_id = self.enc.token_to_id("[PAD]")
+            print("I am the NEW Tokenizer")
+        else:
+            import tiktoken
+            self.enc = tiktoken.get_encoding("gpt2")
+            self.num_tokens = self.enc.n_vocab
+            self.dummy_id = self.enc.encode(" ")[0]
+            print("I am the OLD Tokenizer")
         # WIP:
-        import tiktoken
-        self.enc = tiktoken.get_encoding("gpt2")
-        self.num_tokens = self.enc.n_vocab  # ~ 50
+        # import tiktoken
+        # self.enc = tiktoken.get_encoding("gpt2")
+        # from tokenizers import Tokenizer
+        # self.enc = Tokenizer.from_file("C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\Tokenizer_Path\\tokenizer.json")
+        # # self.enc = Tokenizer.from_file("/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env-CTA-copy/lib/python3.11/site-packages/dicee/Tokenizer/Tokenizer_Path/tokenizer.json")
+        # # self.num_tokens = self.enc.n_vocab  # ~ 50
+        # self.num_tokens = self.enc.get_vocab_size()
         self.num_bpe_entities = None
         self.padding = padding
         # TODO: Find a unique token later
-        self.dummy_id = self.enc.encode(" ")[0]
+        # self.dummy_id = self.enc.encode(" ")[0]
+        # self.dummy_id = self.enc.encode(" ").ids[0]
+        # self.dummy_id = self.enc.token_to_id("[PAD]")
         self.max_length_subword_tokens = None
         self.train_set_target = None
         self.target_dim = None
@@ -141,9 +165,12 @@ class KG:
 
     def func_triple_to_bpe_representation(self, triple: List[str]):
         result = []
-
+        custom_path = self.tokenizer_path
         for x in triple:
-            unshaped_bpe_repr = self.enc.encode(x)
+            if isinstance(custom_path, str) and os.path.isfile(custom_path):
+                unshaped_bpe_repr = self.enc.encode(x).ids
+            else:
+                unshaped_bpe_repr = self.enc.encode(x)
             if len(unshaped_bpe_repr) < self.max_length_subword_tokens:
                 unshaped_bpe_repr.extend([self.dummy_id for _ in
                                           range(self.max_length_subword_tokens - len(unshaped_bpe_repr))])
