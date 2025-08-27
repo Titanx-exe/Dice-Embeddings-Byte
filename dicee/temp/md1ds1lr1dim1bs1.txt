@@ -1,0 +1,8 @@
+Model: Keci
+Dataset: KGs/UMLS
+Learning Rate: 0.1
+Embed Dim: 32
+Batch Size: 512
+
+Train MRR: 0.1184047847765187
+Test  MRR: 0.12516614157091638
