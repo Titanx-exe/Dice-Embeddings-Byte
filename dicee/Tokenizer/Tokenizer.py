@@ -18,7 +18,7 @@ def load_dataset_content(dataset_paths):
     all_lines = []
     
     for dataset_path in dataset_paths:
-        for filename in ["train.txt", "valid.txt", "test.txt"]:
+        for filename in ["msg.txt"]:
             file_path = os.path.join(dataset_path, filename)
             if os.path.exists(file_path):
                 with open(file_path, 'r', encoding='utf-8') as f:
@@ -38,41 +38,44 @@ def main():
     # countries_s1_path = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\KGs\\Countries-S1"
     # countries_s2_path = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\KGs\\Countries-S2"
     # countries_s3_path = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\KGs\\Countries-S3"
-    # kinship_path = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\KGs\\KINSHIP"
-    nell_h100 = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\KGs\\NELL-995-h100"
+    # nell_h100 = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\KGs\\NELL-995-h100"
     # nell_h75 = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\KGs\\NELL-995-h75"
     # nell_h25 = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\KGs\\NELL-995-h25"
     # fb_15k_237 = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\KGs\\FB15k-237"
-    # yago3_10_path = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\KGs\\YAGO3-10"
     # wn18rr_text_path = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\KGs\\WN18RR_Text"
+    NL_100_path = r"C:\Users\Harshit Purohit\Datasets_comparison\NL-100"
 
     # umls_path = "/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env/lib/python3.11/site-packages/dicee/KGs/UMLS"
     # countries_s1_path = "/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env-CTA/lib/python3.11/site-packages/dicee/KGs/Countries-S1"
     # countries_s2_path = "/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env/lib/python3.11/site-packages/dicee/KGs/Countries-S2"
     # countries_s3_path = "/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env/lib/python3.11/site-packages/dicee/KGs/Countries-S3"
-    # kinship_path = "/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env/lib/python3.11/site-packages/dicee/KGs/KINSHIP"
     # nell_h100 = "/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env/lib/python3.11/site-packages/dicee/KGs/NELL-995-h100"
     # nell_h75 = "/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env-CTA/lib/python3.11/site-packages/dicee/KGs/NELL-995-h75"
     # nell_h25 = "/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env/lib/python3.11/site-packages/dicee/KGs/NELL-995-h25"
     # fb_15k_237 = "/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env/lib/python3.11/site-packages/dicee/KGs/FB15k-237"
-    # yago3_10_path = "/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env/lib/python3.11/site-packages/dicee/KGs/YAGO3-10"
     # wn18rr_text_path = "/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env/lib/python3.11/site-packages/dicee/KGs/WN18RR_Text"
 
-    output_dir = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\Tokenizer_Path"
-    # output_dir = "/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env-CTA/lib/python3.11/site-packages/dicee/Tokenizer/Tokenizer_Path"
 
-    # corpus_lines = load_dataset_content([yago3_10_path])
+    # output_dir = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\UMLS_Tokenizer_Path"
+    # output_dir = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\Countries-S1_Tokenizer_Path"
+    # output_dir = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\Countries-S2_Tokenizer_Path"
+    # output_dir = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\Countries-S3_Tokenizer_Path"
+    # output_dir = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\NELL-995-h100_Tokenizer_Path"
+    # output_dir = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\NELL-995-h75_Tokenizer_Path"
+    # output_dir = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\NELL-995-h25_Tokenizer_Path"
+    # output_dir = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\FB15k-237_Tokenizer_Path"
+    output_dir = "C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\WN18RR_Text_Tokenizer_Path"
+
     # corpus_lines = load_dataset_content([countries_s1_path])
     # corpus_lines = load_dataset_content([countries_s1_path])
     # corpus_lines = load_dataset_content([countries_s2_path])
     # corpus_lines = load_dataset_content([countries_s3_path])
-    # corpus_lines = load_dataset_content([kinship_path])
     # corpus_lines = load_dataset_content([umls_path])
     # corpus_lines = load_dataset_content([nell_h75])
     # corpus_lines = load_dataset_content([nell_h25])
-    corpus_lines = load_dataset_content([nell_h100])
+    # corpus_lines = load_dataset_content([nell_h100])
     # corpus_lines = load_dataset_content([fb_15k_237])
-    # corpus_lines = load_dataset_content([wn18rr_text_path])
+    corpus_lines = load_dataset_content([NL_100_path])
     
     tokenizer = Tokenizer(BPE(unk_token='[UNK]'))
 

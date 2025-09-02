@@ -1,8 +1,0 @@
-Model: DistMult
-Dataset: KGs/UMLS
-Learning Rate: 0.01
-Embed Dim: 32
-Batch Size: 512
-
-Train MRR: 0.162358152437642
-Test  MRR: 0.17393845551420312

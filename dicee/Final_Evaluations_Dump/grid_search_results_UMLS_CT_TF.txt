@@ -1,2 +1,0 @@
-model,dataset,lr,embed_dim,batch_size,nhead,num_layers,layer_mode,train_mrr,test_mrr
-DistMult,KGs/NELL-995-h100,0.01,32,512,2,4,transformer,0.0001571038796669792,0.00013827028369484357

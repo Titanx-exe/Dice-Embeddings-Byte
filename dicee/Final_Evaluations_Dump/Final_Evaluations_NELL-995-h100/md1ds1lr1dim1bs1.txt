@@ -1,8 +1,0 @@
-Model: DistMult
-Dataset: KGs/NELL-995-h100
-Learning Rate: 0.01
-Embed Dim: 32
-Batch Size: 1024
-
-Train MRR: 0.0177639434462898
-Test  MRR: 0.016588626310477854

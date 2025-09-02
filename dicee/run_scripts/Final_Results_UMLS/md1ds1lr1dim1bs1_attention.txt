@@ -1,0 +1,12 @@
+Model: DistMult
+Dataset: ..\KGs\UMLS
+Learning Rate: 0.1
+Embed Dim: 32
+Batch Size: 512
+nhead: NA
+num_layers: NA
+
+layer_mode: attention
+
+Train MRR: 0.20605129114511778
+Test  MRR: 0.20680780492528977

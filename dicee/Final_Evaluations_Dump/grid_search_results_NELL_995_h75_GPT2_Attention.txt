@@ -1,2 +1,0 @@
-model,dataset,lr,embed_dim,batch_size,train_mrr,test_mrr
-DistMult,KGs/Countries-S1,0.1,32,512,0.03133349002601698,0.02463236546982291

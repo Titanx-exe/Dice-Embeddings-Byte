@@ -1,0 +1,4 @@
+Train MRR:, 0.20605129114511778
+Test  MRR:, 0.20680780492528977
+{'num_train_triples': 1560, 'num_entities': None, 'num_relations': None, 'max_length_subword_tokens': 10, 'runtime_kg_loading': 0.5873327255249023, 'EstimatedSizeMB': 0.043212890625, 'NumParam': 45312, 'path_experiment_folder': 'C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\run_scripts/Experiments/2025-09-02 09-59-23.278837', 'Runtime': 129.18701362609863, 'Train': {'H@1': 0.11330521472392638, 'H@3': 0.22469325153374234, 'H@10': 0.36848159509202455, 'MRR': 0.20605129114511778}, 'Val': {'H@1': 0.11886503067484662, 'H@3': 0.2254601226993865, 'H@10': 0.36503067484662577, 'MRR': 0.20921837177184102}, 'Test': {'H@1': 0.10968229954614221, 'H@3': 0.2314674735249622, 'H@10': 0.3842662632375189, 'MRR': 0.20680780492528977}}
+

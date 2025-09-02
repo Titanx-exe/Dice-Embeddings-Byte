@@ -1,0 +1,4764 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "[UNK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "[CLS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "[SEP]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "[PAD]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 4,
+      "content": "[MASK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 963,
+      "content": " ",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true,
+      "special": false
+    }
+  ],
+  "normalizer": null,
+  "pre_tokenizer": {
+    "type": "WhitespaceSplit"
+  },
+  "post_processor": null,
+  "decoder": null,
+  "model": {
+    "type": "BPE",
+    "dropout": null,
+    "unk_token": "[UNK]",
+    "continuing_subword_prefix": null,
+    "end_of_word_suffix": null,
+    "fuse_unk": false,
+    "byte_fallback": false,
+    "ignore_merges": false,
+    "vocab": {
+      "[UNK]": 0,
+      "[CLS]": 1,
+      "[SEP]": 2,
+      "[PAD]": 3,
+      "[MASK]": 4,
+      "-": 5,
+      "_": 6,
+      "a": 7,
+      "b": 8,
+      "c": 9,
+      "d": 10,
+      "e": 11,
+      "f": 12,
+      "g": 13,
+      "h": 14,
+      "i": 15,
+      "j": 16,
+      "k": 17,
+      "l": 18,
+      "m": 19,
+      "n": 20,
+      "o": 21,
+      "p": 22,
+      "q": 23,
+      "r": 24,
+      "s": 25,
+      "t": 26,
+      "u": 27,
+      "v": 28,
+      "w": 29,
+      "x": 30,
+      "y": 31,
+      "z": 32,
+      "or": 33,
+      "ti": 34,
+      "on": 35,
+      "al": 36,
+      "tion": 37,
+      "es": 38,
+      "_or": 39,
+      "nc": 40,
+      "ic": 41,
+      "_or_": 42,
+      "en": 43,
+      "ro": 44,
+      "fu": 45,
+      "nction": 46,
+      "function": 47,
+      "is": 48,
+      "al_": 49,
+      "_o": 50,
+      "in": 51,
+      "_of": 52,
+      "an": 53,
+      "pro": 54,
+      "at": 55,
+      "ec": 56,
+      "_function": 57,
+      "it": 58,
+      "ol": 59,
+      "ac": 60,
+      "proc": 61,
+      "ar": 62,
+      "ts": 63,
+      "ed": 64,
+      "ent": 65,
+      "as": 66,
+      "ur": 67,
+      "ul": 68,
+      "ess": 69,
+      "om": 70,
+      "og": 71,
+      "er": 72,
+      "el": 73,
+      "process": 74,
+      "olog": 75,
+      "ation": 76,
+      "dis": 77,
+      "ment": 78,
+      "ologic": 79,
+      "oc": 80,
+      "su": 81,
+      "gan": 82,
+      "ff": 83,
+      "ffec": 84,
+      "tic": 85,
+      "ys": 86,
+      "bi": 87,
+      "ab": 88,
+      "affec": 89,
+      "affects": 90,
+      "pl": 91,
+      "eas": 92,
+      "ity": 93,
+      "orm": 94,
+      "up": 95,
+      "ph": 96,
+      "organ": 97,
+      "vi": 98,
+      "us": 99,
+      "t_of": 100,
+      "st": 101,
+      "ical_": 102,
+      "res": 103,
+      "y_": 104,
+      "ologic_function": 105,
+      "e_": 106,
+      "ell": 107,
+      "cell": 108,
+      "uc": 109,
+      "e_or_": 110,
+      "_w": 111,
+      "ith": 112,
+      "diseas": 113,
+      "_with": 114,
+      "dys": 115,
+      "dysfunction": 116,
+      "ch": 117,
+      "mol": 118,
+      "ecul": 119,
+      "molecul": 120,
+      "molecular": 121,
+      "mental_": 122,
+      "tiv": 123,
+      "ure": 124,
+      "od": 125,
+      "resul": 126,
+      "norm": 127,
+      "ality": 128,
+      "abnorm": 129,
+      "abnormality": 130,
+      "ha": 131,
+      "gen": 132,
+      "tic_": 133,
+      "am": 134,
+      "anc": 135,
+      "bst": 136,
+      "subst": 137,
+      "substanc": 138,
+      "result_of": 139,
+      "ation_of": 140,
+      "occ": 141,
+      "be": 142,
+      "vior": 143,
+      "havior": 144,
+      "behavior": 145,
+      "activ": 146,
+      "al_or_": 147,
+      "id": 148,
+      "eo": 149,
+      "ter": 150,
+      "me": 151,
+      "com": 152,
+      "per": 153,
+      "ed_": 154,
+      "isa": 155,
+      "re": 156,
+      "em": 157,
+      "ia": 158,
+      "proced": 159,
+      "procedure": 160,
+      "molecular_": 161,
+      "nd": 162,
+      "substance": 163,
+      "inter": 164,
+      "acts": 165,
+      "interacts": 166,
+      "interacts_with": 167,
+      "sy": 168,
+      "os": 169,
+      "process_of": 170,
+      "ism": 171,
+      "organism": 172,
+      "po": 173,
+      "ine": 174,
+      "ic_": 175,
+      "uses": 176,
+      "ex": 177,
+      "con": 178,
+      "upation": 179,
+      "occupation": 180,
+      "mental_or_": 181,
+      "ca": 182,
+      "te": 183,
+      "gro": 184,
+      "group": 185,
+      "man": 186,
+      "qu": 187,
+      "ator": 188,
+      "chem": 189,
+      "dia": 190,
+      "rome": 191,
+      "e_or_sy": 192,
+      "disease_or_sy": 193,
+      "ndrome": 194,
+      "disease_or_syndrome": 195,
+      "neo": 196,
+      "al_dysfunction": 197,
+      "astic_": 198,
+      "plastic_": 199,
+      "behavioral_dysfunction": 200,
+      "mental_or_behavioral_dysfunction": 201,
+      "neoplastic_": 202,
+      "neoplastic_process": 203,
+      "hologic_function": 204,
+      "pat": 205,
+      "pathologic_function": 206,
+      "_diseas": 207,
+      "imental_": 208,
+      "mod": 209,
+      "_of_diseas": 210,
+      "el_of_diseas": 211,
+      "perimental_": 212,
+      "experimental_": 213,
+      "model_of_diseas": 214,
+      "experimental_model_of_diseas": 215,
+      "experimental_model_of_disease": 216,
+      "_or_molecular_": 217,
+      "cell_or_molecular_": 218,
+      "cell_or_molecular_dysfunction": 219,
+      "ep": 220,
+      "_or_dis": 221,
+      "ssu": 222,
+      "tissu": 223,
+      "tissue": 224,
+      "gn": 225,
+      "causes": 226,
+      "loc": 227,
+      "anat": 228,
+      "omical_": 229,
+      "anatomical_": 230,
+      "phys": 231,
+      "on_or_": 232,
+      "soc": 233,
+      "soci": 234,
+      "y_or_": 235,
+      "location_of": 236,
+      "par": 237,
+      "ci": 238,
+      "pline": 239,
+      "occupation_or_dis": 240,
+      "cipline": 241,
+      "occupation_or_discipline": 242,
+      "activity": 243,
+      "est": 244,
+      "duc": 245,
+      "produc": 246,
+      "diagn": 247,
+      "diagnos": 248,
+      "ept": 249,
+      "mental_process": 250,
+      "icat": 251,
+      "ison": 252,
+      "poison": 253,
+      "icates": 254,
+      "lab": 255,
+      "orator": 256,
+      "laborator": 257,
+      "all": 258,
+      "produces": 259,
+      "ing": 260,
+      "organism_function": 261,
+      "iologic_function": 262,
+      "issu": 263,
+      "ated": 264,
+      "e_in": 265,
+      "physiologic_function": 266,
+      "issue_in": 267,
+      "_or_tissue": 268,
+      "organ_or_tissue": 269,
+      "organ_or_tissue_function": 270,
+      "etic": 271,
+      "genetic": 272,
+      "genetic_function": 273,
+      "bod": 274,
+      "molecular_function": 275,
+      "body_": 276,
+      "_com": 277,
+      "cell_function": 278,
+      "plicates": 279,
+      "complicates": 280,
+      "enom": 281,
+      "enon_or_": 282,
+      "phenom": 283,
+      "enon_or_process": 284,
+      "phenomenon_or_process": 285,
+      "ologic_": 286,
+      "arch": 287,
+      "active_": 288,
+      "_organ": 289,
+      "diagnostic_": 290,
+      "ruc": 291,
+      "struc": 292,
+      "struct": 293,
+      "meas": 294,
+      "de": 295,
+      "associ": 296,
+      "ated_with": 297,
+      "associated_with": 298,
+      "nuc": 299,
+      "nucl": 300,
+      "ical": 301,
+      "chemical": 302,
+      "rat": 303,
+      "ver": 304,
+      "ib": 305,
+      "ir": 306,
+      "acqu": 307,
+      "ed_abnormality": 308,
+      "ired_abnormality": 309,
+      "acquired_abnormality": 310,
+      "biologic_function": 311,
+      "anatomical_abnormality": 312,
+      "rate": 313,
+      "al_abnormality": 314,
+      "ital_abnormality": 315,
+      "genital_abnormality": 316,
+      "congenital_abnormality": 317,
+      "th": 318,
+      "rec": 319,
+      "part_of": 320,
+      "omed": 321,
+      "biomed": 322,
+      "if": 323,
+      "ind": 324,
+      "ty": 325,
+      "amin": 326,
+      "im": 327,
+      "car": 328,
+      "ous": 329,
+      "manif": 330,
+      "estation_of": 331,
+      "manifestation_of": 332,
+      "earch": 333,
+      "research": 334,
+      "research_": 335,
+      "jur": 336,
+      "injur": 337,
+      "y_or_poison": 338,
+      "injury_or_poison": 339,
+      "injury_or_poisoning": 340,
+      "pon": 341,
+      "_compon": 342,
+      "_component": 343,
+      "rib": 344,
+      "trib": 345,
+      "ute": 346,
+      "attrib": 347,
+      "diagnostic_procedure": 348,
+      "attribute": 349,
+      "y_procedure": 350,
+      "laboratory_procedure": 351,
+      "ures": 352,
+      "measures": 353,
+      "form": 354,
+      "pe": 355,
+      "structure": 356,
+      "cept": 357,
+      "hu": 358,
+      "concept": 359,
+      "human": 360,
+      "fac": 361,
+      "fact": 362,
+      "cl": 363,
+      "acid": 364,
+      "nucleo": 365,
+      "acid_": 366,
+      "urs": 367,
+      "occurs": 368,
+      "tive_": 369,
+      "rup": 370,
+      "disrup": 371,
+      "disrupts": 372,
+      "ew": 373,
+      "view": 374,
+      "ical_view": 375,
+      "chemical_view": 376,
+      "ally": 377,
+      "ical_occupation_or_discipline": 378,
+      "biomedical_occupation_or_discipline": 379,
+      "brate": 380,
+      "ual_": 381,
+      "anti": 382,
+      "tebrate": 383,
+      "vertebrate": 384,
+      "nat": 385,
+      "al_phenomenon_or_process": 386,
+      "ural_phenomenon_or_process": 387,
+      "natural_phenomenon_or_process": 388,
+      "organic_": 389,
+      "organic_chemical": 390,
+      "vir": 391,
+      "inical_": 392,
+      "clinical_": 393,
+      "ly_": 394,
+      "pre": 395,
+      "ven": 396,
+      "tity": 397,
+      "entity": 398,
+      "preven": 399,
+      "mac": 400,
+      "ag": 401,
+      "ion": 402,
+      "mu": 403,
+      "nologic_": 404,
+      "immu": 405,
+      "factor": 406,
+      "nologic_factor": 407,
+      "immunologic_factor": 408,
+      "ally_": 409,
+      "dev": 410,
+      "ologically_": 411,
+      "biologically_": 412,
+      "active_substance": 413,
+      "biologically_active_substance": 414,
+      "ice": 415,
+      "device": 416,
+      "eur": 417,
+      "eactive_": 418,
+      "horm": 419,
+      "neur": 420,
+      "vit": 421,
+      "yme": 422,
+      "zyme": 423,
+      "oreactive_": 424,
+      "one": 425,
+      "enic_": 426,
+      "enzyme": 427,
+      "ogenic_": 428,
+      "biogenic_": 429,
+      "e_or_biogenic_": 430,
+      "amine": 431,
+      "substance_or_biogenic_": 432,
+      "eptor": 433,
+      "receptor": 434,
+      "hormone": 435,
+      "neuroreactive_": 436,
+      "vitamin": 437,
+      "substance_or_biogenic_amine": 438,
+      "neuroreactive_substance_or_biogenic_amine": 439,
+      "otic": 440,
+      "armac": 441,
+      "biotic": 442,
+      "pharmac": 443,
+      "que": 444,
+      "ologic_substance": 445,
+      "antibiotic": 446,
+      "pharmacologic_substance": 447,
+      "ect": 448,
+      "anatomical_structure": 449,
+      "effec": 450,
+      "effect_of": 451,
+      "occupational_": 452,
+      "ape": 453,
+      "utic": 454,
+      "_or_preven": 455,
+      "erape": 456,
+      "therape": 457,
+      "tive_procedure": 458,
+      "utic_or_preven": 459,
+      "therapeutic_or_preven": 460,
+      "therapeutic_or_preventive_procedure": 461,
+      "dr": 462,
+      "ug": 463,
+      "drug": 464,
+      "_resul": 465,
+      "test": 466,
+      "y_or_test": 467,
+      "laboratory_or_test": 468,
+      "_result": 469,
+      "laboratory_or_test_result": 470,
+      "fess": 471,
+      "profess": 472,
+      "ulation": 473,
+      "profession": 474,
+      "ev": 475,
+      "_substance": 476,
+      "_attribute": 477,
+      "dous": 478,
+      "t_organ": 479,
+      "zar": 480,
+      "_or_organ": 481,
+      "_or_poison": 482,
+      "hazar": 483,
+      "reg": 484,
+      "part_organ": 485,
+      "body_part_organ": 486,
+      "ous_substance": 487,
+      "dous_or_poison": 488,
+      "_or_organ_component": 489,
+      "hazardous_or_poison": 490,
+      "body_part_organ_or_organ_component": 491,
+      "hazardous_or_poisonous_substance": 492,
+      "bj": 493,
+      "bject": 494,
+      "virus": 495,
+      "cell_component": 496,
+      "_in": 497,
+      "perform": 498,
+      "occurs_in": 499,
+      "performs": 500,
+      "_car": 501,
+      "bac": 502,
+      "et": 503,
+      "eal": 504,
+      "heal": 505,
+      "iu": 506,
+      "iz": 507,
+      "ket": 508,
+      "lam": 509,
+      "ric": 510,
+      "ydia": 511,
+      "_or_ch": 512,
+      "tsia": 513,
+      "ome": 514,
+      "e_or_gen": 515,
+      "gene_or_gen": 516,
+      "teriu": 517,
+      "th_car": 518,
+      "bacteriu": 519,
+      "health_car": 520,
+      "ization": 521,
+      "kettsia": 522,
+      "lamydia": 523,
+      "rickettsia": 524,
+      "_or_chlamydia": 525,
+      "gene_or_genome": 526,
+      "bacterium": 527,
+      "health_care_": 528,
+      "rickettsia_or_chlamydia": 529,
+      "gus": 530,
+      "ngus": 531,
+      "fungus": 532,
+      "_acid_": 533,
+      "o_acid_": 534,
+      "tid": 535,
+      "ass": 536,
+      "amino_acid_": 537,
+      "organism_attribute": 538,
+      "clinical_attribute": 539,
+      "bo": 540,
+      "hy": 541,
+      "carbo": 542,
+      "hyd": 543,
+      "carbohyd": 544,
+      "hn": 545,
+      "ique": 546,
+      "tec": 547,
+      "und": 548,
+      "ology_": 549,
+      "biology_": 550,
+      "molecular_biology_": 551,
+      "research_tec": 552,
+      "hnique": 553,
+      "molecular_biology_research_tec": 554,
+      "molecular_biology_research_technique": 555,
+      "lly_": 556,
+      "fully_": 557,
+      "ed_anatomical_structure": 558,
+      "research_activity": 559,
+      "formed_anatomical_structure": 560,
+      "fully_formed_anatomical_structure": 561,
+      "to": 562,
+      "ati": 563,
+      "pati": 564,
+      "eli": 565,
+      "_functionally": 566,
+      "ed_functionally": 567,
+      "chemical_viewed_functionally": 568,
+      "ip": 569,
+      "lip": 570,
+      "anim": 571,
+      "lipid": 572,
+      "animal": 573,
+      "eic": 574,
+      "ero": 575,
+      "eic_": 576,
+      "oid": 577,
+      "pep": 578,
+      "sid": 579,
+      "tide": 580,
+      "invertebrate": 581,
+      "anoid": 582,
+      "prote": 583,
+      "urally": 584,
+      "stero": 585,
+      "e_or_nucleo": 586,
+      "e_or_prote": 587,
+      "ed_struct": 588,
+      "osanoid": 589,
+      "nucleic_": 590,
+      "nucleosid": 591,
+      "acid_nucleosid": 592,
+      "chemical_viewed_struct": 593,
+      "tide_or_prote": 594,
+      "amino_acid_pep": 595,
+      "eicosanoid": 596,
+      "steroid": 597,
+      "e_or_nucleotide": 598,
+      "nucleic_acid_nucleosid": 599,
+      "chemical_viewed_structurally": 600,
+      "tide_or_protein": 601,
+      "amino_acid_peptide_or_protein": 602,
+      "nucleic_acid_nucleoside_or_nucleotide": 603,
+      "oph": 604,
+      "orus": 605,
+      "phorus": 606,
+      "organoph": 607,
+      "osphorus": 608,
+      "pound": 609,
+      "_compound": 610,
+      "carbohydrate": 611,
+      "organophosphorus": 612,
+      "organophosphorus_compound": 613,
+      "prec": 614,
+      "edes": 615,
+      "precedes": 616,
+      "al_or_occupational_": 617,
+      "professional_or_occupational_": 618,
+      "professional_or_occupational_group": 619,
+      "ga": 620,
+      "mal": 621,
+      "mam": 622,
+      "alga": 623,
+      "ant": 624,
+      "plant": 625,
+      "mammal": 626,
+      "dual_": 627,
+      "fis": 628,
+      "ibi": 629,
+      "ivi": 630,
+      "le": 631,
+      "pti": 632,
+      "rd": 633,
+      "bird": 634,
+      "phibi": 635,
+      "amphibi": 636,
+      "repti": 637,
+      "indivi": 638,
+      "dual_behavior": 639,
+      "fish": 640,
+      "amphibian": 641,
+      "reptile": 642,
+      "individual_behavior": 643,
+      "_group": 644,
+      "pulation": 645,
+      "population": 646,
+      "population_group": 647,
+      "-occurs": 648,
+      "co": 649,
+      "eri": 650,
+      "body_substance": 651,
+      "-occurs_with": 652,
+      "co-occurs_with": 653,
+      "_i": 654,
+      "_re": 655,
+      "aid": 656,
+      "dent": 657,
+      "ement": 658,
+      "ign": 659,
+      "mp": 660,
+      "mat": 661,
+      "oto": 662,
+      "sign": 663,
+      "tom": 664,
+      "ical_or_": 665,
+      "icator": 666,
+      "_or_sy": 667,
+      "_or_diagnostic_": 668,
+      "isoto": 669,
+      "al_mat": 670,
+      "inorganic_chemical": 671,
+      "ent_or_diagnostic_": 672,
+      "element": 673,
+      "on_or_isoto": 674,
+      "biomedical_or_": 675,
+      "indicator": 676,
+      "agent_or_diagnostic_": 677,
+      "erial": 678,
+      "_ion_or_isoto": 679,
+      "_reagent_or_diagnostic_": 680,
+      "dental_mat": 681,
+      "mptom": 682,
+      "sign_or_sy": 683,
+      "element_ion_or_isoto": 684,
+      "biomedical_or_dental_mat": 685,
+      "indicator_reagent_or_diagnostic_": 686,
+      "sign_or_symptom": 687,
+      "element_ion_or_isotope": 688,
+      "biomedical_or_dental_material": 689,
+      "indicator_reagent_or_diagnostic_aid": 690,
+      "_effect_of": 691,
+      "ae": 692,
+      "es_effect_of": 693,
+      "esses_effect_of": 694,
+      "body_s": 695,
+      "archae": 696,
+      "assesses_effect_of": 697,
+      "archaeon": 698,
+      "led_": 699,
+      "object": 700,
+      "ent_or_dis": 701,
+      "ment_of": 702,
+      "abled_": 703,
+      "ical_object": 704,
+      "urement_of": 705,
+      "physical_object": 706,
+      "measurement_of": 707,
+      "patient_or_dis": 708,
+      "abled_group": 709,
+      "patient_or_disabled_group": 710,
+      "uation_of": 711,
+      "aluation_of": 712,
+      "evaluation_of": 713,
+      "fam": 714,
+      "ily_": 715,
+      "e_group": 716,
+      "age_group": 717,
+      "family_": 718,
+      "family_group": 719,
+      "al_behavior": 720,
+      "social_behavior": 721,
+      "health_care_activity": 722,
+      "br": 723,
+      "yon": 724,
+      "embr": 725,
+      "ic_structure": 726,
+      "_organization": 727,
+      "clinical_drug": 728,
+      "yonic_structure": 729,
+      "embryonic_structure": 730,
+      "conceptual_": 731,
+      "tre": 732,
+      "ats": 733,
+      "treats": 734,
+      "al_activity": 735,
+      "ational_activity": 736,
+      "find": 737,
+      "yz": 738,
+      "alyz": 739,
+      "analyz": 740,
+      "finding": 741,
+      "analyzes": 742,
+      "ju": 743,
+      "pac": 744,
+      "e_or_ju": 745,
+      "body_spac": 746,
+      "e_or_junction": 747,
+      "body_space_or_junction": 748,
+      "_d": 749,
+      "_ca": 750,
+      "_human": 751,
+      "onmental_": 752,
+      "envir": 753,
+      "used_": 754,
+      "y_device": 755,
+      "very_device": 756,
+      "human_ca": 757,
+      "effect_of_human": 758,
+      "drug_d": 759,
+      "elivery_device": 760,
+      "onmental_effect_of_human": 761,
+      "environmental_effect_of_human": 762,
+      "used_phenomenon_or_process": 763,
+      "human_caused_phenomenon_or_process": 764,
+      "drug_delivery_device": 765,
+      "environmental_effect_of_humans": 766,
+      "med": 767,
+      "ical_device": 768,
+      "diagnoses": 769,
+      "medical_device": 770,
+      "ative_": 771,
+      "ative_concept": 772,
+      "hib": 773,
+      "its": 774,
+      "exhib": 775,
+      "exhibits": 776,
+      "proper": 777,
+      "ty_of": 778,
+      "property_of": 779,
+      "al_concept": 780,
+      "eque": 781,
+      "seque": 782,
+      "nce": 783,
+      "sequence": 784,
+      "ea": 785,
+      "occupational_activity": 786,
+      "conceptual_entity": 787,
+      "ies": 788,
+      "ries": 789,
+      "ut": 790,
+      "_out": 791,
+      "carries": 792,
+      "carries_out": 793,
+      "tem": 794,
+      "event": 795,
+      "e_of": 796,
+      "_or_reg": 797,
+      "ation_or_reg": 798,
+      "location_or_reg": 799,
+      "body_location_or_reg": 800,
+      "body_location_or_region": 801,
+      "gre": 802,
+      "degre": 803,
+      "degree_of": 804,
+      "fo": 805,
+      "go": 806,
+      "nmental_or_": 807,
+      "ufact": 808,
+      "_object": 809,
+      "educ": 810,
+      "ed_object": 811,
+      "ured_object": 812,
+      "ulator": 813,
+      "y_activity": 814,
+      "manufact": 815,
+      "vernmental_or_": 816,
+      "prevents": 817,
+      "regulator": 818,
+      "food": 819,
+      "governmental_or_": 820,
+      "educational_activity": 821,
+      "manufactured_object": 822,
+      "regulatory_activity": 823,
+      "governmental_or_regulatory_activity": 824,
+      "aw": 825,
+      "law": 826,
+      "rel": 827,
+      "_or_law": 828,
+      "research_device": 829,
+      "ulation_or_law": 830,
+      "regulation_or_law": 831,
+      "organization": 832,
+      "_h": 833,
+      "ef": 834,
+      "f_h": 835,
+      "p_or_": 836,
+      "reli": 837,
+      "sel": 838,
+      "elp_or_": 839,
+      "ated_organization": 840,
+      "health_care_rel": 841,
+      "ef_organization": 842,
+      "f_help_or_": 843,
+      "relief_organization": 844,
+      "self_help_or_": 845,
+      "health_care_related_organization": 846,
+      "self_help_or_relief_organization": 847,
+      "ety": 848,
+      "ient": 849,
+      "red": 850,
+      "al_soci": 851,
+      "ingred": 852,
+      "professional_soci": 853,
+      "ient_of": 854,
+      "ingredient_of": 855,
+      "professional_society": 856,
+      "indicates": 857,
+      "tative_concept": 858,
+      "quanti": 859,
+      "quantitative_concept": 860,
+      "od_of": 861,
+      "meth": 862,
+      "method_of": 863,
+      "tell": 864,
+      "intell": 865,
+      "product": 866,
+      "ual_product": 867,
+      "ectual_product": 868,
+      "intellectual_product": 869,
+      "por": 870,
+      "tempor": 871,
+      "temporal_concept": 872,
+      "ai": 873,
+      "aph": 874,
+      "dai": 875,
+      "eog": 876,
+      "geog": 877,
+      "ly_or_": 878,
+      "raph": 879,
+      "alit": 880,
+      "ication": 881,
+      "area": 882,
+      "reational_activity": 883,
+      "ic_area": 884,
+      "qualit": 885,
+      "recreational_activity": 886,
+      "ification": 887,
+      "class": 888,
+      "daily_or_": 889,
+      "geograph": 890,
+      "qualitative_concept": 891,
+      "classification": 892,
+      "daily_or_recreational_activity": 893,
+      "geographic_area": 894,
+      "_or_concept": 895,
+      "e_sequence": 896,
+      "idea": 897,
+      "idea_or_concept": 898,
+      "conceptual_part_of": 899,
+      "ystem": 900,
+      "body_system": 901,
+      "hin": 902,
+      "spati": 903,
+      "e_activity": 904,
+      "machin": 905,
+      "spatial_concept": 906,
+      "machine_activity": 907,
+      "group_attribute": 908,
+      "ain": 909,
+      "tain": 910,
+      "molecular_sequence": 911,
+      "contain": 912,
+      "nucleotid": 913,
+      "amino_acid_sequence": 914,
+      "contains": 915,
+      "nucleotide_sequence": 916,
+      "sis": 917,
+      "ts_of": 918,
+      "consis": 919,
+      "rate_sequence": 920,
+      "carbohydrate_sequence": 921,
+      "consists_of": 922,
+      "sur": 923,
+      "round": 924,
+      "surround": 925,
+      "surrounds": 926,
+      "_to": 927,
+      "ad": 928,
+      "jac": 929,
+      "functional_concept": 930,
+      "ent_to": 931,
+      "adjac": 932,
+      "adjacent_to": 933,
+      "ed_to": 934,
+      "conn": 935,
+      "manag": 936,
+      "manages": 937,
+      "gu": 938,
+      "lan": 939,
+      "op": 940,
+      "elop": 941,
+      "mental_form": 942,
+      "age": 943,
+      "develop": 944,
+      "ected_to": 945,
+      "connected_to": 946,
+      "guage": 947,
+      "language": 948,
+      "mental_form_of": 949,
+      "developmental_form_of": 950,
+      "pr": 951,
+      "ually_": 952,
+      "ated_to": 953,
+      "ects": 954,
+      "actic": 955,
+      "interconn": 956,
+      "conceptually_": 957,
+      "related_to": 958,
+      "practic": 959,
+      "interconnects": 960,
+      "conceptually_related_to": 961,
+      "practices": 962
+    },
+    "merges": [
+      [
+        "o",
+        "r"
+      ],
+      [
+        "t",
+        "i"
+      ],
+      [
+        "o",
+        "n"
+      ],
+      [
+        "a",
+        "l"
+      ],
+      [
+        "ti",
+        "on"
+      ],
+      [
+        "e",
+        "s"
+      ],
+      [
+        "_",
+        "or"
+      ],
+      [
+        "n",
+        "c"
+      ],
+      [
+        "i",
+        "c"
+      ],
+      [
+        "_or",
+        "_"
+      ],
+      [
+        "e",
+        "n"
+      ],
+      [
+        "r",
+        "o"
+      ],
+      [
+        "f",
+        "u"
+      ],
+      [
+        "nc",
+        "tion"
+      ],
+      [
+        "fu",
+        "nction"
+      ],
+      [
+        "i",
+        "s"
+      ],
+      [
+        "al",
+        "_"
+      ],
+      [
+        "_",
+        "o"
+      ],
+      [
+        "i",
+        "n"
+      ],
+      [
+        "_o",
+        "f"
+      ],
+      [
+        "a",
+        "n"
+      ],
+      [
+        "p",
+        "ro"
+      ],
+      [
+        "a",
+        "t"
+      ],
+      [
+        "e",
+        "c"
+      ],
+      [
+        "_",
+        "function"
+      ],
+      [
+        "i",
+        "t"
+      ],
+      [
+        "o",
+        "l"
+      ],
+      [
+        "a",
+        "c"
+      ],
+      [
+        "pro",
+        "c"
+      ],
+      [
+        "a",
+        "r"
+      ],
+      [
+        "t",
+        "s"
+      ],
+      [
+        "e",
+        "d"
+      ],
+      [
+        "en",
+        "t"
+      ],
+      [
+        "a",
+        "s"
+      ],
+      [
+        "u",
+        "r"
+      ],
+      [
+        "u",
+        "l"
+      ],
+      [
+        "es",
+        "s"
+      ],
+      [
+        "o",
+        "m"
+      ],
+      [
+        "o",
+        "g"
+      ],
+      [
+        "e",
+        "r"
+      ],
+      [
+        "e",
+        "l"
+      ],
+      [
+        "proc",
+        "ess"
+      ],
+      [
+        "ol",
+        "og"
+      ],
+      [
+        "a",
+        "tion"
+      ],
+      [
+        "d",
+        "is"
+      ],
+      [
+        "m",
+        "ent"
+      ],
+      [
+        "olog",
+        "ic"
+      ],
+      [
+        "o",
+        "c"
+      ],
+      [
+        "s",
+        "u"
+      ],
+      [
+        "g",
+        "an"
+      ],
+      [
+        "f",
+        "f"
+      ],
+      [
+        "ff",
+        "ec"
+      ],
+      [
+        "ti",
+        "c"
+      ],
+      [
+        "y",
+        "s"
+      ],
+      [
+        "b",
+        "i"
+      ],
+      [
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "ffec"
+      ],
+      [
+        "affec",
+        "ts"
+      ],
+      [
+        "p",
+        "l"
+      ],
+      [
+        "e",
+        "as"
+      ],
+      [
+        "it",
+        "y"
+      ],
+      [
+        "or",
+        "m"
+      ],
+      [
+        "u",
+        "p"
+      ],
+      [
+        "p",
+        "h"
+      ],
+      [
+        "or",
+        "gan"
+      ],
+      [
+        "v",
+        "i"
+      ],
+      [
+        "u",
+        "s"
+      ],
+      [
+        "t",
+        "_of"
+      ],
+      [
+        "s",
+        "t"
+      ],
+      [
+        "ic",
+        "al_"
+      ],
+      [
+        "r",
+        "es"
+      ],
+      [
+        "y",
+        "_"
+      ],
+      [
+        "ologic",
+        "_function"
+      ],
+      [
+        "e",
+        "_"
+      ],
+      [
+        "el",
+        "l"
+      ],
+      [
+        "c",
+        "ell"
+      ],
+      [
+        "u",
+        "c"
+      ],
+      [
+        "e",
+        "_or_"
+      ],
+      [
+        "_",
+        "w"
+      ],
+      [
+        "it",
+        "h"
+      ],
+      [
+        "dis",
+        "eas"
+      ],
+      [
+        "_w",
+        "ith"
+      ],
+      [
+        "d",
+        "ys"
+      ],
+      [
+        "dys",
+        "function"
+      ],
+      [
+        "c",
+        "h"
+      ],
+      [
+        "m",
+        "ol"
+      ],
+      [
+        "ec",
+        "ul"
+      ],
+      [
+        "mol",
+        "ecul"
+      ],
+      [
+        "molecul",
+        "ar"
+      ],
+      [
+        "ment",
+        "al_"
+      ],
+      [
+        "ti",
+        "v"
+      ],
+      [
+        "ur",
+        "e"
+      ],
+      [
+        "o",
+        "d"
+      ],
+      [
+        "res",
+        "ul"
+      ],
+      [
+        "n",
+        "orm"
+      ],
+      [
+        "al",
+        "ity"
+      ],
+      [
+        "ab",
+        "norm"
+      ],
+      [
+        "abnorm",
+        "ality"
+      ],
+      [
+        "h",
+        "a"
+      ],
+      [
+        "g",
+        "en"
+      ],
+      [
+        "tic",
+        "_"
+      ],
+      [
+        "a",
+        "m"
+      ],
+      [
+        "a",
+        "nc"
+      ],
+      [
+        "b",
+        "st"
+      ],
+      [
+        "su",
+        "bst"
+      ],
+      [
+        "subst",
+        "anc"
+      ],
+      [
+        "resul",
+        "t_of"
+      ],
+      [
+        "ation",
+        "_of"
+      ],
+      [
+        "oc",
+        "c"
+      ],
+      [
+        "b",
+        "e"
+      ],
+      [
+        "vi",
+        "or"
+      ],
+      [
+        "ha",
+        "vior"
+      ],
+      [
+        "be",
+        "havior"
+      ],
+      [
+        "ac",
+        "tiv"
+      ],
+      [
+        "al",
+        "_or_"
+      ],
+      [
+        "i",
+        "d"
+      ],
+      [
+        "e",
+        "o"
+      ],
+      [
+        "t",
+        "er"
+      ],
+      [
+        "m",
+        "e"
+      ],
+      [
+        "c",
+        "om"
+      ],
+      [
+        "p",
+        "er"
+      ],
+      [
+        "ed",
+        "_"
+      ],
+      [
+        "is",
+        "a"
+      ],
+      [
+        "r",
+        "e"
+      ],
+      [
+        "e",
+        "m"
+      ],
+      [
+        "i",
+        "a"
+      ],
+      [
+        "proc",
+        "ed"
+      ],
+      [
+        "proced",
+        "ure"
+      ],
+      [
+        "molecular",
+        "_"
+      ],
+      [
+        "n",
+        "d"
+      ],
+      [
+        "substanc",
+        "e"
+      ],
+      [
+        "in",
+        "ter"
+      ],
+      [
+        "ac",
+        "ts"
+      ],
+      [
+        "inter",
+        "acts"
+      ],
+      [
+        "interacts",
+        "_with"
+      ],
+      [
+        "s",
+        "y"
+      ],
+      [
+        "o",
+        "s"
+      ],
+      [
+        "process",
+        "_of"
+      ],
+      [
+        "is",
+        "m"
+      ],
+      [
+        "organ",
+        "ism"
+      ],
+      [
+        "p",
+        "o"
+      ],
+      [
+        "in",
+        "e"
+      ],
+      [
+        "ic",
+        "_"
+      ],
+      [
+        "us",
+        "es"
+      ],
+      [
+        "e",
+        "x"
+      ],
+      [
+        "c",
+        "on"
+      ],
+      [
+        "up",
+        "ation"
+      ],
+      [
+        "occ",
+        "upation"
+      ],
+      [
+        "ment",
+        "al_or_"
+      ],
+      [
+        "c",
+        "a"
+      ],
+      [
+        "t",
+        "e"
+      ],
+      [
+        "g",
+        "ro"
+      ],
+      [
+        "gro",
+        "up"
+      ],
+      [
+        "m",
+        "an"
+      ],
+      [
+        "q",
+        "u"
+      ],
+      [
+        "at",
+        "or"
+      ],
+      [
+        "ch",
+        "em"
+      ],
+      [
+        "d",
+        "ia"
+      ],
+      [
+        "ro",
+        "me"
+      ],
+      [
+        "e_or_",
+        "sy"
+      ],
+      [
+        "diseas",
+        "e_or_sy"
+      ],
+      [
+        "nd",
+        "rome"
+      ],
+      [
+        "disease_or_sy",
+        "ndrome"
+      ],
+      [
+        "n",
+        "eo"
+      ],
+      [
+        "al_",
+        "dysfunction"
+      ],
+      [
+        "as",
+        "tic_"
+      ],
+      [
+        "pl",
+        "astic_"
+      ],
+      [
+        "behavior",
+        "al_dysfunction"
+      ],
+      [
+        "mental_or_",
+        "behavioral_dysfunction"
+      ],
+      [
+        "neo",
+        "plastic_"
+      ],
+      [
+        "neoplastic_",
+        "process"
+      ],
+      [
+        "h",
+        "ologic_function"
+      ],
+      [
+        "p",
+        "at"
+      ],
+      [
+        "pat",
+        "hologic_function"
+      ],
+      [
+        "_",
+        "diseas"
+      ],
+      [
+        "i",
+        "mental_"
+      ],
+      [
+        "m",
+        "od"
+      ],
+      [
+        "_of",
+        "_diseas"
+      ],
+      [
+        "el",
+        "_of_diseas"
+      ],
+      [
+        "per",
+        "imental_"
+      ],
+      [
+        "ex",
+        "perimental_"
+      ],
+      [
+        "mod",
+        "el_of_diseas"
+      ],
+      [
+        "experimental_",
+        "model_of_diseas"
+      ],
+      [
+        "experimental_model_of_diseas",
+        "e"
+      ],
+      [
+        "_or_",
+        "molecular_"
+      ],
+      [
+        "cell",
+        "_or_molecular_"
+      ],
+      [
+        "cell_or_molecular_",
+        "dysfunction"
+      ],
+      [
+        "e",
+        "p"
+      ],
+      [
+        "_or_",
+        "dis"
+      ],
+      [
+        "s",
+        "su"
+      ],
+      [
+        "ti",
+        "ssu"
+      ],
+      [
+        "tissu",
+        "e"
+      ],
+      [
+        "g",
+        "n"
+      ],
+      [
+        "ca",
+        "uses"
+      ],
+      [
+        "l",
+        "oc"
+      ],
+      [
+        "an",
+        "at"
+      ],
+      [
+        "om",
+        "ical_"
+      ],
+      [
+        "anat",
+        "omical_"
+      ],
+      [
+        "ph",
+        "ys"
+      ],
+      [
+        "on",
+        "_or_"
+      ],
+      [
+        "s",
+        "oc"
+      ],
+      [
+        "soc",
+        "i"
+      ],
+      [
+        "y",
+        "_or_"
+      ],
+      [
+        "loc",
+        "ation_of"
+      ],
+      [
+        "p",
+        "ar"
+      ],
+      [
+        "c",
+        "i"
+      ],
+      [
+        "pl",
+        "ine"
+      ],
+      [
+        "occupation",
+        "_or_dis"
+      ],
+      [
+        "ci",
+        "pline"
+      ],
+      [
+        "occupation_or_dis",
+        "cipline"
+      ],
+      [
+        "activ",
+        "ity"
+      ],
+      [
+        "es",
+        "t"
+      ],
+      [
+        "d",
+        "uc"
+      ],
+      [
+        "pro",
+        "duc"
+      ],
+      [
+        "dia",
+        "gn"
+      ],
+      [
+        "diagn",
+        "os"
+      ],
+      [
+        "ep",
+        "t"
+      ],
+      [
+        "mental_",
+        "process"
+      ],
+      [
+        "ic",
+        "at"
+      ],
+      [
+        "is",
+        "on"
+      ],
+      [
+        "po",
+        "ison"
+      ],
+      [
+        "icat",
+        "es"
+      ],
+      [
+        "l",
+        "ab"
+      ],
+      [
+        "or",
+        "ator"
+      ],
+      [
+        "lab",
+        "orator"
+      ],
+      [
+        "al",
+        "l"
+      ],
+      [
+        "produc",
+        "es"
+      ],
+      [
+        "in",
+        "g"
+      ],
+      [
+        "organism",
+        "_function"
+      ],
+      [
+        "i",
+        "ologic_function"
+      ],
+      [
+        "is",
+        "su"
+      ],
+      [
+        "at",
+        "ed"
+      ],
+      [
+        "e_",
+        "in"
+      ],
+      [
+        "phys",
+        "iologic_function"
+      ],
+      [
+        "issu",
+        "e_in"
+      ],
+      [
+        "_or_",
+        "tissue"
+      ],
+      [
+        "organ",
+        "_or_tissue"
+      ],
+      [
+        "organ_or_tissue",
+        "_function"
+      ],
+      [
+        "e",
+        "tic"
+      ],
+      [
+        "gen",
+        "etic"
+      ],
+      [
+        "genetic",
+        "_function"
+      ],
+      [
+        "b",
+        "od"
+      ],
+      [
+        "molecular",
+        "_function"
+      ],
+      [
+        "bod",
+        "y_"
+      ],
+      [
+        "_",
+        "com"
+      ],
+      [
+        "cell",
+        "_function"
+      ],
+      [
+        "pl",
+        "icates"
+      ],
+      [
+        "com",
+        "plicates"
+      ],
+      [
+        "en",
+        "om"
+      ],
+      [
+        "en",
+        "on_or_"
+      ],
+      [
+        "ph",
+        "enom"
+      ],
+      [
+        "enon_or_",
+        "process"
+      ],
+      [
+        "phenom",
+        "enon_or_process"
+      ],
+      [
+        "ologic",
+        "_"
+      ],
+      [
+        "ar",
+        "ch"
+      ],
+      [
+        "activ",
+        "e_"
+      ],
+      [
+        "_or",
+        "gan"
+      ],
+      [
+        "diagnos",
+        "tic_"
+      ],
+      [
+        "r",
+        "uc"
+      ],
+      [
+        "st",
+        "ruc"
+      ],
+      [
+        "struc",
+        "t"
+      ],
+      [
+        "m",
+        "eas"
+      ],
+      [
+        "d",
+        "e"
+      ],
+      [
+        "as",
+        "soci"
+      ],
+      [
+        "ated",
+        "_with"
+      ],
+      [
+        "associ",
+        "ated_with"
+      ],
+      [
+        "n",
+        "uc"
+      ],
+      [
+        "nuc",
+        "l"
+      ],
+      [
+        "ic",
+        "al"
+      ],
+      [
+        "chem",
+        "ical"
+      ],
+      [
+        "r",
+        "at"
+      ],
+      [
+        "v",
+        "er"
+      ],
+      [
+        "i",
+        "b"
+      ],
+      [
+        "i",
+        "r"
+      ],
+      [
+        "ac",
+        "qu"
+      ],
+      [
+        "ed_",
+        "abnormality"
+      ],
+      [
+        "ir",
+        "ed_abnormality"
+      ],
+      [
+        "acqu",
+        "ired_abnormality"
+      ],
+      [
+        "bi",
+        "ologic_function"
+      ],
+      [
+        "anatomical_",
+        "abnormality"
+      ],
+      [
+        "rat",
+        "e"
+      ],
+      [
+        "al_",
+        "abnormality"
+      ],
+      [
+        "it",
+        "al_abnormality"
+      ],
+      [
+        "gen",
+        "ital_abnormality"
+      ],
+      [
+        "con",
+        "genital_abnormality"
+      ],
+      [
+        "t",
+        "h"
+      ],
+      [
+        "r",
+        "ec"
+      ],
+      [
+        "par",
+        "t_of"
+      ],
+      [
+        "om",
+        "ed"
+      ],
+      [
+        "bi",
+        "omed"
+      ],
+      [
+        "i",
+        "f"
+      ],
+      [
+        "in",
+        "d"
+      ],
+      [
+        "t",
+        "y"
+      ],
+      [
+        "am",
+        "in"
+      ],
+      [
+        "i",
+        "m"
+      ],
+      [
+        "c",
+        "ar"
+      ],
+      [
+        "o",
+        "us"
+      ],
+      [
+        "man",
+        "if"
+      ],
+      [
+        "est",
+        "ation_of"
+      ],
+      [
+        "manif",
+        "estation_of"
+      ],
+      [
+        "e",
+        "arch"
+      ],
+      [
+        "res",
+        "earch"
+      ],
+      [
+        "research",
+        "_"
+      ],
+      [
+        "j",
+        "ur"
+      ],
+      [
+        "in",
+        "jur"
+      ],
+      [
+        "y_or_",
+        "poison"
+      ],
+      [
+        "injur",
+        "y_or_poison"
+      ],
+      [
+        "injury_or_poison",
+        "ing"
+      ],
+      [
+        "p",
+        "on"
+      ],
+      [
+        "_com",
+        "pon"
+      ],
+      [
+        "_compon",
+        "ent"
+      ],
+      [
+        "r",
+        "ib"
+      ],
+      [
+        "t",
+        "rib"
+      ],
+      [
+        "u",
+        "te"
+      ],
+      [
+        "at",
+        "trib"
+      ],
+      [
+        "diagnostic_",
+        "procedure"
+      ],
+      [
+        "attrib",
+        "ute"
+      ],
+      [
+        "y_",
+        "procedure"
+      ],
+      [
+        "laborator",
+        "y_procedure"
+      ],
+      [
+        "ur",
+        "es"
+      ],
+      [
+        "meas",
+        "ures"
+      ],
+      [
+        "f",
+        "orm"
+      ],
+      [
+        "p",
+        "e"
+      ],
+      [
+        "struct",
+        "ure"
+      ],
+      [
+        "c",
+        "ept"
+      ],
+      [
+        "h",
+        "u"
+      ],
+      [
+        "con",
+        "cept"
+      ],
+      [
+        "hu",
+        "man"
+      ],
+      [
+        "f",
+        "ac"
+      ],
+      [
+        "fac",
+        "t"
+      ],
+      [
+        "c",
+        "l"
+      ],
+      [
+        "ac",
+        "id"
+      ],
+      [
+        "nucl",
+        "eo"
+      ],
+      [
+        "acid",
+        "_"
+      ],
+      [
+        "ur",
+        "s"
+      ],
+      [
+        "occ",
+        "urs"
+      ],
+      [
+        "tiv",
+        "e_"
+      ],
+      [
+        "r",
+        "up"
+      ],
+      [
+        "dis",
+        "rup"
+      ],
+      [
+        "disrup",
+        "ts"
+      ],
+      [
+        "e",
+        "w"
+      ],
+      [
+        "vi",
+        "ew"
+      ],
+      [
+        "ical_",
+        "view"
+      ],
+      [
+        "chem",
+        "ical_view"
+      ],
+      [
+        "all",
+        "y"
+      ],
+      [
+        "ical_",
+        "occupation_or_discipline"
+      ],
+      [
+        "biomed",
+        "ical_occupation_or_discipline"
+      ],
+      [
+        "b",
+        "rate"
+      ],
+      [
+        "u",
+        "al_"
+      ],
+      [
+        "an",
+        "ti"
+      ],
+      [
+        "te",
+        "brate"
+      ],
+      [
+        "ver",
+        "tebrate"
+      ],
+      [
+        "n",
+        "at"
+      ],
+      [
+        "al_",
+        "phenomenon_or_process"
+      ],
+      [
+        "ur",
+        "al_phenomenon_or_process"
+      ],
+      [
+        "nat",
+        "ural_phenomenon_or_process"
+      ],
+      [
+        "organ",
+        "ic_"
+      ],
+      [
+        "organic_",
+        "chemical"
+      ],
+      [
+        "vi",
+        "r"
+      ],
+      [
+        "in",
+        "ical_"
+      ],
+      [
+        "cl",
+        "inical_"
+      ],
+      [
+        "l",
+        "y_"
+      ],
+      [
+        "p",
+        "re"
+      ],
+      [
+        "v",
+        "en"
+      ],
+      [
+        "ti",
+        "ty"
+      ],
+      [
+        "en",
+        "tity"
+      ],
+      [
+        "pre",
+        "ven"
+      ],
+      [
+        "m",
+        "ac"
+      ],
+      [
+        "a",
+        "g"
+      ],
+      [
+        "i",
+        "on"
+      ],
+      [
+        "m",
+        "u"
+      ],
+      [
+        "n",
+        "ologic_"
+      ],
+      [
+        "im",
+        "mu"
+      ],
+      [
+        "fact",
+        "or"
+      ],
+      [
+        "nologic_",
+        "factor"
+      ],
+      [
+        "immu",
+        "nologic_factor"
+      ],
+      [
+        "all",
+        "y_"
+      ],
+      [
+        "de",
+        "v"
+      ],
+      [
+        "ologic",
+        "ally_"
+      ],
+      [
+        "bi",
+        "ologically_"
+      ],
+      [
+        "active_",
+        "substance"
+      ],
+      [
+        "biologically_",
+        "active_substance"
+      ],
+      [
+        "ic",
+        "e"
+      ],
+      [
+        "dev",
+        "ice"
+      ],
+      [
+        "e",
+        "ur"
+      ],
+      [
+        "e",
+        "active_"
+      ],
+      [
+        "h",
+        "orm"
+      ],
+      [
+        "n",
+        "eur"
+      ],
+      [
+        "v",
+        "it"
+      ],
+      [
+        "y",
+        "me"
+      ],
+      [
+        "z",
+        "yme"
+      ],
+      [
+        "or",
+        "eactive_"
+      ],
+      [
+        "on",
+        "e"
+      ],
+      [
+        "en",
+        "ic_"
+      ],
+      [
+        "en",
+        "zyme"
+      ],
+      [
+        "og",
+        "enic_"
+      ],
+      [
+        "bi",
+        "ogenic_"
+      ],
+      [
+        "e_or_",
+        "biogenic_"
+      ],
+      [
+        "am",
+        "ine"
+      ],
+      [
+        "substanc",
+        "e_or_biogenic_"
+      ],
+      [
+        "ept",
+        "or"
+      ],
+      [
+        "rec",
+        "eptor"
+      ],
+      [
+        "horm",
+        "one"
+      ],
+      [
+        "neur",
+        "oreactive_"
+      ],
+      [
+        "vit",
+        "amin"
+      ],
+      [
+        "substance_or_biogenic_",
+        "amine"
+      ],
+      [
+        "neuroreactive_",
+        "substance_or_biogenic_amine"
+      ],
+      [
+        "o",
+        "tic"
+      ],
+      [
+        "ar",
+        "mac"
+      ],
+      [
+        "bi",
+        "otic"
+      ],
+      [
+        "ph",
+        "armac"
+      ],
+      [
+        "qu",
+        "e"
+      ],
+      [
+        "ologic_",
+        "substance"
+      ],
+      [
+        "anti",
+        "biotic"
+      ],
+      [
+        "pharmac",
+        "ologic_substance"
+      ],
+      [
+        "ec",
+        "t"
+      ],
+      [
+        "anatomical_",
+        "structure"
+      ],
+      [
+        "e",
+        "ffec"
+      ],
+      [
+        "effec",
+        "t_of"
+      ],
+      [
+        "occupation",
+        "al_"
+      ],
+      [
+        "a",
+        "pe"
+      ],
+      [
+        "u",
+        "tic"
+      ],
+      [
+        "_or_",
+        "preven"
+      ],
+      [
+        "er",
+        "ape"
+      ],
+      [
+        "th",
+        "erape"
+      ],
+      [
+        "tive_",
+        "procedure"
+      ],
+      [
+        "utic",
+        "_or_preven"
+      ],
+      [
+        "therape",
+        "utic_or_preven"
+      ],
+      [
+        "therapeutic_or_preven",
+        "tive_procedure"
+      ],
+      [
+        "d",
+        "r"
+      ],
+      [
+        "u",
+        "g"
+      ],
+      [
+        "dr",
+        "ug"
+      ],
+      [
+        "_",
+        "resul"
+      ],
+      [
+        "t",
+        "est"
+      ],
+      [
+        "y_or_",
+        "test"
+      ],
+      [
+        "laborator",
+        "y_or_test"
+      ],
+      [
+        "_resul",
+        "t"
+      ],
+      [
+        "laboratory_or_test",
+        "_result"
+      ],
+      [
+        "f",
+        "ess"
+      ],
+      [
+        "pro",
+        "fess"
+      ],
+      [
+        "ul",
+        "ation"
+      ],
+      [
+        "profess",
+        "ion"
+      ],
+      [
+        "e",
+        "v"
+      ],
+      [
+        "_",
+        "substance"
+      ],
+      [
+        "_",
+        "attribute"
+      ],
+      [
+        "d",
+        "ous"
+      ],
+      [
+        "t",
+        "_organ"
+      ],
+      [
+        "z",
+        "ar"
+      ],
+      [
+        "_or",
+        "_organ"
+      ],
+      [
+        "_or_",
+        "poison"
+      ],
+      [
+        "ha",
+        "zar"
+      ],
+      [
+        "re",
+        "g"
+      ],
+      [
+        "par",
+        "t_organ"
+      ],
+      [
+        "body_",
+        "part_organ"
+      ],
+      [
+        "ous",
+        "_substance"
+      ],
+      [
+        "dous",
+        "_or_poison"
+      ],
+      [
+        "_or_organ",
+        "_component"
+      ],
+      [
+        "hazar",
+        "dous_or_poison"
+      ],
+      [
+        "body_part_organ",
+        "_or_organ_component"
+      ],
+      [
+        "hazardous_or_poison",
+        "ous_substance"
+      ],
+      [
+        "b",
+        "j"
+      ],
+      [
+        "bj",
+        "ect"
+      ],
+      [
+        "vir",
+        "us"
+      ],
+      [
+        "cell",
+        "_component"
+      ],
+      [
+        "_",
+        "in"
+      ],
+      [
+        "per",
+        "form"
+      ],
+      [
+        "occurs",
+        "_in"
+      ],
+      [
+        "perform",
+        "s"
+      ],
+      [
+        "_",
+        "car"
+      ],
+      [
+        "b",
+        "ac"
+      ],
+      [
+        "e",
+        "t"
+      ],
+      [
+        "e",
+        "al"
+      ],
+      [
+        "h",
+        "eal"
+      ],
+      [
+        "i",
+        "u"
+      ],
+      [
+        "i",
+        "z"
+      ],
+      [
+        "k",
+        "et"
+      ],
+      [
+        "l",
+        "am"
+      ],
+      [
+        "r",
+        "ic"
+      ],
+      [
+        "y",
+        "dia"
+      ],
+      [
+        "_or_",
+        "ch"
+      ],
+      [
+        "ts",
+        "ia"
+      ],
+      [
+        "om",
+        "e"
+      ],
+      [
+        "e_or_",
+        "gen"
+      ],
+      [
+        "gen",
+        "e_or_gen"
+      ],
+      [
+        "ter",
+        "iu"
+      ],
+      [
+        "th",
+        "_car"
+      ],
+      [
+        "bac",
+        "teriu"
+      ],
+      [
+        "heal",
+        "th_car"
+      ],
+      [
+        "iz",
+        "ation"
+      ],
+      [
+        "ket",
+        "tsia"
+      ],
+      [
+        "lam",
+        "ydia"
+      ],
+      [
+        "ric",
+        "kettsia"
+      ],
+      [
+        "_or_ch",
+        "lamydia"
+      ],
+      [
+        "gene_or_gen",
+        "ome"
+      ],
+      [
+        "bacteriu",
+        "m"
+      ],
+      [
+        "health_car",
+        "e_"
+      ],
+      [
+        "rickettsia",
+        "_or_chlamydia"
+      ],
+      [
+        "g",
+        "us"
+      ],
+      [
+        "n",
+        "gus"
+      ],
+      [
+        "fu",
+        "ngus"
+      ],
+      [
+        "_",
+        "acid_"
+      ],
+      [
+        "o",
+        "_acid_"
+      ],
+      [
+        "ti",
+        "d"
+      ],
+      [
+        "as",
+        "s"
+      ],
+      [
+        "amin",
+        "o_acid_"
+      ],
+      [
+        "organism",
+        "_attribute"
+      ],
+      [
+        "clinical_",
+        "attribute"
+      ],
+      [
+        "b",
+        "o"
+      ],
+      [
+        "h",
+        "y"
+      ],
+      [
+        "car",
+        "bo"
+      ],
+      [
+        "hy",
+        "d"
+      ],
+      [
+        "carbo",
+        "hyd"
+      ],
+      [
+        "h",
+        "n"
+      ],
+      [
+        "i",
+        "que"
+      ],
+      [
+        "t",
+        "ec"
+      ],
+      [
+        "u",
+        "nd"
+      ],
+      [
+        "olog",
+        "y_"
+      ],
+      [
+        "bi",
+        "ology_"
+      ],
+      [
+        "molecular_",
+        "biology_"
+      ],
+      [
+        "research_",
+        "tec"
+      ],
+      [
+        "hn",
+        "ique"
+      ],
+      [
+        "molecular_biology_",
+        "research_tec"
+      ],
+      [
+        "molecular_biology_research_tec",
+        "hnique"
+      ],
+      [
+        "l",
+        "ly_"
+      ],
+      [
+        "fu",
+        "lly_"
+      ],
+      [
+        "ed_",
+        "anatomical_structure"
+      ],
+      [
+        "research_",
+        "activity"
+      ],
+      [
+        "form",
+        "ed_anatomical_structure"
+      ],
+      [
+        "fully_",
+        "formed_anatomical_structure"
+      ],
+      [
+        "t",
+        "o"
+      ],
+      [
+        "a",
+        "ti"
+      ],
+      [
+        "p",
+        "ati"
+      ],
+      [
+        "el",
+        "i"
+      ],
+      [
+        "_function",
+        "ally"
+      ],
+      [
+        "ed",
+        "_functionally"
+      ],
+      [
+        "chemical_view",
+        "ed_functionally"
+      ],
+      [
+        "i",
+        "p"
+      ],
+      [
+        "l",
+        "ip"
+      ],
+      [
+        "an",
+        "im"
+      ],
+      [
+        "lip",
+        "id"
+      ],
+      [
+        "anim",
+        "al"
+      ],
+      [
+        "e",
+        "ic"
+      ],
+      [
+        "e",
+        "ro"
+      ],
+      [
+        "e",
+        "ic_"
+      ],
+      [
+        "o",
+        "id"
+      ],
+      [
+        "p",
+        "ep"
+      ],
+      [
+        "s",
+        "id"
+      ],
+      [
+        "ti",
+        "de"
+      ],
+      [
+        "in",
+        "vertebrate"
+      ],
+      [
+        "an",
+        "oid"
+      ],
+      [
+        "pro",
+        "te"
+      ],
+      [
+        "ur",
+        "ally"
+      ],
+      [
+        "st",
+        "ero"
+      ],
+      [
+        "e_or_",
+        "nucleo"
+      ],
+      [
+        "e_or_",
+        "prote"
+      ],
+      [
+        "ed_",
+        "struct"
+      ],
+      [
+        "os",
+        "anoid"
+      ],
+      [
+        "nucl",
+        "eic_"
+      ],
+      [
+        "nucleo",
+        "sid"
+      ],
+      [
+        "acid_",
+        "nucleosid"
+      ],
+      [
+        "chemical_view",
+        "ed_struct"
+      ],
+      [
+        "tid",
+        "e_or_prote"
+      ],
+      [
+        "amino_acid_",
+        "pep"
+      ],
+      [
+        "eic",
+        "osanoid"
+      ],
+      [
+        "stero",
+        "id"
+      ],
+      [
+        "e_or_nucleo",
+        "tide"
+      ],
+      [
+        "nucleic_",
+        "acid_nucleosid"
+      ],
+      [
+        "chemical_viewed_struct",
+        "urally"
+      ],
+      [
+        "tide_or_prote",
+        "in"
+      ],
+      [
+        "amino_acid_pep",
+        "tide_or_protein"
+      ],
+      [
+        "nucleic_acid_nucleosid",
+        "e_or_nucleotide"
+      ],
+      [
+        "o",
+        "ph"
+      ],
+      [
+        "or",
+        "us"
+      ],
+      [
+        "ph",
+        "orus"
+      ],
+      [
+        "organ",
+        "oph"
+      ],
+      [
+        "os",
+        "phorus"
+      ],
+      [
+        "po",
+        "und"
+      ],
+      [
+        "_com",
+        "pound"
+      ],
+      [
+        "carbohyd",
+        "rate"
+      ],
+      [
+        "organoph",
+        "osphorus"
+      ],
+      [
+        "organophosphorus",
+        "_compound"
+      ],
+      [
+        "p",
+        "rec"
+      ],
+      [
+        "ed",
+        "es"
+      ],
+      [
+        "prec",
+        "edes"
+      ],
+      [
+        "al_or_",
+        "occupational_"
+      ],
+      [
+        "profession",
+        "al_or_occupational_"
+      ],
+      [
+        "professional_or_occupational_",
+        "group"
+      ],
+      [
+        "g",
+        "a"
+      ],
+      [
+        "m",
+        "al"
+      ],
+      [
+        "m",
+        "am"
+      ],
+      [
+        "al",
+        "ga"
+      ],
+      [
+        "an",
+        "t"
+      ],
+      [
+        "pl",
+        "ant"
+      ],
+      [
+        "mam",
+        "mal"
+      ],
+      [
+        "d",
+        "ual_"
+      ],
+      [
+        "f",
+        "is"
+      ],
+      [
+        "i",
+        "bi"
+      ],
+      [
+        "i",
+        "vi"
+      ],
+      [
+        "l",
+        "e"
+      ],
+      [
+        "p",
+        "ti"
+      ],
+      [
+        "r",
+        "d"
+      ],
+      [
+        "bi",
+        "rd"
+      ],
+      [
+        "ph",
+        "ibi"
+      ],
+      [
+        "am",
+        "phibi"
+      ],
+      [
+        "re",
+        "pti"
+      ],
+      [
+        "ind",
+        "ivi"
+      ],
+      [
+        "dual_",
+        "behavior"
+      ],
+      [
+        "fis",
+        "h"
+      ],
+      [
+        "amphibi",
+        "an"
+      ],
+      [
+        "repti",
+        "le"
+      ],
+      [
+        "indivi",
+        "dual_behavior"
+      ],
+      [
+        "_",
+        "group"
+      ],
+      [
+        "p",
+        "ulation"
+      ],
+      [
+        "po",
+        "pulation"
+      ],
+      [
+        "population",
+        "_group"
+      ],
+      [
+        "-",
+        "occurs"
+      ],
+      [
+        "c",
+        "o"
+      ],
+      [
+        "er",
+        "i"
+      ],
+      [
+        "body_",
+        "substance"
+      ],
+      [
+        "-occurs",
+        "_with"
+      ],
+      [
+        "co",
+        "-occurs_with"
+      ],
+      [
+        "_",
+        "i"
+      ],
+      [
+        "_",
+        "re"
+      ],
+      [
+        "a",
+        "id"
+      ],
+      [
+        "d",
+        "ent"
+      ],
+      [
+        "e",
+        "ment"
+      ],
+      [
+        "i",
+        "gn"
+      ],
+      [
+        "m",
+        "p"
+      ],
+      [
+        "m",
+        "at"
+      ],
+      [
+        "o",
+        "to"
+      ],
+      [
+        "s",
+        "ign"
+      ],
+      [
+        "t",
+        "om"
+      ],
+      [
+        "ic",
+        "al_or_"
+      ],
+      [
+        "ic",
+        "ator"
+      ],
+      [
+        "_or_",
+        "sy"
+      ],
+      [
+        "_or_",
+        "diagnostic_"
+      ],
+      [
+        "is",
+        "oto"
+      ],
+      [
+        "al_",
+        "mat"
+      ],
+      [
+        "in",
+        "organic_chemical"
+      ],
+      [
+        "ent",
+        "_or_diagnostic_"
+      ],
+      [
+        "el",
+        "ement"
+      ],
+      [
+        "on_or_",
+        "isoto"
+      ],
+      [
+        "biomed",
+        "ical_or_"
+      ],
+      [
+        "ind",
+        "icator"
+      ],
+      [
+        "ag",
+        "ent_or_diagnostic_"
+      ],
+      [
+        "eri",
+        "al"
+      ],
+      [
+        "_i",
+        "on_or_isoto"
+      ],
+      [
+        "_re",
+        "agent_or_diagnostic_"
+      ],
+      [
+        "dent",
+        "al_mat"
+      ],
+      [
+        "mp",
+        "tom"
+      ],
+      [
+        "sign",
+        "_or_sy"
+      ],
+      [
+        "element",
+        "_ion_or_isoto"
+      ],
+      [
+        "biomedical_or_",
+        "dental_mat"
+      ],
+      [
+        "indicator",
+        "_reagent_or_diagnostic_"
+      ],
+      [
+        "sign_or_sy",
+        "mptom"
+      ],
+      [
+        "element_ion_or_isoto",
+        "pe"
+      ],
+      [
+        "biomedical_or_dental_mat",
+        "erial"
+      ],
+      [
+        "indicator_reagent_or_diagnostic_",
+        "aid"
+      ],
+      [
+        "_",
+        "effect_of"
+      ],
+      [
+        "a",
+        "e"
+      ],
+      [
+        "es",
+        "_effect_of"
+      ],
+      [
+        "ess",
+        "es_effect_of"
+      ],
+      [
+        "body_",
+        "s"
+      ],
+      [
+        "arch",
+        "ae"
+      ],
+      [
+        "ass",
+        "esses_effect_of"
+      ],
+      [
+        "archae",
+        "on"
+      ],
+      [
+        "l",
+        "ed_"
+      ],
+      [
+        "o",
+        "bject"
+      ],
+      [
+        "ent",
+        "_or_dis"
+      ],
+      [
+        "ment",
+        "_of"
+      ],
+      [
+        "ab",
+        "led_"
+      ],
+      [
+        "ical_",
+        "object"
+      ],
+      [
+        "ure",
+        "ment_of"
+      ],
+      [
+        "phys",
+        "ical_object"
+      ],
+      [
+        "meas",
+        "urement_of"
+      ],
+      [
+        "pati",
+        "ent_or_dis"
+      ],
+      [
+        "abled_",
+        "group"
+      ],
+      [
+        "patient_or_dis",
+        "abled_group"
+      ],
+      [
+        "u",
+        "ation_of"
+      ],
+      [
+        "al",
+        "uation_of"
+      ],
+      [
+        "ev",
+        "aluation_of"
+      ],
+      [
+        "f",
+        "am"
+      ],
+      [
+        "i",
+        "ly_"
+      ],
+      [
+        "e_",
+        "group"
+      ],
+      [
+        "ag",
+        "e_group"
+      ],
+      [
+        "fam",
+        "ily_"
+      ],
+      [
+        "family_",
+        "group"
+      ],
+      [
+        "al_",
+        "behavior"
+      ],
+      [
+        "soci",
+        "al_behavior"
+      ],
+      [
+        "health_care_",
+        "activity"
+      ],
+      [
+        "b",
+        "r"
+      ],
+      [
+        "y",
+        "on"
+      ],
+      [
+        "em",
+        "br"
+      ],
+      [
+        "ic_",
+        "structure"
+      ],
+      [
+        "_organ",
+        "ization"
+      ],
+      [
+        "clinical_",
+        "drug"
+      ],
+      [
+        "yon",
+        "ic_structure"
+      ],
+      [
+        "embr",
+        "yonic_structure"
+      ],
+      [
+        "concept",
+        "ual_"
+      ],
+      [
+        "t",
+        "re"
+      ],
+      [
+        "at",
+        "s"
+      ],
+      [
+        "tre",
+        "ats"
+      ],
+      [
+        "al_",
+        "activity"
+      ],
+      [
+        "ation",
+        "al_activity"
+      ],
+      [
+        "f",
+        "ind"
+      ],
+      [
+        "y",
+        "z"
+      ],
+      [
+        "al",
+        "yz"
+      ],
+      [
+        "an",
+        "alyz"
+      ],
+      [
+        "find",
+        "ing"
+      ],
+      [
+        "analyz",
+        "es"
+      ],
+      [
+        "j",
+        "u"
+      ],
+      [
+        "p",
+        "ac"
+      ],
+      [
+        "e_or_",
+        "ju"
+      ],
+      [
+        "body_s",
+        "pac"
+      ],
+      [
+        "e_or_ju",
+        "nction"
+      ],
+      [
+        "body_spac",
+        "e_or_junction"
+      ],
+      [
+        "_",
+        "d"
+      ],
+      [
+        "_",
+        "ca"
+      ],
+      [
+        "_",
+        "human"
+      ],
+      [
+        "on",
+        "mental_"
+      ],
+      [
+        "en",
+        "vir"
+      ],
+      [
+        "us",
+        "ed_"
+      ],
+      [
+        "y_",
+        "device"
+      ],
+      [
+        "ver",
+        "y_device"
+      ],
+      [
+        "human",
+        "_ca"
+      ],
+      [
+        "effect_of",
+        "_human"
+      ],
+      [
+        "drug",
+        "_d"
+      ],
+      [
+        "eli",
+        "very_device"
+      ],
+      [
+        "onmental_",
+        "effect_of_human"
+      ],
+      [
+        "envir",
+        "onmental_effect_of_human"
+      ],
+      [
+        "used_",
+        "phenomenon_or_process"
+      ],
+      [
+        "human_ca",
+        "used_phenomenon_or_process"
+      ],
+      [
+        "drug_d",
+        "elivery_device"
+      ],
+      [
+        "environmental_effect_of_human",
+        "s"
+      ],
+      [
+        "m",
+        "ed"
+      ],
+      [
+        "ical_",
+        "device"
+      ],
+      [
+        "diagnos",
+        "es"
+      ],
+      [
+        "med",
+        "ical_device"
+      ],
+      [
+        "a",
+        "tive_"
+      ],
+      [
+        "ative_",
+        "concept"
+      ],
+      [
+        "h",
+        "ib"
+      ],
+      [
+        "it",
+        "s"
+      ],
+      [
+        "ex",
+        "hib"
+      ],
+      [
+        "exhib",
+        "its"
+      ],
+      [
+        "pro",
+        "per"
+      ],
+      [
+        "ty",
+        "_of"
+      ],
+      [
+        "proper",
+        "ty_of"
+      ],
+      [
+        "al_",
+        "concept"
+      ],
+      [
+        "e",
+        "que"
+      ],
+      [
+        "s",
+        "eque"
+      ],
+      [
+        "nc",
+        "e"
+      ],
+      [
+        "seque",
+        "nce"
+      ],
+      [
+        "e",
+        "a"
+      ],
+      [
+        "occupational_",
+        "activity"
+      ],
+      [
+        "conceptual_",
+        "entity"
+      ],
+      [
+        "i",
+        "es"
+      ],
+      [
+        "r",
+        "ies"
+      ],
+      [
+        "u",
+        "t"
+      ],
+      [
+        "_o",
+        "ut"
+      ],
+      [
+        "car",
+        "ries"
+      ],
+      [
+        "carries",
+        "_out"
+      ],
+      [
+        "t",
+        "em"
+      ],
+      [
+        "ev",
+        "ent"
+      ],
+      [
+        "e",
+        "_of"
+      ],
+      [
+        "_or_",
+        "reg"
+      ],
+      [
+        "ation",
+        "_or_reg"
+      ],
+      [
+        "loc",
+        "ation_or_reg"
+      ],
+      [
+        "body_",
+        "location_or_reg"
+      ],
+      [
+        "body_location_or_reg",
+        "ion"
+      ],
+      [
+        "g",
+        "re"
+      ],
+      [
+        "de",
+        "gre"
+      ],
+      [
+        "degre",
+        "e_of"
+      ],
+      [
+        "f",
+        "o"
+      ],
+      [
+        "g",
+        "o"
+      ],
+      [
+        "n",
+        "mental_or_"
+      ],
+      [
+        "u",
+        "fact"
+      ],
+      [
+        "_o",
+        "bject"
+      ],
+      [
+        "ed",
+        "uc"
+      ],
+      [
+        "ed",
+        "_object"
+      ],
+      [
+        "ur",
+        "ed_object"
+      ],
+      [
+        "ul",
+        "ator"
+      ],
+      [
+        "y_",
+        "activity"
+      ],
+      [
+        "man",
+        "ufact"
+      ],
+      [
+        "ver",
+        "nmental_or_"
+      ],
+      [
+        "preven",
+        "ts"
+      ],
+      [
+        "reg",
+        "ulator"
+      ],
+      [
+        "fo",
+        "od"
+      ],
+      [
+        "go",
+        "vernmental_or_"
+      ],
+      [
+        "educ",
+        "ational_activity"
+      ],
+      [
+        "manufact",
+        "ured_object"
+      ],
+      [
+        "regulator",
+        "y_activity"
+      ],
+      [
+        "governmental_or_",
+        "regulatory_activity"
+      ],
+      [
+        "a",
+        "w"
+      ],
+      [
+        "l",
+        "aw"
+      ],
+      [
+        "r",
+        "el"
+      ],
+      [
+        "_or_",
+        "law"
+      ],
+      [
+        "research_",
+        "device"
+      ],
+      [
+        "ulation",
+        "_or_law"
+      ],
+      [
+        "reg",
+        "ulation_or_law"
+      ],
+      [
+        "organ",
+        "ization"
+      ],
+      [
+        "_",
+        "h"
+      ],
+      [
+        "e",
+        "f"
+      ],
+      [
+        "f",
+        "_h"
+      ],
+      [
+        "p",
+        "_or_"
+      ],
+      [
+        "r",
+        "eli"
+      ],
+      [
+        "s",
+        "el"
+      ],
+      [
+        "el",
+        "p_or_"
+      ],
+      [
+        "ated",
+        "_organization"
+      ],
+      [
+        "health_care_",
+        "rel"
+      ],
+      [
+        "ef",
+        "_organization"
+      ],
+      [
+        "f_h",
+        "elp_or_"
+      ],
+      [
+        "reli",
+        "ef_organization"
+      ],
+      [
+        "sel",
+        "f_help_or_"
+      ],
+      [
+        "health_care_rel",
+        "ated_organization"
+      ],
+      [
+        "self_help_or_",
+        "relief_organization"
+      ],
+      [
+        "e",
+        "ty"
+      ],
+      [
+        "i",
+        "ent"
+      ],
+      [
+        "r",
+        "ed"
+      ],
+      [
+        "al_",
+        "soci"
+      ],
+      [
+        "ing",
+        "red"
+      ],
+      [
+        "profession",
+        "al_soci"
+      ],
+      [
+        "ient",
+        "_of"
+      ],
+      [
+        "ingred",
+        "ient_of"
+      ],
+      [
+        "professional_soci",
+        "ety"
+      ],
+      [
+        "ind",
+        "icates"
+      ],
+      [
+        "t",
+        "ative_concept"
+      ],
+      [
+        "qu",
+        "anti"
+      ],
+      [
+        "quanti",
+        "tative_concept"
+      ],
+      [
+        "od",
+        "_of"
+      ],
+      [
+        "me",
+        "th"
+      ],
+      [
+        "meth",
+        "od_of"
+      ],
+      [
+        "t",
+        "ell"
+      ],
+      [
+        "in",
+        "tell"
+      ],
+      [
+        "produc",
+        "t"
+      ],
+      [
+        "ual_",
+        "product"
+      ],
+      [
+        "ect",
+        "ual_product"
+      ],
+      [
+        "intell",
+        "ectual_product"
+      ],
+      [
+        "p",
+        "or"
+      ],
+      [
+        "tem",
+        "por"
+      ],
+      [
+        "tempor",
+        "al_concept"
+      ],
+      [
+        "a",
+        "i"
+      ],
+      [
+        "a",
+        "ph"
+      ],
+      [
+        "d",
+        "ai"
+      ],
+      [
+        "e",
+        "og"
+      ],
+      [
+        "g",
+        "eog"
+      ],
+      [
+        "l",
+        "y_or_"
+      ],
+      [
+        "r",
+        "aph"
+      ],
+      [
+        "al",
+        "it"
+      ],
+      [
+        "ic",
+        "ation"
+      ],
+      [
+        "ar",
+        "ea"
+      ],
+      [
+        "re",
+        "ational_activity"
+      ],
+      [
+        "ic_",
+        "area"
+      ],
+      [
+        "qu",
+        "alit"
+      ],
+      [
+        "rec",
+        "reational_activity"
+      ],
+      [
+        "if",
+        "ication"
+      ],
+      [
+        "cl",
+        "ass"
+      ],
+      [
+        "dai",
+        "ly_or_"
+      ],
+      [
+        "geog",
+        "raph"
+      ],
+      [
+        "qualit",
+        "ative_concept"
+      ],
+      [
+        "class",
+        "ification"
+      ],
+      [
+        "daily_or_",
+        "recreational_activity"
+      ],
+      [
+        "geograph",
+        "ic_area"
+      ],
+      [
+        "_or_",
+        "concept"
+      ],
+      [
+        "e_",
+        "sequence"
+      ],
+      [
+        "id",
+        "ea"
+      ],
+      [
+        "idea",
+        "_or_concept"
+      ],
+      [
+        "conceptual_",
+        "part_of"
+      ],
+      [
+        "ys",
+        "tem"
+      ],
+      [
+        "body_s",
+        "ystem"
+      ],
+      [
+        "h",
+        "in"
+      ],
+      [
+        "s",
+        "pati"
+      ],
+      [
+        "e_",
+        "activity"
+      ],
+      [
+        "mac",
+        "hin"
+      ],
+      [
+        "spati",
+        "al_concept"
+      ],
+      [
+        "machin",
+        "e_activity"
+      ],
+      [
+        "group",
+        "_attribute"
+      ],
+      [
+        "a",
+        "in"
+      ],
+      [
+        "t",
+        "ain"
+      ],
+      [
+        "molecular_",
+        "sequence"
+      ],
+      [
+        "con",
+        "tain"
+      ],
+      [
+        "nucleo",
+        "tid"
+      ],
+      [
+        "amino_acid_",
+        "sequence"
+      ],
+      [
+        "contain",
+        "s"
+      ],
+      [
+        "nucleotid",
+        "e_sequence"
+      ],
+      [
+        "s",
+        "is"
+      ],
+      [
+        "ts",
+        "_of"
+      ],
+      [
+        "con",
+        "sis"
+      ],
+      [
+        "rat",
+        "e_sequence"
+      ],
+      [
+        "carbohyd",
+        "rate_sequence"
+      ],
+      [
+        "consis",
+        "ts_of"
+      ],
+      [
+        "s",
+        "ur"
+      ],
+      [
+        "ro",
+        "und"
+      ],
+      [
+        "sur",
+        "round"
+      ],
+      [
+        "surround",
+        "s"
+      ],
+      [
+        "_",
+        "to"
+      ],
+      [
+        "a",
+        "d"
+      ],
+      [
+        "j",
+        "ac"
+      ],
+      [
+        "function",
+        "al_concept"
+      ],
+      [
+        "ent",
+        "_to"
+      ],
+      [
+        "ad",
+        "jac"
+      ],
+      [
+        "adjac",
+        "ent_to"
+      ],
+      [
+        "ed_",
+        "to"
+      ],
+      [
+        "con",
+        "n"
+      ],
+      [
+        "man",
+        "ag"
+      ],
+      [
+        "manag",
+        "es"
+      ],
+      [
+        "g",
+        "u"
+      ],
+      [
+        "l",
+        "an"
+      ],
+      [
+        "o",
+        "p"
+      ],
+      [
+        "el",
+        "op"
+      ],
+      [
+        "mental_",
+        "form"
+      ],
+      [
+        "ag",
+        "e"
+      ],
+      [
+        "dev",
+        "elop"
+      ],
+      [
+        "ect",
+        "ed_to"
+      ],
+      [
+        "conn",
+        "ected_to"
+      ],
+      [
+        "gu",
+        "age"
+      ],
+      [
+        "lan",
+        "guage"
+      ],
+      [
+        "mental_form",
+        "_of"
+      ],
+      [
+        "develop",
+        "mental_form_of"
+      ],
+      [
+        "p",
+        "r"
+      ],
+      [
+        "u",
+        "ally_"
+      ],
+      [
+        "at",
+        "ed_to"
+      ],
+      [
+        "ec",
+        "ts"
+      ],
+      [
+        "ac",
+        "tic"
+      ],
+      [
+        "inter",
+        "conn"
+      ],
+      [
+        "concept",
+        "ually_"
+      ],
+      [
+        "rel",
+        "ated_to"
+      ],
+      [
+        "pr",
+        "actic"
+      ],
+      [
+        "interconn",
+        "ects"
+      ],
+      [
+        "conceptually_",
+        "related_to"
+      ],
+      [
+        "practic",
+        "es"
+      ]
+    ]
+  }
+}

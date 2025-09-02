@@ -1,0 +1,2 @@
+model,dataset,lr,embed_dim,batch_size,nhead,num_layers,layer_mode,train_mrr,test_mrr
+DistMult,..\KGs\UMLS,0.1,32,512,NA,NA,attention,0.20605129114511778,0.20680780492528977

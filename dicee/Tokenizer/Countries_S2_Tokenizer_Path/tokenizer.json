@@ -1,0 +1,5229 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "[UNK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "[CLS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "[SEP]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "[PAD]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 4,
+      "content": "[MASK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1060,
+      "content": " ",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true,
+      "special": false
+    }
+  ],
+  "normalizer": null,
+  "pre_tokenizer": {
+    "type": "WhitespaceSplit"
+  },
+  "post_processor": null,
+  "decoder": null,
+  "model": {
+    "type": "BPE",
+    "dropout": null,
+    "unk_token": "[UNK]",
+    "continuing_subword_prefix": null,
+    "end_of_word_suffix": null,
+    "fuse_unk": false,
+    "byte_fallback": false,
+    "ignore_merges": false,
+    "vocab": {
+      "[UNK]": 0,
+      "[CLS]": 1,
+      "[SEP]": 2,
+      "[PAD]": 3,
+      "[MASK]": 4,
+      "-": 5,
+      "_": 6,
+      "a": 7,
+      "b": 8,
+      "c": 9,
+      "d": 10,
+      "e": 11,
+      "f": 12,
+      "g": 13,
+      "h": 14,
+      "i": 15,
+      "j": 16,
+      "k": 17,
+      "l": 18,
+      "m": 19,
+      "n": 20,
+      "o": 21,
+      "p": 22,
+      "q": 23,
+      "r": 24,
+      "s": 25,
+      "t": 26,
+      "u": 27,
+      "v": 28,
+      "w": 29,
+      "x": 30,
+      "y": 31,
+      "z": 32,
+      "Å": 33,
+      "ã": 34,
+      "ç": 35,
+      "é": 36,
+      "í": 37,
+      "ne": 38,
+      "or": 39,
+      "ca": 40,
+      "ig": 41,
+      "in": 42,
+      "bor": 43,
+      "hbor": 44,
+      "neig": 45,
+      "neighbor": 46,
+      "te": 47,
+      "an": 48,
+      "ia": 49,
+      "lo": 50,
+      "ted": 51,
+      "cated": 52,
+      "located": 53,
+      "locatedin": 54,
+      "er": 55,
+      "ica": 56,
+      "ur": 57,
+      "al": 58,
+      "as": 59,
+      "th": 60,
+      "fr": 61,
+      "n_": 62,
+      "and": 63,
+      "am": 64,
+      "ar": 65,
+      "afr": 66,
+      "africa": 67,
+      "st": 68,
+      "en": 69,
+      "on": 70,
+      "op": 71,
+      "eur": 72,
+      "ope": 73,
+      "europe": 74,
+      "so": 75,
+      "land": 76,
+      "asia": 77,
+      "ania": 78,
+      "li": 79,
+      "ra": 80,
+      "erica": 81,
+      "america": 82,
+      "rn_": 83,
+      "ch": 84,
+      "tern_": 85,
+      "uth": 86,
+      "south": 87,
+      "sia": 88,
+      "gu": 89,
+      "stan": 90,
+      "bia": 91,
+      "ce": 92,
+      "it": 93,
+      "be": 94,
+      "ina": 95,
+      "go": 96,
+      "americas": 97,
+      "co": 98,
+      "istan": 99,
+      "we": 100,
+      "is": 101,
+      "la": 102,
+      "ine": 103,
+      "un": 104,
+      "ern_": 105,
+      "re": 106,
+      "bo": 107,
+      "mal": 108,
+      "au": 109,
+      "nor": 110,
+      "us": 111,
+      "south_": 112,
+      "ro": 113,
+      "urk": 114,
+      "le": 115,
+      "ad": 116,
+      "eas": 117,
+      "stern_": 118,
+      "ent": 119,
+      "western_": 120,
+      "eastern_": 121,
+      "dan": 122,
+      "ral": 123,
+      "north": 124,
+      "ri": 125,
+      "zi": 126,
+      "nesia": 127,
+      "ongo": 128,
+      "ger": 129,
+      "ara": 130,
+      "pu": 131,
+      "ak": 132,
+      "ba": 133,
+      "ma": 134,
+      "ana": 135,
+      "lands": 136,
+      "oce": 137,
+      "china": 138,
+      "man": 139,
+      "rus": 140,
+      "_c": 141,
+      "_and": 142,
+      "ze": 143,
+      "zam": 144,
+      "oceania": 145,
+      "_congo": 146,
+      "_and_": 147,
+      "turk": 148,
+      "northern_": 149,
+      "ay": 150,
+      "bli": 151,
+      "cent": 152,
+      "mar": 153,
+      "ria": 154,
+      "su": 155,
+      "guine": 156,
+      "uni": 157,
+      "repu": 158,
+      "russia": 159,
+      "blic": 160,
+      "sudan": 161,
+      "guinea": 162,
+      "republic": 163,
+      "_is": 164,
+      "bbe": 165,
+      "gar": 166,
+      "po": 167,
+      "sw": 168,
+      "ue": 169,
+      "cari": 170,
+      "bbean": 171,
+      "caribbean": 172,
+      "mi": 173,
+      "ind": 174,
+      "ral_": 175,
+      "central_": 176,
+      "at": 177,
+      "ain": 178,
+      "aust": 179,
+      "men": 180,
+      "nig": 181,
+      "ya": 182,
+      "niger": 183,
+      "az": 184,
+      "di": 185,
+      "ey": 186,
+      "tan": 187,
+      "neg": 188,
+      "southern_": 189,
+      "_islands": 190,
+      "gh": 191,
+      "kistan": 192,
+      "mo": 193,
+      "slo": 194,
+      "via": 195,
+      "cam": 196,
+      "slov": 197,
+      "_ara": 198,
+      "bra": 199,
+      "cro": 200,
+      "lib": 201,
+      "bel": 202,
+      "zil": 203,
+      "united": 204,
+      "brazil": 205,
+      "_k": 206,
+      "dr": 207,
+      "el": 208,
+      "ir": 209,
+      "sau": 210,
+      "anda": 211,
+      "onia": 212,
+      "german": 213,
+      "dr_congo": 214,
+      "germany": 215,
+      "ate": 216,
+      "gy": 217,
+      "ji": 218,
+      "ser": 219,
+      "nam": 220,
+      "que": 221,
+      "zania": 222,
+      "ance": 223,
+      "france": 224,
+      "n_republic": 225,
+      "eastern_asia": 226,
+      "turkey": 227,
+      "austria": 228,
+      "tanzania": 229,
+      "do": 230,
+      "mon": 231,
+      "mala": 232,
+      "zambia": 233,
+      "india": 234,
+      "serbia": 235,
+      "hun": 236,
+      "ique": 237,
+      "kra": 238,
+      "os": 239,
+      "t_": 240,
+      "to": 241,
+      "ukra": 242,
+      "alger": 243,
+      "northern_europe": 244,
+      "gary": 245,
+      "iran": 246,
+      "hungary": 247,
+      "ukraine": 248,
+      "algeria": 249,
+      "_o": 250,
+      "af": 251,
+      "ly": 252,
+      "ug": 253,
+      "anistan": 254,
+      "mali": 255,
+      "eastern_africa": 256,
+      "poland": 257,
+      "di_ara": 258,
+      "ghanistan": 259,
+      "saudi_ara": 260,
+      "afghanistan": 261,
+      "saudi_arabia": 262,
+      "_f": 263,
+      "bu": 264,
+      "burk": 265,
+      "bique": 266,
+      "donia": 267,
+      "eth": 268,
+      "iop": 269,
+      "ira": 270,
+      "jan": 271,
+      "my": 272,
+      "oon": 273,
+      "sain": 274,
+      "ta": 275,
+      "w_": 276,
+      "new_": 277,
+      "ore": 278,
+      "ory": 279,
+      "eroon": 280,
+      "aly": 281,
+      "aso": 282,
+      "african_republic": 283,
+      "chad": 284,
+      "italy": 285,
+      "ina_f": 286,
+      "south_africa": 287,
+      "south_sudan": 288,
+      "zambique": 289,
+      "central_african_republic": 290,
+      "mozambique": 291,
+      "cameroon": 292,
+      "burkina_f": 293,
+      "ethiop": 294,
+      "iraq": 295,
+      "burkina_faso": 296,
+      "ethiopia": 297,
+      "f_": 298,
+      "gi": 299,
+      "me": 300,
+      "ia_and_": 301,
+      "the": 302,
+      "guay": 303,
+      "western_africa": 304,
+      "poly": 305,
+      "libya": 306,
+      "_of_": 307,
+      "polynesia": 308,
+      "_co": 309,
+      "eor": 310,
+      "eneg": 311,
+      "ga": 312,
+      "gia": 313,
+      "gent": 314,
+      "geor": 315,
+      "hstan": 316,
+      "iv": 317,
+      "ijan": 318,
+      "ken": 319,
+      "kaz": 320,
+      "lgar": 321,
+      "mor": 322,
+      "per": 323,
+      "pal": 324,
+      "pain": 325,
+      "seneg": 326,
+      "spain": 327,
+      "ti": 328,
+      "uz": 329,
+      "zer": 330,
+      "teneg": 331,
+      "anmar": 332,
+      "erba": 333,
+      "alb": 334,
+      "ast": 335,
+      "arus": 336,
+      "argent": 337,
+      "livia": 338,
+      "cedonia": 339,
+      "itzer": 340,
+      "bekistan": 341,
+      "laos": 342,
+      "bolivia": 343,
+      "south_america": 344,
+      "ador": 345,
+      "western_asia": 346,
+      "akia": 347,
+      "akhstan": 348,
+      "macedonia": 349,
+      "switzer": 350,
+      "azerba": 351,
+      "slovakia": 352,
+      "belarus": 353,
+      "monteneg": 354,
+      "bulgar": 355,
+      "myanmar": 356,
+      "saint_": 357,
+      "orea": 358,
+      "ory_co": 359,
+      "georgia": 360,
+      "ivory_co": 361,
+      "kenya": 362,
+      "kazakhstan": 363,
+      "peru": 364,
+      "senegal": 365,
+      "uzbekistan": 366,
+      "argentina": 367,
+      "switzerland": 368,
+      "azerbaijan": 369,
+      "montenegro": 370,
+      "bulgaria": 371,
+      "ivory_coast": 372,
+      "-eastern_asia": 373,
+      "ban": 374,
+      "est": 375,
+      "gre": 376,
+      "mania": 377,
+      "mbia": 378,
+      "sy": 379,
+      "lombia": 380,
+      "urit": 381,
+      "south-eastern_asia": 382,
+      "colombia": 383,
+      "romania": 384,
+      "maurit": 385,
+      "republic_of_": 386,
+      "atia": 387,
+      "southern_europe": 388,
+      "croatia": 389,
+      "dom": 390,
+      "uganda": 391,
+      "the_congo": 392,
+      "syria": 393,
+      "republic_of_the_congo": 394,
+      "_st": 395,
+      "a_": 396,
+      "ai": 397,
+      "ait": 398,
+      "ben": 399,
+      "bwe": 400,
+      "cze": 401,
+      "den": 402,
+      "hon": 403,
+      "ibia": 404,
+      "jor": 405,
+      "ky": 406,
+      "lu": 407,
+      "mba": 408,
+      "pak": 409,
+      "rgy": 410,
+      "tsw": 411,
+      "tvia": 412,
+      "uania": 413,
+      "ve": 414,
+      "zstan": 415,
+      "ten": 416,
+      "ango": 417,
+      "thai": 418,
+      "thuania": 419,
+      "armen": 420,
+      "enia": 421,
+      "lithuania": 422,
+      "rael": 423,
+      "chia": 424,
+      "israel": 425,
+      "latvia": 426,
+      "botsw": 427,
+      "zimba": 428,
+      "turkmen": 429,
+      "micro": 430,
+      "nigeria": 431,
+      "slovenia": 432,
+      "united_st": 433,
+      "ates": 434,
+      "jikistan": 435,
+      "namibia": 436,
+      "tajikistan": 437,
+      "albania": 438,
+      "benin": 439,
+      "czechia": 440,
+      "jordan": 441,
+      "kyrgy": 442,
+      "pakistan": 443,
+      "angola": 444,
+      "thailand": 445,
+      "armenia": 446,
+      "botswana": 447,
+      "zimbabwe": 448,
+      "turkmenistan": 449,
+      "micronesia": 450,
+      "united_states": 451,
+      "kyrgyzstan": 452,
+      "_africa": 453,
+      "dd": 454,
+      "ece": 455,
+      "egy": 456,
+      "ico": 457,
+      "ko": 458,
+      "pt": 459,
+      "rw": 460,
+      "ste": 461,
+      "um": 462,
+      "vo": 463,
+      "ing": 464,
+      "sovo": 465,
+      "guate": 466,
+      "le_africa": 467,
+      "midd": 468,
+      "belgi": 469,
+      "greece": 470,
+      "mauritania": 471,
+      "egypt": 472,
+      "kosovo": 473,
+      "rwanda": 474,
+      "guatemala": 475,
+      "middle_africa": 476,
+      "belgium": 477,
+      "ah": 478,
+      "br": 479,
+      "bon": 480,
+      "cu": 481,
+      "dia": 482,
+      "em": 483,
+      "et": 484,
+      "fin": 485,
+      "ier": 486,
+      "ile": 487,
+      "iana": 488,
+      "iet": 489,
+      "onesia": 490,
+      "oman": 491,
+      "sah": 492,
+      "uat": 493,
+      "viet": 494,
+      "wi": 495,
+      "way": 496,
+      "xem": 497,
+      "yana": 498,
+      "zue": 499,
+      "nezue": 500,
+      "eria": 501,
+      "erit": 502,
+      "urg": 503,
+      "uru": 504,
+      "aland": 505,
+      "fren": 506,
+      "ch_": 507,
+      "chile": 508,
+      "guyana": 509,
+      "rea": 510,
+      "bodia": 511,
+      "bourg": 512,
+      "malay": 513,
+      "norway": 514,
+      "western_europe": 515,
+      "western_sah": 516,
+      "eastern_europe": 517,
+      "north_k": 518,
+      "zealand": 519,
+      "indonesia": 520,
+      "austral": 521,
+      "southern_asia": 522,
+      "ghana": 523,
+      "cambodia": 524,
+      "liberia": 525,
+      "malawi": 526,
+      "togo": 527,
+      "new_zealand": 528,
+      "gabon": 529,
+      "luxem": 530,
+      "venezue": 531,
+      "finland": 532,
+      "vietnam": 533,
+      "eritrea": 534,
+      "french_": 535,
+      "malaysia": 536,
+      "western_sahara": 537,
+      "north_korea": 538,
+      "luxembourg": 539,
+      "venezuela": 540,
+      "bur": 541,
+      "cco": 542,
+      "de": 543,
+      "dur": 544,
+      "dji": 545,
+      "her": 546,
+      "nia_and_": 547,
+      "occo": 548,
+      "pan": 549,
+      "para": 550,
+      "sh": 551,
+      "sur": 552,
+      "snia_and_": 553,
+      "uti": 554,
+      "vina": 555,
+      "xico": 556,
+      "inam": 557,
+      "an_": 558,
+      "ama": 559,
+      "somal": 560,
+      "govina": 561,
+      "undi": 562,
+      "bosnia_and_": 563,
+      "bouti": 564,
+      "ada": 565,
+      "zegovina": 566,
+      "mexico": 567,
+      "morocco": 568,
+      "hondur": 569,
+      "burundi": 570,
+      "djibouti": 571,
+      "herzegovina": 572,
+      "paraguay": 573,
+      "surinam": 574,
+      "somalia": 575,
+      "bosnia_and_herzegovina": 576,
+      "honduras": 577,
+      "suriname": 578,
+      "_e": 579,
+      "_s": 580,
+      "_v": 581,
+      "_le": 582,
+      "_guinea": 583,
+      "azi": 584,
+      "bh": 585,
+      "bar": 586,
+      "b_e": 587,
+      "eq": 588,
+      "ech": 589,
+      "ecu": 590,
+      "ku": 591,
+      "lia": 592,
+      "ldo": 593,
+      "l_guinea": 594,
+      "mongo": 595,
+      "nica": 596,
+      "one": 597,
+      "pe": 598,
+      "rica": 599,
+      "sin": 600,
+      "swe": 601,
+      "s_and_": 602,
+      "sey": 603,
+      "sier": 604,
+      "tin": 605,
+      "tuni": 606,
+      "utan": 607,
+      "va": 608,
+      "vador": 609,
+      "wait": 610,
+      "neth": 611,
+      "oria": 612,
+      "inica": 613,
+      "tes": 614,
+      "erlands": 615,
+      "alvador": 616,
+      "sta_": 617,
+      "lize": 618,
+      "liech": 619,
+      "ragu": 620,
+      "ra_le": 621,
+      "rates": 622,
+      "guiana": 623,
+      "belize": 624,
+      "costa_": 625,
+      "lanesia": 626,
+      "leban": 627,
+      "northern_africa": 628,
+      "northern_america": 629,
+      "martin": 630,
+      "swazi": 631,
+      "mirates": 632,
+      "central_asia": 633,
+      "moldo": 634,
+      "_arab_e": 635,
+      "united_arab_e": 636,
+      "el_s": 637,
+      "melanesia": 638,
+      "ia_and_new_zealand": 639,
+      "estonia": 640,
+      "dominica": 641,
+      "tenste": 642,
+      "uatoria": 643,
+      "uruguay": 644,
+      "australia_and_new_zealand": 645,
+      "french_guiana": 646,
+      "bhutan": 647,
+      "equatoria": 648,
+      "ecuador": 649,
+      "kuwait": 650,
+      "mongolia": 651,
+      "nicaragu": 652,
+      "sweden": 653,
+      "sierra_le": 654,
+      "tunisia": 655,
+      "netherlands": 656,
+      "liechtenste": 657,
+      "costa_rica": 658,
+      "lebanon": 659,
+      "swaziland": 660,
+      "moldova": 661,
+      "united_arab_emirates": 662,
+      "el_salvador": 663,
+      "equatorial_guinea": 664,
+      "nicaragua": 665,
+      "sierra_leone": 666,
+      "liechtenstein": 667,
+      "-b": 668,
+      "emen": 669,
+      "gla": 670,
+      "yemen": 671,
+      "nepal": 672,
+      "orra": 673,
+      "andorra": 674,
+      "issau": 675,
+      "guinea-b": 676,
+      "central_america": 677,
+      "southern_africa": 678,
+      "united_k": 679,
+      "palest": 680,
+      "bangla": 681,
+      "ingdom": 682,
+      "desh": 683,
+      "panama": 684,
+      "guinea-bissau": 685,
+      "united_kingdom": 686,
+      "palestine": 687,
+      "bangladesh": 688,
+      "apu": 689,
+      "bral": 690,
+      "cit": 691,
+      "da": 692,
+      "gr": 693,
+      "gin": 694,
+      "gam": 695,
+      "hait": 696,
+      "korea": 697,
+      "oa": 698,
+      "por": 699,
+      "papu": 700,
+      "sam": 701,
+      "tar": 702,
+      "tug": 703,
+      "ut": 704,
+      "une": 705,
+      "vat": 706,
+      "ican_": 707,
+      "arten": 708,
+      "land_islands": 709,
+      "itis": 710,
+      "islands": 711,
+      "ines": 712,
+      "south_korea": 713,
+      "bah": 714,
+      "may": 715,
+      "maarten": 716,
+      "mark": 717,
+      "_island": 718,
+      "irgin": 719,
+      "t_maarten": 720,
+      "new_guinea": 721,
+      "gibral": 722,
+      "saint_martin": 723,
+      "a_new_guinea": 724,
+      "denmark": 725,
+      "ing_islands": 726,
+      "brune": 727,
+      "britis": 728,
+      "_virgin": 729,
+      "sint_maarten": 730,
+      "dominican_republic": 731,
+      "city": 732,
+      "gren": 733,
+      "gambia": 734,
+      "haiti": 735,
+      "portug": 736,
+      "papua_new_guinea": 737,
+      "samoa": 738,
+      "vatican_": 739,
+      "gibraltar": 740,
+      "brunei": 741,
+      "british": 742,
+      "_virgin_islands": 743,
+      "portugal": 744,
+      "vatican_city": 745,
+      "-le": 746,
+      "_l": 747,
+      "aco": 748,
+      "cy": 749,
+      "g_k": 750,
+      "ire": 751,
+      "ka": 752,
+      "nada": 753,
+      "prus": 754,
+      "qat": 755,
+      "sri": 756,
+      "san_": 757,
+      "cau": 758,
+      "canada": 759,
+      "ino": 760,
+      "anka": 761,
+      "tho": 762,
+      "ong": 763,
+      "sotho": 764,
+      "lesotho": 765,
+      "macau": 766,
+      "marino": 767,
+      "monaco": 768,
+      "mor-le": 769,
+      "timor-le": 770,
+      "hong_k": 771,
+      "_lanka": 772,
+      "cyprus": 773,
+      "ireland": 774,
+      "qatar": 775,
+      "sri_lanka": 776,
+      "san_marino": 777,
+      "timor-leste": 778,
+      "hong_kong": 779,
+      "_m": 780,
+      "_ri": 781,
+      "_ind": 782,
+      "_to": 783,
+      "_may": 784,
+      "_gren": 785,
+      "ao": 786,
+      "aç": 787,
+      "a_and_": 788,
+      "auru": 789,
+      "apan": 790,
+      "ber": 791,
+      "bad": 792,
+      "ci": 793,
+      "cia": 794,
+      "cur": 795,
+      "dad": 796,
+      "d_and_": 797,
+      "elo": 798,
+      "ela": 799,
+      "e_islands": 800,
+      "eel": 801,
+      "fi": 802,
+      "fo": 803,
+      "fal": 804,
+      "far": 805,
+      "fut": 806,
+      "gas": 807,
+      "hi": 808,
+      "il": 809,
+      "iw": 810,
+      "irn_": 811,
+      "ice": 812,
+      "ius": 813,
+      "iri": 814,
+      "iue": 815,
+      "ian_": 816,
+      "idad": 817,
+      "jer": 818,
+      "jama": 819,
+      "japan": 820,
+      "k_islands": 821,
+      "kland_islands": 822,
+      "k_island": 823,
+      "kela": 824,
+      "kiri": 825,
+      "l_islands": 826,
+      "lk_island": 827,
+      "mu": 828,
+      "mé": 829,
+      "mas": 830,
+      "mada": 831,
+      "nsey": 832,
+      "nauru": 833,
+      "nci": 834,
+      "niue": 835,
+      "ot": 836,
+      "o_to": 837,
+      "oe_islands": 838,
+      "ok_islands": 839,
+      "pp": 840,
+      "pr": 841,
+      "pit": 842,
+      "pore": 843,
+      "pier": 844,
+      "phi": 845,
+      "rr": 846,
+      "ré": 847,
+      "rin": 848,
+      "sv": 849,
+      "sã": 850,
+      "s_islands": 851,
+      "s_k": 852,
+      "tu": 853,
+      "tig": 854,
+      "ton": 855,
+      "t_k": 856,
+      "tser": 857,
+      "ts_and_": 858,
+      "trin": 859,
+      "uba": 860,
+      "upe": 861,
+      "ua_and_": 862,
+      "vin": 863,
+      "van": 864,
+      "val": 865,
+      "vis": 866,
+      "wal": 867,
+      "yman": 868,
+      "Åland_islands": 869,
+      "éle": 870,
+      "ínci": 871,
+      "nevis": 872,
+      "or_o": 873,
+      "car": 874,
+      "cale": 875,
+      "caico": 876,
+      "cape": 877,
+      "cairn_": 878,
+      "cayman": 879,
+      "inor_o": 880,
+      "terr": 881,
+      "angu": 882,
+      "antig": 883,
+      "lon": 884,
+      "lomo": 885,
+      "erto": 886,
+      "erde": 887,
+      "ernsey": 888,
+      "all_islands": 889,
+      "théle": 890,
+      "n_islands": 891,
+      "n_samoa": 892,
+      "amas": 893,
+      "ard_and_": 894,
+      "aruba": 895,
+      "stmas": 896,
+      "enland": 897,
+      "solomo": 898,
+      "lis_and_": 899,
+      "lipp": 900,
+      "rat": 901,
+      "rain": 902,
+      "american_samoa": 903,
+      "chri": 904,
+      "chel": 905,
+      "guam": 906,
+      "guad": 907,
+      "guernsey": 908,
+      "itory": 909,
+      "itts_and_": 910,
+      "coco": 911,
+      "comor": 912,
+      "cook_islands": 913,
+      "isle": 914,
+      "una": 915,
+      "re_and_": 916,
+      "maldi": 917,
+      "malta": 918,
+      "norfo": 919,
+      "south_georgia": 920,
+      "les": 921,
+      "adines": 922,
+      "puerto": 923,
+      "bago": 924,
+      "bati": 925,
+      "ocean_": 926,
+      "_and_to": 927,
+      "_and_the": 928,
+      "_and_pr": 929,
+      "turks_and_": 930,
+      "northern_mar": 931,
+      "cent_and_the": 932,
+      "marsh": 933,
+      "union": 934,
+      "mique": 935,
+      "central_europe": 936,
+      "montser": 937,
+      "tokela": 938,
+      "lying_islands": 939,
+      "buda": 940,
+      "jan_may": 941,
+      "saint_k": 942,
+      "taiw": 943,
+      "new_cale": 944,
+      "_of_man": 945,
+      "gapore": 946,
+      "palau": 947,
+      "albard_and_": 948,
+      "saint_lu": 949,
+      "saint_bar": 950,
+      "saint_pier": 951,
+      "saint_vin": 952,
+      "greenland": 953,
+      "mauritius": 954,
+      "ves": 955,
+      "united_states_virgin_islands": 956,
+      "united_states_m": 957,
+      "cuba": 958,
+      "iana_islands": 959,
+      "uatu": 960,
+      "australia": 961,
+      "french_polynesia": 962,
+      "_verde": 963,
+      "barbad": 964,
+      "barbuda": 965,
+      "singapore": 966,
+      "seychel": 967,
+      "martinique": 968,
+      "utlying_islands": 969,
+      "bahamas": 970,
+      "bahrain": 971,
+      "mayot": 972,
+      "grenada": 973,
+      "british_virgin_islands": 974,
+      "british_ind": 975,
+      "_rico": 976,
+      "_grenadines": 977,
+      "açao": 978,
+      "bermu": 979,
+      "curaçao": 980,
+      "eloupe": 981,
+      "eeling_islands": 982,
+      "fiji": 983,
+      "falkland_islands": 984,
+      "faroe_islands": 985,
+      "futuna": 986,
+      "gascar": 987,
+      "illa": 988,
+      "iceland": 989,
+      "ian_ocean_": 990,
+      "idad_and_to": 991,
+      "jersey": 992,
+      "jamaica": 993,
+      "kiribati": 994,
+      "mé_and_pr": 995,
+      "madagascar": 996,
+      "o_tomé_and_pr": 997,
+      "pitcairn_": 998,
+      "philipp": 999,
+      "réunion": 1000,
+      "svalbard_and_": 1001,
+      "são_tomé_and_pr": 1002,
+      "s_keeling_islands": 1003,
+      "tuval": 1004,
+      "tonga": 1005,
+      "trinidad_and_to": 1006,
+      "ua_and_barbuda": 1007,
+      "vanuatu": 1008,
+      "wallis_and_": 1009,
+      "íncipe": 1010,
+      "caicos_islands": 1011,
+      "cape_verde": 1012,
+      "cayman_islands": 1013,
+      "inor_outlying_islands": 1014,
+      "territory": 1015,
+      "anguilla": 1016,
+      "antigua_and_barbuda": 1017,
+      "thélemy": 1018,
+      "stmas_island": 1019,
+      "solomon_islands": 1020,
+      "christmas_island": 1021,
+      "guadeloupe": 1022,
+      "itts_and_nevis": 1023,
+      "cocos_keeling_islands": 1024,
+      "comoros": 1025,
+      "isle_of_man": 1026,
+      "re_and_mique": 1027,
+      "maldives": 1028,
+      "norfolk_island": 1029,
+      "puerto_rico": 1030,
+      "turks_and_caicos_islands": 1031,
+      "northern_mariana_islands": 1032,
+      "cent_and_the_grenadines": 1033,
+      "marshall_islands": 1034,
+      "montserrat": 1035,
+      "tokelau": 1036,
+      "jan_mayen": 1037,
+      "saint_kitts_and_nevis": 1038,
+      "taiwan": 1039,
+      "new_caledonia": 1040,
+      "saint_lucia": 1041,
+      "saint_barthélemy": 1042,
+      "saint_pierre_and_mique": 1043,
+      "saint_vincent_and_the_grenadines": 1044,
+      "united_states_minor_outlying_islands": 1045,
+      "barbados": 1046,
+      "seychelles": 1047,
+      "mayotte": 1048,
+      "british_indian_ocean_": 1049,
+      "bermuda": 1050,
+      "pitcairn_islands": 1051,
+      "philippines": 1052,
+      "svalbard_and_jan_mayen": 1053,
+      "são_tomé_and_príncipe": 1054,
+      "tuvalu": 1055,
+      "trinidad_and_tobago": 1056,
+      "wallis_and_futuna": 1057,
+      "saint_pierre_and_miquelon": 1058,
+      "british_indian_ocean_territory": 1059
+    },
+    "merges": [
+      [
+        "n",
+        "e"
+      ],
+      [
+        "o",
+        "r"
+      ],
+      [
+        "c",
+        "a"
+      ],
+      [
+        "i",
+        "g"
+      ],
+      [
+        "i",
+        "n"
+      ],
+      [
+        "b",
+        "or"
+      ],
+      [
+        "h",
+        "bor"
+      ],
+      [
+        "ne",
+        "ig"
+      ],
+      [
+        "neig",
+        "hbor"
+      ],
+      [
+        "t",
+        "e"
+      ],
+      [
+        "a",
+        "n"
+      ],
+      [
+        "i",
+        "a"
+      ],
+      [
+        "l",
+        "o"
+      ],
+      [
+        "te",
+        "d"
+      ],
+      [
+        "ca",
+        "ted"
+      ],
+      [
+        "lo",
+        "cated"
+      ],
+      [
+        "located",
+        "in"
+      ],
+      [
+        "e",
+        "r"
+      ],
+      [
+        "i",
+        "ca"
+      ],
+      [
+        "u",
+        "r"
+      ],
+      [
+        "a",
+        "l"
+      ],
+      [
+        "a",
+        "s"
+      ],
+      [
+        "t",
+        "h"
+      ],
+      [
+        "f",
+        "r"
+      ],
+      [
+        "n",
+        "_"
+      ],
+      [
+        "an",
+        "d"
+      ],
+      [
+        "a",
+        "m"
+      ],
+      [
+        "a",
+        "r"
+      ],
+      [
+        "a",
+        "fr"
+      ],
+      [
+        "afr",
+        "ica"
+      ],
+      [
+        "s",
+        "t"
+      ],
+      [
+        "e",
+        "n"
+      ],
+      [
+        "o",
+        "n"
+      ],
+      [
+        "o",
+        "p"
+      ],
+      [
+        "e",
+        "ur"
+      ],
+      [
+        "op",
+        "e"
+      ],
+      [
+        "eur",
+        "ope"
+      ],
+      [
+        "s",
+        "o"
+      ],
+      [
+        "l",
+        "and"
+      ],
+      [
+        "as",
+        "ia"
+      ],
+      [
+        "an",
+        "ia"
+      ],
+      [
+        "l",
+        "i"
+      ],
+      [
+        "r",
+        "a"
+      ],
+      [
+        "er",
+        "ica"
+      ],
+      [
+        "am",
+        "erica"
+      ],
+      [
+        "r",
+        "n_"
+      ],
+      [
+        "c",
+        "h"
+      ],
+      [
+        "te",
+        "rn_"
+      ],
+      [
+        "u",
+        "th"
+      ],
+      [
+        "so",
+        "uth"
+      ],
+      [
+        "s",
+        "ia"
+      ],
+      [
+        "g",
+        "u"
+      ],
+      [
+        "st",
+        "an"
+      ],
+      [
+        "b",
+        "ia"
+      ],
+      [
+        "c",
+        "e"
+      ],
+      [
+        "i",
+        "t"
+      ],
+      [
+        "b",
+        "e"
+      ],
+      [
+        "in",
+        "a"
+      ],
+      [
+        "g",
+        "o"
+      ],
+      [
+        "america",
+        "s"
+      ],
+      [
+        "c",
+        "o"
+      ],
+      [
+        "i",
+        "stan"
+      ],
+      [
+        "w",
+        "e"
+      ],
+      [
+        "i",
+        "s"
+      ],
+      [
+        "l",
+        "a"
+      ],
+      [
+        "i",
+        "ne"
+      ],
+      [
+        "u",
+        "n"
+      ],
+      [
+        "er",
+        "n_"
+      ],
+      [
+        "r",
+        "e"
+      ],
+      [
+        "b",
+        "o"
+      ],
+      [
+        "m",
+        "al"
+      ],
+      [
+        "a",
+        "u"
+      ],
+      [
+        "n",
+        "or"
+      ],
+      [
+        "u",
+        "s"
+      ],
+      [
+        "south",
+        "_"
+      ],
+      [
+        "r",
+        "o"
+      ],
+      [
+        "ur",
+        "k"
+      ],
+      [
+        "l",
+        "e"
+      ],
+      [
+        "a",
+        "d"
+      ],
+      [
+        "e",
+        "as"
+      ],
+      [
+        "s",
+        "tern_"
+      ],
+      [
+        "en",
+        "t"
+      ],
+      [
+        "we",
+        "stern_"
+      ],
+      [
+        "eas",
+        "tern_"
+      ],
+      [
+        "d",
+        "an"
+      ],
+      [
+        "r",
+        "al"
+      ],
+      [
+        "nor",
+        "th"
+      ],
+      [
+        "r",
+        "i"
+      ],
+      [
+        "z",
+        "i"
+      ],
+      [
+        "ne",
+        "sia"
+      ],
+      [
+        "on",
+        "go"
+      ],
+      [
+        "g",
+        "er"
+      ],
+      [
+        "ar",
+        "a"
+      ],
+      [
+        "p",
+        "u"
+      ],
+      [
+        "a",
+        "k"
+      ],
+      [
+        "b",
+        "a"
+      ],
+      [
+        "m",
+        "a"
+      ],
+      [
+        "an",
+        "a"
+      ],
+      [
+        "land",
+        "s"
+      ],
+      [
+        "o",
+        "ce"
+      ],
+      [
+        "ch",
+        "ina"
+      ],
+      [
+        "m",
+        "an"
+      ],
+      [
+        "r",
+        "us"
+      ],
+      [
+        "_",
+        "c"
+      ],
+      [
+        "_",
+        "and"
+      ],
+      [
+        "z",
+        "e"
+      ],
+      [
+        "z",
+        "am"
+      ],
+      [
+        "oce",
+        "ania"
+      ],
+      [
+        "_c",
+        "ongo"
+      ],
+      [
+        "_and",
+        "_"
+      ],
+      [
+        "t",
+        "urk"
+      ],
+      [
+        "north",
+        "ern_"
+      ],
+      [
+        "a",
+        "y"
+      ],
+      [
+        "b",
+        "li"
+      ],
+      [
+        "c",
+        "ent"
+      ],
+      [
+        "m",
+        "ar"
+      ],
+      [
+        "r",
+        "ia"
+      ],
+      [
+        "s",
+        "u"
+      ],
+      [
+        "gu",
+        "ine"
+      ],
+      [
+        "un",
+        "i"
+      ],
+      [
+        "re",
+        "pu"
+      ],
+      [
+        "rus",
+        "sia"
+      ],
+      [
+        "bli",
+        "c"
+      ],
+      [
+        "su",
+        "dan"
+      ],
+      [
+        "guine",
+        "a"
+      ],
+      [
+        "repu",
+        "blic"
+      ],
+      [
+        "_",
+        "is"
+      ],
+      [
+        "b",
+        "be"
+      ],
+      [
+        "g",
+        "ar"
+      ],
+      [
+        "p",
+        "o"
+      ],
+      [
+        "s",
+        "w"
+      ],
+      [
+        "u",
+        "e"
+      ],
+      [
+        "ca",
+        "ri"
+      ],
+      [
+        "bbe",
+        "an"
+      ],
+      [
+        "cari",
+        "bbean"
+      ],
+      [
+        "m",
+        "i"
+      ],
+      [
+        "in",
+        "d"
+      ],
+      [
+        "ral",
+        "_"
+      ],
+      [
+        "cent",
+        "ral_"
+      ],
+      [
+        "a",
+        "t"
+      ],
+      [
+        "a",
+        "in"
+      ],
+      [
+        "au",
+        "st"
+      ],
+      [
+        "m",
+        "en"
+      ],
+      [
+        "n",
+        "ig"
+      ],
+      [
+        "y",
+        "a"
+      ],
+      [
+        "nig",
+        "er"
+      ],
+      [
+        "a",
+        "z"
+      ],
+      [
+        "d",
+        "i"
+      ],
+      [
+        "e",
+        "y"
+      ],
+      [
+        "t",
+        "an"
+      ],
+      [
+        "ne",
+        "g"
+      ],
+      [
+        "south",
+        "ern_"
+      ],
+      [
+        "_is",
+        "lands"
+      ],
+      [
+        "g",
+        "h"
+      ],
+      [
+        "k",
+        "istan"
+      ],
+      [
+        "m",
+        "o"
+      ],
+      [
+        "s",
+        "lo"
+      ],
+      [
+        "v",
+        "ia"
+      ],
+      [
+        "ca",
+        "m"
+      ],
+      [
+        "slo",
+        "v"
+      ],
+      [
+        "_",
+        "ara"
+      ],
+      [
+        "b",
+        "ra"
+      ],
+      [
+        "c",
+        "ro"
+      ],
+      [
+        "li",
+        "b"
+      ],
+      [
+        "be",
+        "l"
+      ],
+      [
+        "zi",
+        "l"
+      ],
+      [
+        "uni",
+        "ted"
+      ],
+      [
+        "bra",
+        "zil"
+      ],
+      [
+        "_",
+        "k"
+      ],
+      [
+        "d",
+        "r"
+      ],
+      [
+        "e",
+        "l"
+      ],
+      [
+        "i",
+        "r"
+      ],
+      [
+        "s",
+        "au"
+      ],
+      [
+        "and",
+        "a"
+      ],
+      [
+        "on",
+        "ia"
+      ],
+      [
+        "ger",
+        "man"
+      ],
+      [
+        "dr",
+        "_congo"
+      ],
+      [
+        "german",
+        "y"
+      ],
+      [
+        "a",
+        "te"
+      ],
+      [
+        "g",
+        "y"
+      ],
+      [
+        "j",
+        "i"
+      ],
+      [
+        "s",
+        "er"
+      ],
+      [
+        "n",
+        "am"
+      ],
+      [
+        "q",
+        "ue"
+      ],
+      [
+        "z",
+        "ania"
+      ],
+      [
+        "an",
+        "ce"
+      ],
+      [
+        "fr",
+        "ance"
+      ],
+      [
+        "n_",
+        "republic"
+      ],
+      [
+        "eastern_",
+        "asia"
+      ],
+      [
+        "turk",
+        "ey"
+      ],
+      [
+        "aust",
+        "ria"
+      ],
+      [
+        "tan",
+        "zania"
+      ],
+      [
+        "d",
+        "o"
+      ],
+      [
+        "m",
+        "on"
+      ],
+      [
+        "mal",
+        "a"
+      ],
+      [
+        "zam",
+        "bia"
+      ],
+      [
+        "ind",
+        "ia"
+      ],
+      [
+        "ser",
+        "bia"
+      ],
+      [
+        "h",
+        "un"
+      ],
+      [
+        "i",
+        "que"
+      ],
+      [
+        "k",
+        "ra"
+      ],
+      [
+        "o",
+        "s"
+      ],
+      [
+        "t",
+        "_"
+      ],
+      [
+        "t",
+        "o"
+      ],
+      [
+        "u",
+        "kra"
+      ],
+      [
+        "al",
+        "ger"
+      ],
+      [
+        "northern_",
+        "europe"
+      ],
+      [
+        "gar",
+        "y"
+      ],
+      [
+        "ir",
+        "an"
+      ],
+      [
+        "hun",
+        "gary"
+      ],
+      [
+        "ukra",
+        "ine"
+      ],
+      [
+        "alger",
+        "ia"
+      ],
+      [
+        "_",
+        "o"
+      ],
+      [
+        "a",
+        "f"
+      ],
+      [
+        "l",
+        "y"
+      ],
+      [
+        "u",
+        "g"
+      ],
+      [
+        "an",
+        "istan"
+      ],
+      [
+        "mal",
+        "i"
+      ],
+      [
+        "eastern_",
+        "africa"
+      ],
+      [
+        "po",
+        "land"
+      ],
+      [
+        "di",
+        "_ara"
+      ],
+      [
+        "gh",
+        "anistan"
+      ],
+      [
+        "sau",
+        "di_ara"
+      ],
+      [
+        "af",
+        "ghanistan"
+      ],
+      [
+        "saudi_ara",
+        "bia"
+      ],
+      [
+        "_",
+        "f"
+      ],
+      [
+        "b",
+        "u"
+      ],
+      [
+        "b",
+        "urk"
+      ],
+      [
+        "b",
+        "ique"
+      ],
+      [
+        "d",
+        "onia"
+      ],
+      [
+        "e",
+        "th"
+      ],
+      [
+        "i",
+        "op"
+      ],
+      [
+        "i",
+        "ra"
+      ],
+      [
+        "j",
+        "an"
+      ],
+      [
+        "m",
+        "y"
+      ],
+      [
+        "o",
+        "on"
+      ],
+      [
+        "s",
+        "ain"
+      ],
+      [
+        "t",
+        "a"
+      ],
+      [
+        "w",
+        "_"
+      ],
+      [
+        "ne",
+        "w_"
+      ],
+      [
+        "or",
+        "e"
+      ],
+      [
+        "or",
+        "y"
+      ],
+      [
+        "er",
+        "oon"
+      ],
+      [
+        "al",
+        "y"
+      ],
+      [
+        "as",
+        "o"
+      ],
+      [
+        "africa",
+        "n_republic"
+      ],
+      [
+        "ch",
+        "ad"
+      ],
+      [
+        "it",
+        "aly"
+      ],
+      [
+        "ina",
+        "_f"
+      ],
+      [
+        "south_",
+        "africa"
+      ],
+      [
+        "south_",
+        "sudan"
+      ],
+      [
+        "zam",
+        "bique"
+      ],
+      [
+        "central_",
+        "african_republic"
+      ],
+      [
+        "mo",
+        "zambique"
+      ],
+      [
+        "cam",
+        "eroon"
+      ],
+      [
+        "burk",
+        "ina_f"
+      ],
+      [
+        "eth",
+        "iop"
+      ],
+      [
+        "ira",
+        "q"
+      ],
+      [
+        "burkina_f",
+        "aso"
+      ],
+      [
+        "ethiop",
+        "ia"
+      ],
+      [
+        "f",
+        "_"
+      ],
+      [
+        "g",
+        "i"
+      ],
+      [
+        "m",
+        "e"
+      ],
+      [
+        "ia",
+        "_and_"
+      ],
+      [
+        "th",
+        "e"
+      ],
+      [
+        "gu",
+        "ay"
+      ],
+      [
+        "western_",
+        "africa"
+      ],
+      [
+        "po",
+        "ly"
+      ],
+      [
+        "lib",
+        "ya"
+      ],
+      [
+        "_o",
+        "f_"
+      ],
+      [
+        "poly",
+        "nesia"
+      ],
+      [
+        "_",
+        "co"
+      ],
+      [
+        "e",
+        "or"
+      ],
+      [
+        "e",
+        "neg"
+      ],
+      [
+        "g",
+        "a"
+      ],
+      [
+        "g",
+        "ia"
+      ],
+      [
+        "g",
+        "ent"
+      ],
+      [
+        "g",
+        "eor"
+      ],
+      [
+        "h",
+        "stan"
+      ],
+      [
+        "i",
+        "v"
+      ],
+      [
+        "i",
+        "jan"
+      ],
+      [
+        "k",
+        "en"
+      ],
+      [
+        "k",
+        "az"
+      ],
+      [
+        "l",
+        "gar"
+      ],
+      [
+        "m",
+        "or"
+      ],
+      [
+        "p",
+        "er"
+      ],
+      [
+        "p",
+        "al"
+      ],
+      [
+        "p",
+        "ain"
+      ],
+      [
+        "s",
+        "eneg"
+      ],
+      [
+        "s",
+        "pain"
+      ],
+      [
+        "t",
+        "i"
+      ],
+      [
+        "u",
+        "z"
+      ],
+      [
+        "z",
+        "er"
+      ],
+      [
+        "te",
+        "neg"
+      ],
+      [
+        "an",
+        "mar"
+      ],
+      [
+        "er",
+        "ba"
+      ],
+      [
+        "al",
+        "b"
+      ],
+      [
+        "as",
+        "t"
+      ],
+      [
+        "ar",
+        "us"
+      ],
+      [
+        "ar",
+        "gent"
+      ],
+      [
+        "li",
+        "via"
+      ],
+      [
+        "ce",
+        "donia"
+      ],
+      [
+        "it",
+        "zer"
+      ],
+      [
+        "be",
+        "kistan"
+      ],
+      [
+        "la",
+        "os"
+      ],
+      [
+        "bo",
+        "livia"
+      ],
+      [
+        "south_",
+        "america"
+      ],
+      [
+        "ad",
+        "or"
+      ],
+      [
+        "western_",
+        "asia"
+      ],
+      [
+        "ak",
+        "ia"
+      ],
+      [
+        "ak",
+        "hstan"
+      ],
+      [
+        "ma",
+        "cedonia"
+      ],
+      [
+        "sw",
+        "itzer"
+      ],
+      [
+        "az",
+        "erba"
+      ],
+      [
+        "slov",
+        "akia"
+      ],
+      [
+        "bel",
+        "arus"
+      ],
+      [
+        "mon",
+        "teneg"
+      ],
+      [
+        "bu",
+        "lgar"
+      ],
+      [
+        "my",
+        "anmar"
+      ],
+      [
+        "sain",
+        "t_"
+      ],
+      [
+        "ore",
+        "a"
+      ],
+      [
+        "ory",
+        "_co"
+      ],
+      [
+        "geor",
+        "gia"
+      ],
+      [
+        "iv",
+        "ory_co"
+      ],
+      [
+        "ken",
+        "ya"
+      ],
+      [
+        "kaz",
+        "akhstan"
+      ],
+      [
+        "per",
+        "u"
+      ],
+      [
+        "seneg",
+        "al"
+      ],
+      [
+        "uz",
+        "bekistan"
+      ],
+      [
+        "argent",
+        "ina"
+      ],
+      [
+        "switzer",
+        "land"
+      ],
+      [
+        "azerba",
+        "ijan"
+      ],
+      [
+        "monteneg",
+        "ro"
+      ],
+      [
+        "bulgar",
+        "ia"
+      ],
+      [
+        "ivory_co",
+        "ast"
+      ],
+      [
+        "-",
+        "eastern_asia"
+      ],
+      [
+        "b",
+        "an"
+      ],
+      [
+        "e",
+        "st"
+      ],
+      [
+        "g",
+        "re"
+      ],
+      [
+        "m",
+        "ania"
+      ],
+      [
+        "m",
+        "bia"
+      ],
+      [
+        "s",
+        "y"
+      ],
+      [
+        "lo",
+        "mbia"
+      ],
+      [
+        "ur",
+        "it"
+      ],
+      [
+        "south",
+        "-eastern_asia"
+      ],
+      [
+        "co",
+        "lombia"
+      ],
+      [
+        "ro",
+        "mania"
+      ],
+      [
+        "ma",
+        "urit"
+      ],
+      [
+        "republic",
+        "_of_"
+      ],
+      [
+        "at",
+        "ia"
+      ],
+      [
+        "southern_",
+        "europe"
+      ],
+      [
+        "cro",
+        "atia"
+      ],
+      [
+        "do",
+        "m"
+      ],
+      [
+        "ug",
+        "anda"
+      ],
+      [
+        "the",
+        "_congo"
+      ],
+      [
+        "sy",
+        "ria"
+      ],
+      [
+        "republic_of_",
+        "the_congo"
+      ],
+      [
+        "_",
+        "st"
+      ],
+      [
+        "a",
+        "_"
+      ],
+      [
+        "a",
+        "i"
+      ],
+      [
+        "a",
+        "it"
+      ],
+      [
+        "b",
+        "en"
+      ],
+      [
+        "b",
+        "we"
+      ],
+      [
+        "c",
+        "ze"
+      ],
+      [
+        "d",
+        "en"
+      ],
+      [
+        "h",
+        "on"
+      ],
+      [
+        "i",
+        "bia"
+      ],
+      [
+        "j",
+        "or"
+      ],
+      [
+        "k",
+        "y"
+      ],
+      [
+        "l",
+        "u"
+      ],
+      [
+        "m",
+        "ba"
+      ],
+      [
+        "p",
+        "ak"
+      ],
+      [
+        "r",
+        "gy"
+      ],
+      [
+        "t",
+        "sw"
+      ],
+      [
+        "t",
+        "via"
+      ],
+      [
+        "u",
+        "ania"
+      ],
+      [
+        "v",
+        "e"
+      ],
+      [
+        "z",
+        "stan"
+      ],
+      [
+        "te",
+        "n"
+      ],
+      [
+        "an",
+        "go"
+      ],
+      [
+        "th",
+        "ai"
+      ],
+      [
+        "th",
+        "uania"
+      ],
+      [
+        "ar",
+        "men"
+      ],
+      [
+        "en",
+        "ia"
+      ],
+      [
+        "li",
+        "thuania"
+      ],
+      [
+        "ra",
+        "el"
+      ],
+      [
+        "ch",
+        "ia"
+      ],
+      [
+        "is",
+        "rael"
+      ],
+      [
+        "la",
+        "tvia"
+      ],
+      [
+        "bo",
+        "tsw"
+      ],
+      [
+        "zi",
+        "mba"
+      ],
+      [
+        "turk",
+        "men"
+      ],
+      [
+        "mi",
+        "cro"
+      ],
+      [
+        "niger",
+        "ia"
+      ],
+      [
+        "slov",
+        "enia"
+      ],
+      [
+        "united",
+        "_st"
+      ],
+      [
+        "ate",
+        "s"
+      ],
+      [
+        "ji",
+        "kistan"
+      ],
+      [
+        "nam",
+        "ibia"
+      ],
+      [
+        "ta",
+        "jikistan"
+      ],
+      [
+        "alb",
+        "ania"
+      ],
+      [
+        "ben",
+        "in"
+      ],
+      [
+        "cze",
+        "chia"
+      ],
+      [
+        "jor",
+        "dan"
+      ],
+      [
+        "ky",
+        "rgy"
+      ],
+      [
+        "pak",
+        "istan"
+      ],
+      [
+        "ango",
+        "la"
+      ],
+      [
+        "thai",
+        "land"
+      ],
+      [
+        "armen",
+        "ia"
+      ],
+      [
+        "botsw",
+        "ana"
+      ],
+      [
+        "zimba",
+        "bwe"
+      ],
+      [
+        "turkmen",
+        "istan"
+      ],
+      [
+        "micro",
+        "nesia"
+      ],
+      [
+        "united_st",
+        "ates"
+      ],
+      [
+        "kyrgy",
+        "zstan"
+      ],
+      [
+        "_",
+        "africa"
+      ],
+      [
+        "d",
+        "d"
+      ],
+      [
+        "e",
+        "ce"
+      ],
+      [
+        "e",
+        "gy"
+      ],
+      [
+        "i",
+        "co"
+      ],
+      [
+        "k",
+        "o"
+      ],
+      [
+        "p",
+        "t"
+      ],
+      [
+        "r",
+        "w"
+      ],
+      [
+        "s",
+        "te"
+      ],
+      [
+        "u",
+        "m"
+      ],
+      [
+        "v",
+        "o"
+      ],
+      [
+        "in",
+        "g"
+      ],
+      [
+        "so",
+        "vo"
+      ],
+      [
+        "gu",
+        "ate"
+      ],
+      [
+        "le",
+        "_africa"
+      ],
+      [
+        "mi",
+        "dd"
+      ],
+      [
+        "bel",
+        "gi"
+      ],
+      [
+        "gre",
+        "ece"
+      ],
+      [
+        "maurit",
+        "ania"
+      ],
+      [
+        "egy",
+        "pt"
+      ],
+      [
+        "ko",
+        "sovo"
+      ],
+      [
+        "rw",
+        "anda"
+      ],
+      [
+        "guate",
+        "mala"
+      ],
+      [
+        "midd",
+        "le_africa"
+      ],
+      [
+        "belgi",
+        "um"
+      ],
+      [
+        "a",
+        "h"
+      ],
+      [
+        "b",
+        "r"
+      ],
+      [
+        "b",
+        "on"
+      ],
+      [
+        "c",
+        "u"
+      ],
+      [
+        "d",
+        "ia"
+      ],
+      [
+        "e",
+        "m"
+      ],
+      [
+        "e",
+        "t"
+      ],
+      [
+        "f",
+        "in"
+      ],
+      [
+        "i",
+        "er"
+      ],
+      [
+        "i",
+        "le"
+      ],
+      [
+        "i",
+        "ana"
+      ],
+      [
+        "i",
+        "et"
+      ],
+      [
+        "o",
+        "nesia"
+      ],
+      [
+        "o",
+        "man"
+      ],
+      [
+        "s",
+        "ah"
+      ],
+      [
+        "u",
+        "at"
+      ],
+      [
+        "v",
+        "iet"
+      ],
+      [
+        "w",
+        "i"
+      ],
+      [
+        "w",
+        "ay"
+      ],
+      [
+        "x",
+        "em"
+      ],
+      [
+        "y",
+        "ana"
+      ],
+      [
+        "z",
+        "ue"
+      ],
+      [
+        "ne",
+        "zue"
+      ],
+      [
+        "er",
+        "ia"
+      ],
+      [
+        "er",
+        "it"
+      ],
+      [
+        "ur",
+        "g"
+      ],
+      [
+        "ur",
+        "u"
+      ],
+      [
+        "al",
+        "and"
+      ],
+      [
+        "fr",
+        "en"
+      ],
+      [
+        "ch",
+        "_"
+      ],
+      [
+        "ch",
+        "ile"
+      ],
+      [
+        "gu",
+        "yana"
+      ],
+      [
+        "re",
+        "a"
+      ],
+      [
+        "bo",
+        "dia"
+      ],
+      [
+        "bo",
+        "urg"
+      ],
+      [
+        "mal",
+        "ay"
+      ],
+      [
+        "nor",
+        "way"
+      ],
+      [
+        "western_",
+        "europe"
+      ],
+      [
+        "western_",
+        "sah"
+      ],
+      [
+        "eastern_",
+        "europe"
+      ],
+      [
+        "north",
+        "_k"
+      ],
+      [
+        "ze",
+        "aland"
+      ],
+      [
+        "ind",
+        "onesia"
+      ],
+      [
+        "aust",
+        "ral"
+      ],
+      [
+        "southern_",
+        "asia"
+      ],
+      [
+        "gh",
+        "ana"
+      ],
+      [
+        "cam",
+        "bodia"
+      ],
+      [
+        "lib",
+        "eria"
+      ],
+      [
+        "mala",
+        "wi"
+      ],
+      [
+        "to",
+        "go"
+      ],
+      [
+        "new_",
+        "zealand"
+      ],
+      [
+        "ga",
+        "bon"
+      ],
+      [
+        "lu",
+        "xem"
+      ],
+      [
+        "ve",
+        "nezue"
+      ],
+      [
+        "fin",
+        "land"
+      ],
+      [
+        "viet",
+        "nam"
+      ],
+      [
+        "erit",
+        "rea"
+      ],
+      [
+        "fren",
+        "ch_"
+      ],
+      [
+        "malay",
+        "sia"
+      ],
+      [
+        "western_sah",
+        "ara"
+      ],
+      [
+        "north_k",
+        "orea"
+      ],
+      [
+        "luxem",
+        "bourg"
+      ],
+      [
+        "venezue",
+        "la"
+      ],
+      [
+        "b",
+        "ur"
+      ],
+      [
+        "c",
+        "co"
+      ],
+      [
+        "d",
+        "e"
+      ],
+      [
+        "d",
+        "ur"
+      ],
+      [
+        "d",
+        "ji"
+      ],
+      [
+        "h",
+        "er"
+      ],
+      [
+        "n",
+        "ia_and_"
+      ],
+      [
+        "o",
+        "cco"
+      ],
+      [
+        "p",
+        "an"
+      ],
+      [
+        "p",
+        "ara"
+      ],
+      [
+        "s",
+        "h"
+      ],
+      [
+        "s",
+        "ur"
+      ],
+      [
+        "s",
+        "nia_and_"
+      ],
+      [
+        "u",
+        "ti"
+      ],
+      [
+        "v",
+        "ina"
+      ],
+      [
+        "x",
+        "ico"
+      ],
+      [
+        "in",
+        "am"
+      ],
+      [
+        "an",
+        "_"
+      ],
+      [
+        "am",
+        "a"
+      ],
+      [
+        "so",
+        "mal"
+      ],
+      [
+        "go",
+        "vina"
+      ],
+      [
+        "un",
+        "di"
+      ],
+      [
+        "bo",
+        "snia_and_"
+      ],
+      [
+        "bo",
+        "uti"
+      ],
+      [
+        "ad",
+        "a"
+      ],
+      [
+        "ze",
+        "govina"
+      ],
+      [
+        "me",
+        "xico"
+      ],
+      [
+        "mor",
+        "occo"
+      ],
+      [
+        "hon",
+        "dur"
+      ],
+      [
+        "bur",
+        "undi"
+      ],
+      [
+        "dji",
+        "bouti"
+      ],
+      [
+        "her",
+        "zegovina"
+      ],
+      [
+        "para",
+        "guay"
+      ],
+      [
+        "sur",
+        "inam"
+      ],
+      [
+        "somal",
+        "ia"
+      ],
+      [
+        "bosnia_and_",
+        "herzegovina"
+      ],
+      [
+        "hondur",
+        "as"
+      ],
+      [
+        "surinam",
+        "e"
+      ],
+      [
+        "_",
+        "e"
+      ],
+      [
+        "_",
+        "s"
+      ],
+      [
+        "_",
+        "v"
+      ],
+      [
+        "_",
+        "le"
+      ],
+      [
+        "_",
+        "guinea"
+      ],
+      [
+        "a",
+        "zi"
+      ],
+      [
+        "b",
+        "h"
+      ],
+      [
+        "b",
+        "ar"
+      ],
+      [
+        "b",
+        "_e"
+      ],
+      [
+        "e",
+        "q"
+      ],
+      [
+        "e",
+        "ch"
+      ],
+      [
+        "e",
+        "cu"
+      ],
+      [
+        "k",
+        "u"
+      ],
+      [
+        "l",
+        "ia"
+      ],
+      [
+        "l",
+        "do"
+      ],
+      [
+        "l",
+        "_guinea"
+      ],
+      [
+        "m",
+        "ongo"
+      ],
+      [
+        "n",
+        "ica"
+      ],
+      [
+        "o",
+        "ne"
+      ],
+      [
+        "p",
+        "e"
+      ],
+      [
+        "r",
+        "ica"
+      ],
+      [
+        "s",
+        "in"
+      ],
+      [
+        "s",
+        "we"
+      ],
+      [
+        "s",
+        "_and_"
+      ],
+      [
+        "s",
+        "ey"
+      ],
+      [
+        "s",
+        "ier"
+      ],
+      [
+        "t",
+        "in"
+      ],
+      [
+        "t",
+        "uni"
+      ],
+      [
+        "u",
+        "tan"
+      ],
+      [
+        "v",
+        "a"
+      ],
+      [
+        "v",
+        "ador"
+      ],
+      [
+        "w",
+        "ait"
+      ],
+      [
+        "ne",
+        "th"
+      ],
+      [
+        "or",
+        "ia"
+      ],
+      [
+        "in",
+        "ica"
+      ],
+      [
+        "te",
+        "s"
+      ],
+      [
+        "er",
+        "lands"
+      ],
+      [
+        "al",
+        "vador"
+      ],
+      [
+        "st",
+        "a_"
+      ],
+      [
+        "li",
+        "ze"
+      ],
+      [
+        "li",
+        "ech"
+      ],
+      [
+        "ra",
+        "gu"
+      ],
+      [
+        "ra",
+        "_le"
+      ],
+      [
+        "ra",
+        "tes"
+      ],
+      [
+        "gu",
+        "iana"
+      ],
+      [
+        "be",
+        "lize"
+      ],
+      [
+        "co",
+        "sta_"
+      ],
+      [
+        "la",
+        "nesia"
+      ],
+      [
+        "le",
+        "ban"
+      ],
+      [
+        "northern_",
+        "africa"
+      ],
+      [
+        "northern_",
+        "america"
+      ],
+      [
+        "mar",
+        "tin"
+      ],
+      [
+        "sw",
+        "azi"
+      ],
+      [
+        "mi",
+        "rates"
+      ],
+      [
+        "central_",
+        "asia"
+      ],
+      [
+        "mo",
+        "ldo"
+      ],
+      [
+        "_ara",
+        "b_e"
+      ],
+      [
+        "united",
+        "_arab_e"
+      ],
+      [
+        "el",
+        "_s"
+      ],
+      [
+        "me",
+        "lanesia"
+      ],
+      [
+        "ia_and_",
+        "new_zealand"
+      ],
+      [
+        "est",
+        "onia"
+      ],
+      [
+        "dom",
+        "inica"
+      ],
+      [
+        "ten",
+        "ste"
+      ],
+      [
+        "uat",
+        "oria"
+      ],
+      [
+        "uru",
+        "guay"
+      ],
+      [
+        "austral",
+        "ia_and_new_zealand"
+      ],
+      [
+        "french_",
+        "guiana"
+      ],
+      [
+        "bh",
+        "utan"
+      ],
+      [
+        "eq",
+        "uatoria"
+      ],
+      [
+        "ecu",
+        "ador"
+      ],
+      [
+        "ku",
+        "wait"
+      ],
+      [
+        "mongo",
+        "lia"
+      ],
+      [
+        "nica",
+        "ragu"
+      ],
+      [
+        "swe",
+        "den"
+      ],
+      [
+        "sier",
+        "ra_le"
+      ],
+      [
+        "tuni",
+        "sia"
+      ],
+      [
+        "neth",
+        "erlands"
+      ],
+      [
+        "liech",
+        "tenste"
+      ],
+      [
+        "costa_",
+        "rica"
+      ],
+      [
+        "leban",
+        "on"
+      ],
+      [
+        "swazi",
+        "land"
+      ],
+      [
+        "moldo",
+        "va"
+      ],
+      [
+        "united_arab_e",
+        "mirates"
+      ],
+      [
+        "el_s",
+        "alvador"
+      ],
+      [
+        "equatoria",
+        "l_guinea"
+      ],
+      [
+        "nicaragu",
+        "a"
+      ],
+      [
+        "sierra_le",
+        "one"
+      ],
+      [
+        "liechtenste",
+        "in"
+      ],
+      [
+        "-",
+        "b"
+      ],
+      [
+        "e",
+        "men"
+      ],
+      [
+        "g",
+        "la"
+      ],
+      [
+        "y",
+        "emen"
+      ],
+      [
+        "ne",
+        "pal"
+      ],
+      [
+        "or",
+        "ra"
+      ],
+      [
+        "and",
+        "orra"
+      ],
+      [
+        "is",
+        "sau"
+      ],
+      [
+        "guinea",
+        "-b"
+      ],
+      [
+        "central_",
+        "america"
+      ],
+      [
+        "southern_",
+        "africa"
+      ],
+      [
+        "united",
+        "_k"
+      ],
+      [
+        "pal",
+        "est"
+      ],
+      [
+        "ban",
+        "gla"
+      ],
+      [
+        "ing",
+        "dom"
+      ],
+      [
+        "de",
+        "sh"
+      ],
+      [
+        "pan",
+        "ama"
+      ],
+      [
+        "guinea-b",
+        "issau"
+      ],
+      [
+        "united_k",
+        "ingdom"
+      ],
+      [
+        "palest",
+        "ine"
+      ],
+      [
+        "bangla",
+        "desh"
+      ],
+      [
+        "a",
+        "pu"
+      ],
+      [
+        "b",
+        "ral"
+      ],
+      [
+        "c",
+        "it"
+      ],
+      [
+        "d",
+        "a"
+      ],
+      [
+        "g",
+        "r"
+      ],
+      [
+        "g",
+        "in"
+      ],
+      [
+        "g",
+        "am"
+      ],
+      [
+        "h",
+        "ait"
+      ],
+      [
+        "k",
+        "orea"
+      ],
+      [
+        "o",
+        "a"
+      ],
+      [
+        "p",
+        "or"
+      ],
+      [
+        "p",
+        "apu"
+      ],
+      [
+        "s",
+        "am"
+      ],
+      [
+        "t",
+        "ar"
+      ],
+      [
+        "t",
+        "ug"
+      ],
+      [
+        "u",
+        "t"
+      ],
+      [
+        "u",
+        "ne"
+      ],
+      [
+        "v",
+        "at"
+      ],
+      [
+        "ica",
+        "n_"
+      ],
+      [
+        "ar",
+        "ten"
+      ],
+      [
+        "land",
+        "_islands"
+      ],
+      [
+        "it",
+        "is"
+      ],
+      [
+        "is",
+        "lands"
+      ],
+      [
+        "ine",
+        "s"
+      ],
+      [
+        "south_",
+        "korea"
+      ],
+      [
+        "ba",
+        "h"
+      ],
+      [
+        "ma",
+        "y"
+      ],
+      [
+        "ma",
+        "arten"
+      ],
+      [
+        "mar",
+        "k"
+      ],
+      [
+        "_is",
+        "land"
+      ],
+      [
+        "ir",
+        "gin"
+      ],
+      [
+        "t_",
+        "maarten"
+      ],
+      [
+        "new_",
+        "guinea"
+      ],
+      [
+        "gi",
+        "bral"
+      ],
+      [
+        "saint_",
+        "martin"
+      ],
+      [
+        "a_",
+        "new_guinea"
+      ],
+      [
+        "den",
+        "mark"
+      ],
+      [
+        "ing",
+        "_islands"
+      ],
+      [
+        "br",
+        "une"
+      ],
+      [
+        "br",
+        "itis"
+      ],
+      [
+        "_v",
+        "irgin"
+      ],
+      [
+        "sin",
+        "t_maarten"
+      ],
+      [
+        "dominica",
+        "n_republic"
+      ],
+      [
+        "cit",
+        "y"
+      ],
+      [
+        "gr",
+        "en"
+      ],
+      [
+        "gam",
+        "bia"
+      ],
+      [
+        "hait",
+        "i"
+      ],
+      [
+        "por",
+        "tug"
+      ],
+      [
+        "papu",
+        "a_new_guinea"
+      ],
+      [
+        "sam",
+        "oa"
+      ],
+      [
+        "vat",
+        "ican_"
+      ],
+      [
+        "gibral",
+        "tar"
+      ],
+      [
+        "brune",
+        "i"
+      ],
+      [
+        "britis",
+        "h"
+      ],
+      [
+        "_virgin",
+        "_islands"
+      ],
+      [
+        "portug",
+        "al"
+      ],
+      [
+        "vatican_",
+        "city"
+      ],
+      [
+        "-",
+        "le"
+      ],
+      [
+        "_",
+        "l"
+      ],
+      [
+        "a",
+        "co"
+      ],
+      [
+        "c",
+        "y"
+      ],
+      [
+        "g",
+        "_k"
+      ],
+      [
+        "i",
+        "re"
+      ],
+      [
+        "k",
+        "a"
+      ],
+      [
+        "n",
+        "ada"
+      ],
+      [
+        "p",
+        "rus"
+      ],
+      [
+        "q",
+        "at"
+      ],
+      [
+        "s",
+        "ri"
+      ],
+      [
+        "s",
+        "an_"
+      ],
+      [
+        "ca",
+        "u"
+      ],
+      [
+        "ca",
+        "nada"
+      ],
+      [
+        "in",
+        "o"
+      ],
+      [
+        "an",
+        "ka"
+      ],
+      [
+        "th",
+        "o"
+      ],
+      [
+        "on",
+        "g"
+      ],
+      [
+        "so",
+        "tho"
+      ],
+      [
+        "le",
+        "sotho"
+      ],
+      [
+        "ma",
+        "cau"
+      ],
+      [
+        "mar",
+        "ino"
+      ],
+      [
+        "mon",
+        "aco"
+      ],
+      [
+        "mor",
+        "-le"
+      ],
+      [
+        "ti",
+        "mor-le"
+      ],
+      [
+        "hon",
+        "g_k"
+      ],
+      [
+        "_l",
+        "anka"
+      ],
+      [
+        "cy",
+        "prus"
+      ],
+      [
+        "ire",
+        "land"
+      ],
+      [
+        "qat",
+        "ar"
+      ],
+      [
+        "sri",
+        "_lanka"
+      ],
+      [
+        "san_",
+        "marino"
+      ],
+      [
+        "timor-le",
+        "ste"
+      ],
+      [
+        "hong_k",
+        "ong"
+      ],
+      [
+        "_",
+        "m"
+      ],
+      [
+        "_",
+        "ri"
+      ],
+      [
+        "_",
+        "ind"
+      ],
+      [
+        "_",
+        "to"
+      ],
+      [
+        "_",
+        "may"
+      ],
+      [
+        "_",
+        "gren"
+      ],
+      [
+        "a",
+        "o"
+      ],
+      [
+        "a",
+        "ç"
+      ],
+      [
+        "a",
+        "_and_"
+      ],
+      [
+        "a",
+        "uru"
+      ],
+      [
+        "a",
+        "pan"
+      ],
+      [
+        "b",
+        "er"
+      ],
+      [
+        "b",
+        "ad"
+      ],
+      [
+        "c",
+        "i"
+      ],
+      [
+        "c",
+        "ia"
+      ],
+      [
+        "c",
+        "ur"
+      ],
+      [
+        "d",
+        "ad"
+      ],
+      [
+        "d",
+        "_and_"
+      ],
+      [
+        "e",
+        "lo"
+      ],
+      [
+        "e",
+        "la"
+      ],
+      [
+        "e",
+        "_islands"
+      ],
+      [
+        "e",
+        "el"
+      ],
+      [
+        "f",
+        "i"
+      ],
+      [
+        "f",
+        "o"
+      ],
+      [
+        "f",
+        "al"
+      ],
+      [
+        "f",
+        "ar"
+      ],
+      [
+        "f",
+        "ut"
+      ],
+      [
+        "g",
+        "as"
+      ],
+      [
+        "h",
+        "i"
+      ],
+      [
+        "i",
+        "l"
+      ],
+      [
+        "i",
+        "w"
+      ],
+      [
+        "i",
+        "rn_"
+      ],
+      [
+        "i",
+        "ce"
+      ],
+      [
+        "i",
+        "us"
+      ],
+      [
+        "i",
+        "ri"
+      ],
+      [
+        "i",
+        "ue"
+      ],
+      [
+        "i",
+        "an_"
+      ],
+      [
+        "i",
+        "dad"
+      ],
+      [
+        "j",
+        "er"
+      ],
+      [
+        "j",
+        "ama"
+      ],
+      [
+        "j",
+        "apan"
+      ],
+      [
+        "k",
+        "_islands"
+      ],
+      [
+        "k",
+        "land_islands"
+      ],
+      [
+        "k",
+        "_island"
+      ],
+      [
+        "k",
+        "ela"
+      ],
+      [
+        "k",
+        "iri"
+      ],
+      [
+        "l",
+        "_islands"
+      ],
+      [
+        "l",
+        "k_island"
+      ],
+      [
+        "m",
+        "u"
+      ],
+      [
+        "m",
+        "é"
+      ],
+      [
+        "m",
+        "as"
+      ],
+      [
+        "m",
+        "ada"
+      ],
+      [
+        "n",
+        "sey"
+      ],
+      [
+        "n",
+        "auru"
+      ],
+      [
+        "n",
+        "ci"
+      ],
+      [
+        "n",
+        "iue"
+      ],
+      [
+        "o",
+        "t"
+      ],
+      [
+        "o",
+        "_to"
+      ],
+      [
+        "o",
+        "e_islands"
+      ],
+      [
+        "o",
+        "k_islands"
+      ],
+      [
+        "p",
+        "p"
+      ],
+      [
+        "p",
+        "r"
+      ],
+      [
+        "p",
+        "it"
+      ],
+      [
+        "p",
+        "ore"
+      ],
+      [
+        "p",
+        "ier"
+      ],
+      [
+        "p",
+        "hi"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "r",
+        "é"
+      ],
+      [
+        "r",
+        "in"
+      ],
+      [
+        "s",
+        "v"
+      ],
+      [
+        "s",
+        "ã"
+      ],
+      [
+        "s",
+        "_islands"
+      ],
+      [
+        "s",
+        "_k"
+      ],
+      [
+        "t",
+        "u"
+      ],
+      [
+        "t",
+        "ig"
+      ],
+      [
+        "t",
+        "on"
+      ],
+      [
+        "t",
+        "_k"
+      ],
+      [
+        "t",
+        "ser"
+      ],
+      [
+        "t",
+        "s_and_"
+      ],
+      [
+        "t",
+        "rin"
+      ],
+      [
+        "u",
+        "ba"
+      ],
+      [
+        "u",
+        "pe"
+      ],
+      [
+        "u",
+        "a_and_"
+      ],
+      [
+        "v",
+        "in"
+      ],
+      [
+        "v",
+        "an"
+      ],
+      [
+        "v",
+        "al"
+      ],
+      [
+        "v",
+        "is"
+      ],
+      [
+        "w",
+        "al"
+      ],
+      [
+        "y",
+        "man"
+      ],
+      [
+        "Å",
+        "land_islands"
+      ],
+      [
+        "é",
+        "le"
+      ],
+      [
+        "í",
+        "nci"
+      ],
+      [
+        "ne",
+        "vis"
+      ],
+      [
+        "or",
+        "_o"
+      ],
+      [
+        "ca",
+        "r"
+      ],
+      [
+        "ca",
+        "le"
+      ],
+      [
+        "ca",
+        "ico"
+      ],
+      [
+        "ca",
+        "pe"
+      ],
+      [
+        "ca",
+        "irn_"
+      ],
+      [
+        "ca",
+        "yman"
+      ],
+      [
+        "in",
+        "or_o"
+      ],
+      [
+        "te",
+        "rr"
+      ],
+      [
+        "an",
+        "gu"
+      ],
+      [
+        "an",
+        "tig"
+      ],
+      [
+        "lo",
+        "n"
+      ],
+      [
+        "lo",
+        "mo"
+      ],
+      [
+        "er",
+        "to"
+      ],
+      [
+        "er",
+        "de"
+      ],
+      [
+        "er",
+        "nsey"
+      ],
+      [
+        "al",
+        "l_islands"
+      ],
+      [
+        "th",
+        "éle"
+      ],
+      [
+        "n_",
+        "islands"
+      ],
+      [
+        "n_",
+        "samoa"
+      ],
+      [
+        "am",
+        "as"
+      ],
+      [
+        "ar",
+        "d_and_"
+      ],
+      [
+        "ar",
+        "uba"
+      ],
+      [
+        "st",
+        "mas"
+      ],
+      [
+        "en",
+        "land"
+      ],
+      [
+        "so",
+        "lomo"
+      ],
+      [
+        "li",
+        "s_and_"
+      ],
+      [
+        "li",
+        "pp"
+      ],
+      [
+        "ra",
+        "t"
+      ],
+      [
+        "ra",
+        "in"
+      ],
+      [
+        "america",
+        "n_samoa"
+      ],
+      [
+        "ch",
+        "ri"
+      ],
+      [
+        "ch",
+        "el"
+      ],
+      [
+        "gu",
+        "am"
+      ],
+      [
+        "gu",
+        "ad"
+      ],
+      [
+        "gu",
+        "ernsey"
+      ],
+      [
+        "it",
+        "ory"
+      ],
+      [
+        "it",
+        "ts_and_"
+      ],
+      [
+        "co",
+        "co"
+      ],
+      [
+        "co",
+        "mor"
+      ],
+      [
+        "co",
+        "ok_islands"
+      ],
+      [
+        "is",
+        "le"
+      ],
+      [
+        "un",
+        "a"
+      ],
+      [
+        "re",
+        "_and_"
+      ],
+      [
+        "mal",
+        "di"
+      ],
+      [
+        "mal",
+        "ta"
+      ],
+      [
+        "nor",
+        "fo"
+      ],
+      [
+        "south_",
+        "georgia"
+      ],
+      [
+        "le",
+        "s"
+      ],
+      [
+        "ad",
+        "ines"
+      ],
+      [
+        "pu",
+        "erto"
+      ],
+      [
+        "ba",
+        "go"
+      ],
+      [
+        "ba",
+        "ti"
+      ],
+      [
+        "oce",
+        "an_"
+      ],
+      [
+        "_and_",
+        "to"
+      ],
+      [
+        "_and_",
+        "the"
+      ],
+      [
+        "_and_",
+        "pr"
+      ],
+      [
+        "turk",
+        "s_and_"
+      ],
+      [
+        "northern_",
+        "mar"
+      ],
+      [
+        "cent",
+        "_and_the"
+      ],
+      [
+        "mar",
+        "sh"
+      ],
+      [
+        "uni",
+        "on"
+      ],
+      [
+        "mi",
+        "que"
+      ],
+      [
+        "central_",
+        "europe"
+      ],
+      [
+        "mon",
+        "tser"
+      ],
+      [
+        "to",
+        "kela"
+      ],
+      [
+        "ly",
+        "ing_islands"
+      ],
+      [
+        "bu",
+        "da"
+      ],
+      [
+        "jan",
+        "_may"
+      ],
+      [
+        "sain",
+        "t_k"
+      ],
+      [
+        "ta",
+        "iw"
+      ],
+      [
+        "new_",
+        "cale"
+      ],
+      [
+        "_of_",
+        "man"
+      ],
+      [
+        "ga",
+        "pore"
+      ],
+      [
+        "pal",
+        "au"
+      ],
+      [
+        "alb",
+        "ard_and_"
+      ],
+      [
+        "saint_",
+        "lu"
+      ],
+      [
+        "saint_",
+        "bar"
+      ],
+      [
+        "saint_",
+        "pier"
+      ],
+      [
+        "saint_",
+        "vin"
+      ],
+      [
+        "gre",
+        "enland"
+      ],
+      [
+        "maurit",
+        "ius"
+      ],
+      [
+        "ve",
+        "s"
+      ],
+      [
+        "united_states",
+        "_virgin_islands"
+      ],
+      [
+        "united_states",
+        "_m"
+      ],
+      [
+        "cu",
+        "ba"
+      ],
+      [
+        "iana",
+        "_islands"
+      ],
+      [
+        "uat",
+        "u"
+      ],
+      [
+        "austral",
+        "ia"
+      ],
+      [
+        "french_",
+        "polynesia"
+      ],
+      [
+        "_v",
+        "erde"
+      ],
+      [
+        "bar",
+        "bad"
+      ],
+      [
+        "bar",
+        "buda"
+      ],
+      [
+        "sin",
+        "gapore"
+      ],
+      [
+        "sey",
+        "chel"
+      ],
+      [
+        "martin",
+        "ique"
+      ],
+      [
+        "ut",
+        "lying_islands"
+      ],
+      [
+        "bah",
+        "amas"
+      ],
+      [
+        "bah",
+        "rain"
+      ],
+      [
+        "may",
+        "ot"
+      ],
+      [
+        "gren",
+        "ada"
+      ],
+      [
+        "british",
+        "_virgin_islands"
+      ],
+      [
+        "british",
+        "_ind"
+      ],
+      [
+        "_ri",
+        "co"
+      ],
+      [
+        "_gren",
+        "adines"
+      ],
+      [
+        "aç",
+        "ao"
+      ],
+      [
+        "ber",
+        "mu"
+      ],
+      [
+        "cur",
+        "açao"
+      ],
+      [
+        "elo",
+        "upe"
+      ],
+      [
+        "eel",
+        "ing_islands"
+      ],
+      [
+        "fi",
+        "ji"
+      ],
+      [
+        "fal",
+        "kland_islands"
+      ],
+      [
+        "far",
+        "oe_islands"
+      ],
+      [
+        "fut",
+        "una"
+      ],
+      [
+        "gas",
+        "car"
+      ],
+      [
+        "il",
+        "la"
+      ],
+      [
+        "ice",
+        "land"
+      ],
+      [
+        "ian_",
+        "ocean_"
+      ],
+      [
+        "idad",
+        "_and_to"
+      ],
+      [
+        "jer",
+        "sey"
+      ],
+      [
+        "jama",
+        "ica"
+      ],
+      [
+        "kiri",
+        "bati"
+      ],
+      [
+        "mé",
+        "_and_pr"
+      ],
+      [
+        "mada",
+        "gascar"
+      ],
+      [
+        "o_to",
+        "mé_and_pr"
+      ],
+      [
+        "pit",
+        "cairn_"
+      ],
+      [
+        "phi",
+        "lipp"
+      ],
+      [
+        "ré",
+        "union"
+      ],
+      [
+        "sv",
+        "albard_and_"
+      ],
+      [
+        "sã",
+        "o_tomé_and_pr"
+      ],
+      [
+        "s_k",
+        "eeling_islands"
+      ],
+      [
+        "tu",
+        "val"
+      ],
+      [
+        "ton",
+        "ga"
+      ],
+      [
+        "trin",
+        "idad_and_to"
+      ],
+      [
+        "ua_and_",
+        "barbuda"
+      ],
+      [
+        "van",
+        "uatu"
+      ],
+      [
+        "wal",
+        "lis_and_"
+      ],
+      [
+        "ínci",
+        "pe"
+      ],
+      [
+        "caico",
+        "s_islands"
+      ],
+      [
+        "cape",
+        "_verde"
+      ],
+      [
+        "cayman",
+        "_islands"
+      ],
+      [
+        "inor_o",
+        "utlying_islands"
+      ],
+      [
+        "terr",
+        "itory"
+      ],
+      [
+        "angu",
+        "illa"
+      ],
+      [
+        "antig",
+        "ua_and_barbuda"
+      ],
+      [
+        "théle",
+        "my"
+      ],
+      [
+        "stmas",
+        "_island"
+      ],
+      [
+        "solomo",
+        "n_islands"
+      ],
+      [
+        "chri",
+        "stmas_island"
+      ],
+      [
+        "guad",
+        "eloupe"
+      ],
+      [
+        "itts_and_",
+        "nevis"
+      ],
+      [
+        "coco",
+        "s_keeling_islands"
+      ],
+      [
+        "comor",
+        "os"
+      ],
+      [
+        "isle",
+        "_of_man"
+      ],
+      [
+        "re_and_",
+        "mique"
+      ],
+      [
+        "maldi",
+        "ves"
+      ],
+      [
+        "norfo",
+        "lk_island"
+      ],
+      [
+        "puerto",
+        "_rico"
+      ],
+      [
+        "turks_and_",
+        "caicos_islands"
+      ],
+      [
+        "northern_mar",
+        "iana_islands"
+      ],
+      [
+        "cent_and_the",
+        "_grenadines"
+      ],
+      [
+        "marsh",
+        "all_islands"
+      ],
+      [
+        "montser",
+        "rat"
+      ],
+      [
+        "tokela",
+        "u"
+      ],
+      [
+        "jan_may",
+        "en"
+      ],
+      [
+        "saint_k",
+        "itts_and_nevis"
+      ],
+      [
+        "taiw",
+        "an"
+      ],
+      [
+        "new_cale",
+        "donia"
+      ],
+      [
+        "saint_lu",
+        "cia"
+      ],
+      [
+        "saint_bar",
+        "thélemy"
+      ],
+      [
+        "saint_pier",
+        "re_and_mique"
+      ],
+      [
+        "saint_vin",
+        "cent_and_the_grenadines"
+      ],
+      [
+        "united_states_m",
+        "inor_outlying_islands"
+      ],
+      [
+        "barbad",
+        "os"
+      ],
+      [
+        "seychel",
+        "les"
+      ],
+      [
+        "mayot",
+        "te"
+      ],
+      [
+        "british_ind",
+        "ian_ocean_"
+      ],
+      [
+        "bermu",
+        "da"
+      ],
+      [
+        "pitcairn_",
+        "islands"
+      ],
+      [
+        "philipp",
+        "ines"
+      ],
+      [
+        "svalbard_and_",
+        "jan_mayen"
+      ],
+      [
+        "são_tomé_and_pr",
+        "íncipe"
+      ],
+      [
+        "tuval",
+        "u"
+      ],
+      [
+        "trinidad_and_to",
+        "bago"
+      ],
+      [
+        "wallis_and_",
+        "futuna"
+      ],
+      [
+        "saint_pierre_and_mique",
+        "lon"
+      ],
+      [
+        "british_indian_ocean_",
+        "territory"
+      ]
+    ]
+  }
+}
