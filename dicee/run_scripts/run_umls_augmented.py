@@ -55,9 +55,8 @@ if __name__ == "__main__":
     custom_tokenizer_path = "../Tokenizer/UMLS_Augmented_15_Tokenizer_Path/tokenizer.json"
     # custom_tokenizer_path = None
     model = ["DistMult", "ComplEx", "QMult", "Keci"]
-    # dataset_path = ["../KGs/UMLS_Augmented_5"]
+    dataset_path = ["../KGs/UMLS_Augmented_5"]
     # dataset_path = ["../KGs/UMLS_Augmented_10"]
-    dataset_path = ["../KGs/UMLS_Augmented_15"]
     embed_dim = [32, 64]
     learning_rate = [0.1, 0.01, 0.001]
     batch_size = [512]     
