@@ -50,9 +50,8 @@ def run_model(model, dataset_path, embed_dim, learning_rate, batch_size, nhead, 
 if __name__ == "__main__":
     multiprocessing.freeze_support()
 
-    # custom_tokenizer_path = "../Tokenizer/UMLS_Augmented_5_Tokenizer_Path/tokenizer.json"
+    custom_tokenizer_path = "../Tokenizer/UMLS_Augmented_5_Tokenizer_Path/tokenizer.json"
     # custom_tokenizer_path = "../Tokenizer/UMLS_Augmented_10_Tokenizer_Path/tokenizer.json"
-    custom_tokenizer_path = "../Tokenizer/UMLS_Augmented_15_Tokenizer_Path/tokenizer.json"
     # custom_tokenizer_path = None
     model = ["DistMult", "ComplEx", "QMult", "Keci"]
     dataset_path = ["../KGs/UMLS_Augmented_5"]
