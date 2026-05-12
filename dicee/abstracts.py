@@ -192,14 +192,6 @@ class BaseInteractiveKGE:
                 self.dummy_id = self.enc.encode(" ")[0]
                 print("I am evaluator, I got the OLD Tokenizer")
             self.max_length_subword_tokens = self.configs["max_length_subword_tokens"]
-            # # import tiktoken
-            # # self.enc = tiktoken.get_encoding("gpt2")
-            # # self.dummy_id = tiktoken.get_encoding("gpt2").encode(" ")[0]
-            # from tokenizers import Tokenizer
-            # self.enc = Tokenizer.from_file("C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\Tokenizer_Path\\tokenizer.json")
-            # # self.enc = Tokenizer.from_file("/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env-CTA-copy/lib/python3.11/site-packages/dicee/Tokenizer/Tokenizer_Path/tokenizer.json")
-            # self.dummy_id = self.enc.encode(" ").ids[0]
-            # self.max_length_subword_tokens = self.configs["max_length_subword_tokens"]
         else:
             assert len(tuple_of_entity_relation_idx) == 2
 

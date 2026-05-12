@@ -76,14 +76,6 @@ class KG:
             self.num_tokens = self.enc.n_vocab
             self.dummy_id = self.enc.encode(" ")[0]
             print("I am the OLD Tokenizer")
-        # WIP:
-        # import tiktoken
-        # self.enc = tiktoken.get_encoding("gpt2")
-        # from tokenizers import Tokenizer
-        # self.enc = Tokenizer.from_file("C:\\Users\\Harshit Purohit\\Byte\\myenv7\\Lib\\site-packages\\dicee\\Tokenizer\\Tokenizer_Path\\tokenizer.json")
-        # # self.enc = Tokenizer.from_file("/data/upb/users/h/hpurohit/profiles/unix/cs/dice-env-CTA-copy/lib/python3.11/site-packages/dicee/Tokenizer/Tokenizer_Path/tokenizer.json")
-        # # self.num_tokens = self.enc.n_vocab  # ~ 50
-        # self.num_tokens = self.enc.get_vocab_size()
         self.num_bpe_entities = None
         self.padding = padding
         # TODO: Find a unique token later
