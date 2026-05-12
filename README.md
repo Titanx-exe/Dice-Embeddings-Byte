@@ -1,4 +1,4 @@
-# Dice Embeddings Byte: Anonymous Code Artifact
+# Dice Embeddings Byte: Anonymous Code
 
 This repository contains the implementation, datasets, tokenizers, and experiment scripts used for the submitted paper.
 
