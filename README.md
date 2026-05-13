@@ -1,4 +1,4 @@
-# Tokenizing the Graph: Anonymous Code
+# Tokenizing the Graph (Byte): Anonymous Code
 
 This repository contains the implementation, datasets, tokenizers, and experiment scripts used for the submitted paper.
 
